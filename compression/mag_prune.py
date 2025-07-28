@@ -67,8 +67,8 @@ class ResNet18_MagnitudePruning(BaseResNet18Compression):
 
 # --- Magnitude pruning for CLIP ViT ---
 class CLIPViT_MagnitudePruning(BaseCLIPViTCompression):
-    def __init__(self, model, min_channels=1, keep_ratio=0.5, p=2):
-        super().__init__(model, min_channels, keep_ratio)
+    def __init__(self, model, min_channels=1, compression_ratio=0.5, p=2):
+        super().__init__(model, min_channels, compression_ratio)
         self.p = p
 
     def compress_function(self, axes, params):

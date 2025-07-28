@@ -1,6 +1,9 @@
 import torch
 from utils.weight_clustering import merge_channel_clustering, NopMerge, _log_cluster_stats
+
 from compression.fold import ResNet18_ModelFolding
+from compression.base_clip_vit import BaseCLIPViTCompression
+
 
 class ResNet18_Singleton(ResNet18_ModelFolding):
     def compress_function(self, axes, params):
@@ -40,3 +43,87 @@ class ResNet18_Singleton(ResNet18_ModelFolding):
         compressed_params = merge_channel_clustering({0: axes}, params, 0, merge_matrix, custom_merger=NopMerge())
 
         return compressed_params, {'cluster_labels': labels}
+
+
+
+class CLIPViT_Singleton(BaseCLIPViTCompression):
+    def compress_function(self, axes, params):
+        """
+        Singleton folding for CLIP ViT:
+        - Top (k-1) channels form singleton clusters
+        - Remaining channels merged into the last cluster
+        - Centroids used for merging
+        """
+        compressed, merge_sizes = {}, {}
+
+        module_fc, _ = axes[0]     # c_fc
+        module_proj, _ = axes[1]   # c_proj
+
+        # Extract weights
+        W_fc = params[module_fc]       # [hidden_dim, in_dim]
+        W_proj = params[module_proj]   # [out_dim, hidden_dim]
+        device = W_fc.device
+
+        # Determine number of clusters
+        n_channels = W_fc.shape[0]
+        n_clusters = max(int(n_channels * self.keep_ratio), 1)
+
+        # --- Magnitude ranking ---
+        mags = torch.norm(W_fc, p=2, dim=1)  # L2 norm per channel
+        sorted_idx = torch.argsort(mags, descending=True)
+
+        # Top (k-1) are singletons, rest go to last cluster
+        if n_clusters > 1:
+            singleton_idx = sorted_idx[:n_clusters - 1]
+            remainder_idx = sorted_idx[n_clusters - 1:]
+        else:
+            singleton_idx = torch.tensor([], dtype=torch.long, device=device)
+            remainder_idx = sorted_idx
+
+        # Build labels
+        labels = torch.empty(n_channels, dtype=torch.long, device=device)
+        # Assign singletons to clusters 0..k-2
+        for i, idx in enumerate(singleton_idx):
+            labels[idx] = i
+        # Assign remainder to cluster k-1
+        labels[remainder_idx] = n_clusters - 1
+
+        _log_cluster_stats(W_fc, labels, module_fc)
+
+        # --- Compute centroids for clusters ---
+        centroids = []
+        for k in range(n_clusters):
+            cluster_indices = (labels == k).nonzero(as_tuple=True)[0]
+            cluster_mean = W_fc[cluster_indices].mean(dim=0, keepdim=True)
+            centroids.append(cluster_mean)
+        new_fc = torch.cat(centroids, dim=0)  # [n_clusters, in_dim]
+
+        # Apply same clustering to c_proj (input side)
+        new_proj = []
+        for k in range(n_clusters):
+            cluster_indices = (labels == k).nonzero(as_tuple=True)[0]
+            cluster_mean = W_proj[:, cluster_indices].mean(dim=1, keepdim=True)
+            new_proj.append(cluster_mean)
+        new_proj = torch.cat(new_proj, dim=1)  # [out_dim, n_clusters]
+
+        # Assign compressed weights
+        compressed[module_fc + '.weight'] = new_fc
+        compressed[module_proj + '.weight'] = new_proj
+
+        # Bias folding
+        if module_fc + '.bias' in params and params[module_fc + '.bias'] is not None:
+            fc_bias = []
+            for k in range(n_clusters):
+                cluster_indices = (labels == k).nonzero(as_tuple=True)[0]
+                cluster_mean = params[module_fc + '.bias'][cluster_indices].mean().unsqueeze(0)
+                fc_bias.append(cluster_mean)
+            compressed[module_fc + '.bias'] = torch.cat(fc_bias, dim=0)
+
+        if module_proj + '.bias' in params and params[module_proj + '.bias'] is not None:
+            compressed[module_proj + '.bias'] = params[module_proj + '.bias']  # unchanged
+
+        # Track new sizes
+        merge_sizes[module_fc] = new_fc.shape[0]
+        merge_sizes[module_proj] = new_proj.shape[1]
+
+        return compressed, merge_sizes

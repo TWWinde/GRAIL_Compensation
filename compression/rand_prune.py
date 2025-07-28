@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 from compression.base_resnet import BaseResNet18Compression
-
+from compression.base_clip_vit import BaseCLIPViTCompression
 
 class ResNet18_RandomPruning(BaseResNet18Compression):
     def __init__(self, model, min_channels=1, compression_ratio=0.5):
@@ -61,3 +61,52 @@ class ResNet18_RandomPruning(BaseResNet18Compression):
         # Final FC
         self._prune_linear("fc", prev_keep)
         return self.model
+
+
+
+
+class CLIPViT_RandomPruning(BaseCLIPViTCompression):
+    def compress_function(self, axes, params):
+        """
+        Random pruning for CLIP ViT:
+        - Randomly keep a subset of channels proportional to keep_ratio.
+        - Apply same subset to c_proj input channels.
+        """
+        compressed, merge_sizes = {}, {}
+
+        # Module names
+        module_fc, _ = axes[0]     # c_fc
+        module_proj, _ = axes[1]   # c_proj
+
+        # Extract weights
+        W_fc = params[module_fc]      # [hidden_dim, in_dim]
+        W_proj = params[module_proj]  # [out_dim, hidden_dim]
+        device = W_fc.device
+
+        # Determine number of channels to keep
+        n_channels = W_fc.shape[0]
+        n_keep = max(int(n_channels * self.keep_ratio), self.min_channels)
+
+        # Random selection of channels
+        perm = torch.randperm(n_channels, device=device)
+        keep_indices = perm[:n_keep]
+
+        # Apply pruning to c_fc (output) and c_proj (input)
+        new_fc = W_fc[keep_indices, :]           # reduced rows
+        new_proj = W_proj[:, keep_indices]       # reduced columns
+
+        # Assign compressed weights
+        compressed[module_fc + '.weight'] = new_fc
+        compressed[module_proj + '.weight'] = new_proj
+
+        # Bias pruning
+        if module_fc + '.bias' in params and params[module_fc + '.bias'] is not None:
+            compressed[module_fc + '.bias'] = params[module_fc + '.bias'][keep_indices]
+        if module_proj + '.bias' in params and params[module_proj + '.bias'] is not None:
+            compressed[module_proj + '.bias'] = params[module_proj + '.bias']  # unchanged
+
+        # Track new sizes
+        merge_sizes[module_fc] = new_fc.shape[0]
+        merge_sizes[module_proj] = new_proj.shape[1]
+
+        return compressed, merge_sizes

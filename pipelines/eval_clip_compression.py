@@ -12,6 +12,9 @@ from models.clip_vit import CLIPViT_B32
 
 from compression.fold import CLIPViT_ModelFolding
 from compression.mag_prune import CLIPViT_MagnitudePruning
+from compression.rand_fold import CLIPViT_RandomFolding
+from compression.rand_prune import CLIPViT_RandomPruning
+from compression.singleton import CLIPViT_Singleton
 
 from utils.tune_utils import retune_layernorm
 from utils.eval_utils import test, count_parameters
@@ -72,6 +75,9 @@ def main():
     print("\n[INFO] Applying CLIP ViT-B/32 model compression...")
     # pruner = CLIPViT_ModelFolding(model, compression_ratio=COMPRESSION_RATIO)
     pruner = CLIPViT_MagnitudePruning(model, compression_ratio=COMPRESSION_RATIO, p=1)
+    # pruner = CLIPViT_RandomFolding(model, compression_ratio=COMPRESSION_RATIO)
+    # pruner = CLIPViT_RandomPruning(model, compression_ratio=COMPRESSION_RATIO)
+    # pruner = CLIPViT_Singleton(model, compression_ratio=COMPRESSION_RATIO)
 
     pruned_model = pruner.apply()
 
