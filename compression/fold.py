@@ -1,0 +1,101 @@
+import torch
+import torch.nn as nn
+from collections import defaultdict
+
+from utils.weight_clustering import WeightClustering, _log_cluster_stats, concat_weights
+
+from compression.base_clip_vit import BaseCLIPViTCompression
+from compression.base_resnet import BaseResNet18Compression
+
+
+class ResNet18_ModelFolding(BaseResNet18Compression):
+    def compress_or_prune(self, axes, params):
+        """
+        Folding logic: perform clustering and merge weights.
+        """
+        # Use hkmeans clustering
+        from utils.weight_clustering import merge_channel_clustering
+
+        n_channels = params[axes[0][0]].shape[axes[0][1]]
+        n_clusters = max(int(n_channels * self.keep_ratio), 1)
+
+        # Flatten and cluster
+        weight = concat_weights({0: axes}, params, 0, n_channels)
+        clusterer = WeightClustering(n_clusters=n_clusters, n_features=n_channels,
+                                     method="hkmeans", normalize=False, use_pca=True)
+        labels = clusterer(weight).to(self.device).long()
+
+        # Log cluster stats
+        _log_cluster_stats(weight, labels, axes[0][0])
+
+        # Convert to merge matrix
+        merge_matrix = torch.zeros((n_clusters, n_channels), device=self.device, dtype=torch.float32)
+        merge_matrix.scatter_(0, labels.unsqueeze(0), 1.0)
+        merge_matrix /= merge_matrix.sum(dim=1, keepdim=True).clamp(min=1)
+
+        # Merge weights
+        from utils.weight_clustering import NopMerge
+        compressed_params = merge_channel_clustering({0: axes}, params, 0, merge_matrix, custom_merger=NopMerge())
+
+        return compressed_params, {'cluster_labels': labels}
+
+
+
+class CLIPViT_ModelFolding(BaseCLIPViTCompression):
+    # --- Folding for CLIP ViT (Representative Selection) ---
+    def compress_function(self, axes, params):
+        """
+            Compress weights for CLIP ViT MLP (c_fc + c_proj) using representative selection:
+            - Cluster c_fc output channels
+            - Select representative indices per cluster (first occurrence)
+            - Apply same selection to c_proj input channels
+            """
+        compressed = {}
+        merge_sizes = {}
+
+        # Unpack module names
+        module_fc, _ = axes[0]
+        module_proj, _ = axes[1]
+
+        # Extract weights
+        W_fc = params[module_fc]  # [hidden_dim, in_dim]
+        W_proj = params[module_proj]  # [out_dim, hidden_dim]
+
+        # --- Clustering (HKMeans, no PCA, no normalization) ---
+        n_channels = W_fc.shape[0]
+        n_clusters = max(int(n_channels * self.keep_ratio), self.min_channels)
+
+        clusterer = WeightClustering(n_clusters=n_clusters, method="hkmeans", use_pca=False, normalize=False)
+        labels = clusterer(W_fc).to(W_fc.device).long()
+
+        _log_cluster_stats(W_fc, labels, module_fc)
+
+        # Representative indices (first element in each cluster)
+        unique_labels = torch.unique(labels, sorted=True)
+        rep_indices = torch.stack([
+            torch.nonzero(labels == lbl, as_tuple=True)[0][0] for lbl in unique_labels
+        ]).to(W_fc.device)
+
+        # Select channels
+        new_fc = W_fc[rep_indices, :]
+        new_proj = W_proj[:, rep_indices]
+
+        compressed[module_fc + '.weight'] = new_fc
+        compressed[module_proj + '.weight'] = new_proj
+
+        # Biases
+        if module_fc + '.bias' in params and params[module_fc + '.bias'] is not None:
+            compressed[module_fc + '.bias'] = params[module_fc + '.bias'][rep_indices]
+        if module_proj + '.bias' in params and params[module_proj + '.bias'] is not None:
+            compressed[module_proj + '.bias'] = params[module_proj + '.bias']
+
+        # Track new sizes
+        merge_sizes[module_fc] = new_fc.shape[0]
+        merge_sizes[module_proj] = new_proj.shape[1]
+
+        return compressed, merge_sizes
+
+
+
+
+

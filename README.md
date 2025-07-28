@@ -1,1 +1,18 @@
 # folding_as_projection
+
+## Checkpoints
+- resnet18 - trained (private)
+- clipvit-b32-model-soups (M. Wortsman)
+  - https://github.com/mlfoundations/model-soups/releases/ 
+  - https://arxiv.org/abs/2203.05482 
+- preactresnet18 and vit-exp (M. Andriushchenko)
+  - https://arxiv.org/pdf/2302.07011
+  - https://drive.google.com/drive/folders/1LmthJCb3RXBFWjeTOC4UOOl7Ppgg2h7n
+  - https://github.com/tml-epfl/sharpness-vs-generalization/tree/main
+  - Comments:
+    - pip install vit-pytorch==0.40.2 
+    - see: https://github.com/tml-epfl/sharpness-vs-generalization/commit/6d73be94eb88dae6d3096647bb24b92244fae18f
+    - see training metrics on Google Drive
+
+## Testing pipelines
+- `CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.eval_clip_folding`
