@@ -22,9 +22,7 @@ from utils.eval_utils import test, count_parameters
 # -----------------------------------------------------------------------------
 # Configuration
 # -----------------------------------------------------------------------------
-DATASET = "ImageNet"
 CHECKPOINT_PATH = "../checkpoints/clipvit-b32-model-soups/model_1.pt"
-IMAGENET_ROOT = "../data"
 BATCH_SIZE = 32
 COMPRESSION_RATIO = 0.2
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
@@ -61,7 +59,7 @@ def main():
     model, preprocess = load_clip_vit_model(num_classes, CHECKPOINT_PATH, DEVICE)
 
     # Prepare validation loader
-    val_dataset = ImageNet(root=IMAGENET_ROOT, split="val", transform=preprocess)
+    val_dataset = ImageNet(root="../data", split="val", transform=preprocess)
     val_loader = DataLoader(val_dataset, batch_size=BATCH_SIZE, shuffle=False, num_workers=4, pin_memory=True)
 
     # Evaluate BEFORE folding

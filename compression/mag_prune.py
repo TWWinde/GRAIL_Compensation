@@ -7,6 +7,8 @@ from models.preact_resnet import get_module_by_name_PreActResNet18, get_axis_to_
 from compression.base_clip_vit import BaseCLIPViTCompression
 from compression.base_resnet import BaseResNetCompression
 from compression.base_preact_resnet import BasePreActResNetCompression
+from compression.base_vit import BaseViTCompression
+
 from utils.weight_clustering import axes2perm_to_perm2axes
 
 
@@ -179,3 +181,56 @@ class PreActResNet18_MagnitudePruning(BasePreActResNetCompression):
 
 
 
+class ViT_MagnitudePruning(BaseViTCompression):
+    """
+    Magnitude-based pruning for SimpleViT MLP (FeedForward layers):
+    - Rank c_fc output channels by L2 norm
+    - Keep top channels according to keep_ratio
+    - Apply same selection to c_proj input channels
+    """
+
+    def __init__(self, model, min_channels=1, compression_ratio=0.5, p=2):
+        super().__init__(model, min_channels, compression_ratio)
+        self.p = p
+
+    def compress_function(self, axes, params):
+        """
+        Compress weights for SimpleViT MLP (c_fc + c_proj) using magnitude pruning.
+        """
+        compressed = {}
+        merge_sizes = {}
+
+        # --- Unpack module names ---
+        module_fc = axes[0]
+        module_proj = axes[1]
+
+        # --- Extract weights ---
+        W_fc = params[module_fc + '.weight']   # [hidden_dim, in_dim]
+        W_proj = params[module_proj + '.weight']  # [out_dim, hidden_dim]
+
+        # --- Determine number of channels to keep ---
+        n_channels = W_fc.shape[0]
+        keep_units = max(int(n_channels * self.keep_ratio), self.min_channels)
+
+        # --- Compute L2 norm per output channel (row-wise) ---
+        norms = torch.norm(W_fc, dim=1, p=self.p)  # [hidden_dim]
+        topk_indices = torch.topk(norms, keep_units, largest=True).indices.sort()[0].to(W_fc.device)
+
+        # --- Apply selection ---
+        new_fc = W_fc[topk_indices, :]         # Reduce rows
+        new_proj = W_proj[:, topk_indices]     # Reduce columns
+
+        compressed[module_fc + '.weight'] = new_fc
+        compressed[module_proj + '.weight'] = new_proj
+
+        # --- Handle biases ---
+        if module_fc + '.bias' in params and params[module_fc + '.bias'] is not None:
+            compressed[module_fc + '.bias'] = params[module_fc + '.bias'][topk_indices]
+        if module_proj + '.bias' in params and params[module_proj + '.bias'] is not None:
+            compressed[module_proj + '.bias'] = params[module_proj + '.bias']
+
+        # --- Track new sizes ---
+        merge_sizes[module_fc] = new_fc.shape[0]
+        merge_sizes[module_proj] = new_proj.shape[1]
+
+        return compressed, merge_sizes

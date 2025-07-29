@@ -4,16 +4,21 @@ import torch.nn as nn
 def retune_layernorm(model, dataloader, device='cuda', lr=1e-4, steps=None):
     """
     Fine-tunes only LayerNorm parameters to stabilize accuracy after compression.
+    Works for both CLIP ViT and SimpleViT (detects by module type, not name).
 
     Args:
-        model: The CLIP model with classification head.
-        dataloader: DataLoader for validation (ImageNet val).
+        model: Vision Transformer model (CLIP or SimpleViT).
+        dataloader: DataLoader for validation or train split.
         device: Device for training.
         lr: Learning rate for LN tuning.
         steps: Number of steps (None = 1 full pass over dataloader).
     """
-    # Select LayerNorm parameters
-    ln_params = [p for n, p in model.named_parameters() if 'ln' in n and p.requires_grad]
+
+    # --- Collect LayerNorm parameters by module type ---
+    ln_params = [
+        p for m in model.modules() if isinstance(m, nn.LayerNorm)
+        for p in m.parameters() if p.requires_grad
+    ]
 
     if not ln_params:
         print("[WARNING] No LayerNorm parameters found to tune.")
@@ -29,15 +34,23 @@ def retune_layernorm(model, dataloader, device='cuda', lr=1e-4, steps=None):
         inputs, targets = inputs.to(device), targets.to(device)
         optimizer.zero_grad()
 
-        visual_output = model.visual(inputs)
-        outputs = model.classification_head(visual_output)
+        # --- Forward pass ---
+        if hasattr(model, "visual") and hasattr(model, "classification_head"):
+            # CLIP-style
+            visual_output = model.visual(inputs)
+            outputs = model.classification_head(visual_output)
+        else:
+            # SimpleViT-style
+            outputs = model(inputs)
 
-        if outputs.ndim != 2 or outputs.size(1) != 1000:
+        # --- Validate output shape and targets ---
+        if outputs.ndim != 2:
             raise ValueError(f"Unexpected output shape: {outputs.shape}")
 
-        if targets.min() < 0 or targets.max() >= 1000:
+        if targets.min() < 0 or targets.max() >= outputs.size(1):
             raise ValueError(f"Invalid target values: min={targets.min().item()}, max={targets.max().item()}")
 
+        # --- Backpropagation ---
         loss = criterion(outputs, targets)
         loss.backward()
         optimizer.step()

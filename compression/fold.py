@@ -10,6 +10,7 @@ from utils.weight_clustering import WeightClustering, _log_cluster_stats, concat
 from compression.base_clip_vit import BaseCLIPViTCompression
 from compression.base_resnet import BaseResNetCompression
 from compression.base_preact_resnet import BasePreActResNetCompression
+from compression.base_vit import BaseViTCompression
 
 
 class ResNet18_ModelFolding(BaseResNetCompression):
@@ -223,6 +224,66 @@ class PreActResNet18_ModelFolding(BasePreActResNetCompression):
         print("Model folding complete (with BN folding).")
         return self.model
 
+
+
+
+class ViT_ModelFolding(BaseViTCompression):
+    """
+    Folding for SimpleViT MLP (FeedForward layers):
+    - Cluster c_fc output channels
+    - Select representative indices per cluster (first occurrence)
+    - Apply same selection to c_proj input channels
+    """
+
+    def __init__(self, model, min_channels=1, compression_ratio=0.5):
+        super().__init__(model, min_channels, compression_ratio)
+
+    def compress_function(self, axes, params):
+        compressed = {}
+        merge_sizes = {}
+
+        # --- Unpack module names ---
+        module_fc = axes[0]
+        module_proj = axes[1]
+
+        # --- Extract weights ---
+        W_fc = params[module_fc + '.weight']   # [hidden_dim, in_dim]
+        W_proj = params[module_proj + '.weight']  # [out_dim, hidden_dim]
+
+        # --- Determine number of clusters ---
+        n_channels = W_fc.shape[0]
+        n_clusters = max(int(n_channels * self.keep_ratio), self.min_channels)
+
+        # --- Clustering (HKMeans, no PCA, no normalization) ---
+        clusterer = WeightClustering(n_clusters=n_clusters, method="hkmeans", use_pca=False, normalize=False)
+        labels = clusterer(W_fc).to(W_fc.device).long()
+
+        _log_cluster_stats(W_fc, labels, module_fc)
+
+        # --- Select representative indices (first in each cluster) ---
+        unique_labels = torch.unique(labels, sorted=True)
+        rep_indices = torch.stack([
+            torch.nonzero(labels == lbl, as_tuple=True)[0][0] for lbl in unique_labels
+        ]).to(W_fc.device)
+
+        # --- Apply representative selection ---
+        new_fc = W_fc[rep_indices, :]            # Reduce rows
+        new_proj = W_proj[:, rep_indices]        # Reduce columns
+
+        compressed[module_fc + '.weight'] = new_fc
+        compressed[module_proj + '.weight'] = new_proj
+
+        # --- Handle biases ---
+        if module_fc + '.bias' in params and params[module_fc + '.bias'] is not None:
+            compressed[module_fc + '.bias'] = params[module_fc + '.bias'][rep_indices]
+        if module_proj + '.bias' in params and params[module_proj + '.bias'] is not None:
+            compressed[module_proj + '.bias'] = params[module_proj + '.bias']
+
+        # --- Track new sizes ---
+        merge_sizes[module_fc] = new_fc.shape[0]
+        merge_sizes[module_proj] = new_proj.shape[1]
+
+        return compressed, merge_sizes
 
 
 
