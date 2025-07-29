@@ -14,7 +14,11 @@
     - see: https://github.com/tml-epfl/sharpness-vs-generalization/commit/6d73be94eb88dae6d3096647bb24b92244fae18f
     - see training metrics on Google Drive
 
-## Testing pipelines
-- `CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.eval_clip_folding`
+## Evaluating pipeline on individual checkpoints
 - `CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.eval_resnet_compression`
 - `CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.eval_preact_resnet_compression`
+- `CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.eval_vit_compression`
+- `CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.eval_clip_compression`
+
+## Testing pipelines
+- `CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_resnet_compression --ckpt_dir ../checkpoints/resnet18/adam/clean --method fold`
