@@ -59,8 +59,8 @@ def main():
     parser.add_argument("--ckpt_dir", type=str, required=True, help="Directory with CLIP checkpoints (.pt)")
     parser.add_argument("--method", type=str, default="fold",
                         choices=["fold", "mag-l1", "mag-l2", "rand-fold", "rand-prune", "singleton"])
-    parser.add_argument("--epochs", type=int, default=0, help="Fine-tuning epochs after compression")
-    parser.add_argument("--lr", type=float, default=1e-4, help="Learning rate for fine-tuning")
+    parser.add_argument("--epochs", type=int, default=5, help="Fine-tuning epochs after compression")
+    parser.add_argument("--lr", type=float, default=5e-5, help="Learning rate for fine-tuning")
     parser.add_argument("--imagenet_root", type=str, default="../data", help="Path to ImageNet root")
     parser.add_argument("--batch_size", type=int, default=32)
     args = parser.parse_args()
@@ -137,11 +137,21 @@ def main():
                     for x, y in train_loader:
                         x, y = x.to(device), y.to(device)
                         opt.zero_grad()
-                        loss = loss_fn(model(x), y)
+
+                        # Forward pass (CLIP ViT vs ResNet)
+                        if hasattr(model, "classification_head") and hasattr(model, "visual"):
+                            out = model.classification_head(model.visual(x))
+                        else:
+                            out = model(x)
+                        if isinstance(out, tuple):
+                            out = out[0]
+
+                        loss = loss_fn(out, y)
                         loss.backward()
                         opt.step()
+
                     acc = test(model, val_loader, device)
-                    log_line(ratio, f"FINETUNE_EPOCH{epoch+1}", acc=f"{acc:.2f}")
+                    log_line(ratio, f"FINETUNE_EPOCH{epoch + 1}", acc=f"{acc:.2f}")
 
 if __name__ == "__main__":
     main()

@@ -85,8 +85,8 @@ def load_vit_model(checkpoint_path, device):
 def main():
     parser = argparse.ArgumentParser(description="Evaluate ViT compression across ratios/checkpoints")
     parser.add_argument("--ckpt_dir", type=str, required=True)
-    parser.add_argument("--method", type=str, default="fold", choices=["fold", "mag-l2"])
-    parser.add_argument("--epochs", type=int, default=0)
+    parser.add_argument("--method", type=str, default="fold", choices=["fold", "mag-l1", "mag-l2"])
+    parser.add_argument("--epochs", type=int, default=5)
     parser.add_argument("--lr", type=float, default=1e-4)
     args = parser.parse_args()
 
@@ -99,6 +99,7 @@ def main():
 
     pruner_map = {
         "fold":   lambda m, r: ViT_ModelFolding(m, compression_ratio=r),
+        "mag-l1": lambda m, r: ViT_MagnitudePruning(m, compression_ratio=r, p=1),
         "mag-l2": lambda m, r: ViT_MagnitudePruning(m, compression_ratio=r, p=2),
     }
 
