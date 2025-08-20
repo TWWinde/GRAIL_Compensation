@@ -87,7 +87,7 @@ def main():
     parser.add_argument("--ckpt_dir", type=str, required=True)
     parser.add_argument("--method", type=str, default="fold", choices=["fold", "mag-l1", "mag-l2"])
     parser.add_argument("--epochs", type=int, default=5)
-    parser.add_argument("--lr", type=float, default=1e-4)
+    parser.add_argument("--lr", type=float, default=5e-6)
     args = parser.parse_args()
 
     fix_seed(42)
@@ -140,7 +140,7 @@ def main():
 
             # Optional fine-tuning
             if args.epochs > 0:
-                opt = torch.optim.Adam(model.parameters(), lr=args.lr)
+                opt = torch.optim.AdamW(model.parameters(), lr=args.lr)
                 loss_fn = nn.CrossEntropyLoss()
                 for epoch in range(args.epochs):
                     model.train()
