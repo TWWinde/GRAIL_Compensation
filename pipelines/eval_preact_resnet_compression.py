@@ -12,6 +12,7 @@ from models.preact_resnet import PreActResNet18
 
 from compression.fold import PreActResNet18_ModelFolding
 from compression.mag_prune import PreActResNet18_MagnitudePruning
+from compression.wanda import PreActResNet18_WandaPruning
 from compression.rand_fold import PreActResNet18_RandomFolding
 from compression.rand_prune import PreActResNet18_RandomPruning
 from compression.singleton import PreActResNet18_Singleton
@@ -78,11 +79,14 @@ def main():
     print(f"Original Parameters: {original_params}")
 
     # ---- Apply compression (migrate to PreAct variant later) ----
-    pruner = PreActResNet18_ModelFolding(model, compression_ratio=COMPRESSION_RATIO)
+    # pruner = PreActResNet18_ModelFolding(model, compression_ratio=COMPRESSION_RATIO)
     # pruner = PreActResNet18_MagnitudePruning(model, compression_ratio=COMPRESSION_RATIO, p=2)
     # pruner = PreActResNet18_RandomFolding(model, compression_ratio=COMPRESSION_RATIO)
     # pruner = PreActResNet18_RandomPruning(model, compression_ratio=COMPRESSION_RATIO)
     # pruner = PreActResNet18_Singleton(model, compression_ratio=COMPRESSION_RATIO)
+
+    pruner = PreActResNet18_WandaPruning(model, compression_ratio=COMPRESSION_RATIO)
+    pruner.run_calibration(train_loader, DEVICE, num_batches=50)
 
     pruned_model = pruner.apply()
 

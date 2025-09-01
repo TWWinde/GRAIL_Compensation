@@ -24,7 +24,7 @@ def retune_layernorm(model, dataloader, device='cuda', lr=1e-4, steps=None):
         print("[WARNING] No LayerNorm parameters found to tune.")
         return
 
-    optimizer = torch.optim.Adam(ln_params, lr=lr)
+    optimizer = torch.optim.AdamW(ln_params, lr=lr)
     criterion = nn.CrossEntropyLoss()
 
     model.train()

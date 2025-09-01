@@ -1,12 +1,9 @@
 import torch
 import torch.nn as nn
-from collections import defaultdict
 
 from compression.base_resnet import BaseResNetCompression
+from compression.base_preact_resnet import BasePreActResNetCompression
 
-import torch
-import torch.nn as nn
-from compression.base_resnet import BaseResNetCompression
 
 class ResNet18_WandaPruning(BaseResNetCompression):
     """
@@ -169,5 +166,162 @@ class ResNet18_WandaPruning(BaseResNetCompression):
 
         # ----- Final FC (prune inputs only; outputs = classes unchanged) -----
         self._prune_linear("fc", prev_keep)
+        return self.model
+
+
+class PreActResNet18_WandaPruning(BasePreActResNetCompression):
+    """
+    Structured channel pruning for PreActResNet-18 using Wanda scores.
+    Keeps your original per-layer compression ratio and block mapping logic:
+      - Identity blocks: keep2 = in_keep
+      - Downsample blocks: keep2 from Wanda scores; remap shortcut to keep2
+      - BN alignment follows PreAct ordering (bn1 with input, bn2 with conv1 output)
+    """
+
+    def __init__(self, model, min_channels=1, compression_ratio=0.5):
+        super().__init__(model, min_channels, compression_ratio)
+        self.act_scales = {}   # layer_name -> 1D CPU tensor [Cin] of L2 norms
+        self._hooks = []
+
+    # -------------------- Calibration --------------------
+    def _register_activation_hooks(self):
+        self._act_sum_sq = {}
+
+        def make_hook(name):
+            def hook(mod, inputs):
+                x = inputs[0]
+                with torch.no_grad():
+                    if isinstance(mod, nn.Conv2d):
+                        ss = (x.float() ** 2).sum(dim=(0, 2, 3)).detach().cpu()  # [Cin]
+                    elif isinstance(mod, nn.Linear):
+                        ss = (x.float() ** 2).sum(dim=0).detach().cpu()          # [Cin]
+                    else:
+                        return
+                    self._act_sum_sq[name] = self._act_sum_sq.get(name, 0)
+                    self._act_sum_sq[name] = self._act_sum_sq[name] + ss
+            return hook
+
+        for lname, layer in self.model_layers.items():
+            if isinstance(layer, (nn.Conv2d, nn.Linear)):
+                self._hooks.append(layer.register_forward_pre_hook(make_hook(lname)))
+
+    def _clear_hooks(self):
+        for h in self._hooks:
+            try: h.remove()
+            except: pass
+        self._hooks = []
+
+    @torch.no_grad()
+    def run_calibration(self, dataloader, device, num_batches=50):
+        self.model.eval().to(device)
+        self._register_activation_hooks()
+        seen = 0
+        for batch in dataloader:
+            x = batch[0] if isinstance(batch, (list, tuple)) else batch
+            _ = self.model(x.to(device))
+            seen += 1
+            if seen >= num_batches:
+                break
+        self._clear_hooks()
+        # finalize per-input L2 norms (sqrt of sum of squares), clamp to avoid zeros
+        self.act_scales = {name: ss.sqrt().clamp_min(1e-8) for name, ss in self._act_sum_sq.items()}
+
+    # -------------------- Wanda helpers --------------------
+    @staticmethod
+    def _wanda_scores_conv(weight: torch.Tensor, s_in: torch.Tensor):
+        # weight: [Cout, Cin, kH, kW]; s_in: [Cin] (device-agnostic)
+        w_abs_sum = weight.abs().view(weight.size(0), weight.size(1), -1).sum(dim=2)  # [Cout, Cin]
+        return torch.matmul(w_abs_sum, s_in.to(weight.device))                         # [Cout]
+
+    @staticmethod
+    def _slice_weight_in(weight: torch.Tensor, in_keep):
+        if in_keep is None:
+            return weight
+        idx = in_keep.to(weight.device)
+        if weight.ndim == 4:  # Conv2d
+            return weight.index_select(1, idx)
+        else:                 # Linear
+            return weight.index_select(1, idx)
+
+    def _get_s_in(self, layer_name, in_keep=None, fallback_weight=None):
+        """
+        Get per-input-channel L2 norms for a layer (CPU tensor). If absent, fall back
+        to a weight-derived proxy (avg |W| over Cout & kernel dims per Cin).
+        """
+        if layer_name in self.act_scales:
+            s = self.act_scales[layer_name]
+            if in_keep is not None:
+                s = s[in_keep.cpu()]
+            return s.clamp_min(1e-8)
+
+        # Fallback proxy (no calibration)
+        if fallback_weight is None:
+            raise RuntimeError(f"No activation stats or fallback weights for '{layer_name}'. Run calibration first.")
+        w = fallback_weight
+        if w.ndim == 4:
+            proxy = w.abs().view(w.size(0), w.size(1), -1).sum(dim=2).mean(dim=0)  # [Cin]
+        else:
+            proxy = w.abs().mean(dim=0)                                            # [Cin]
+        if in_keep is not None:
+            proxy = proxy[in_keep.to(proxy.device)]
+        return proxy.detach().cpu().clamp_min(1e-8)
+
+    # -------------------- Apply (mirrors your magnitude flow) --------------------
+    @torch.no_grad()
+    def apply(self):
+        # --- Initial conv (no BN at root in PreAct) ---
+        conv1 = self.model_layers['conv1']
+        k1 = max(int(conv1.out_channels * self.keep_ratio), self.min_channels)
+        s_in_conv1 = self._get_s_in('conv1', fallback_weight=conv1.weight)
+        scores1 = self._wanda_scores_conv(conv1.weight, s_in_conv1)
+        keep = self._get_keep_indices(scores1, k1)
+        self._rebuild_conv('conv1', out_keep=keep)
+        prev_keep = keep
+
+        # --- Residual blocks ---
+        for layer in ['layer1', 'layer2', 'layer3', 'layer4']:
+            blocks = self.model_layers[layer]
+            for i, block in enumerate(blocks):
+                prefix = f"{layer}.{i}"
+
+                # conv1 (PreAct order: bn1 -> relu -> conv1)
+                in_keep = prev_keep
+                s_in1 = self._get_s_in(f"{prefix}.conv1", in_keep=in_keep, fallback_weight=block.conv1.weight)
+                w1 = self._slice_weight_in(block.conv1.weight, in_keep)
+                assert w1.size(1) == s_in1.numel(), f"Cin mismatch @ {prefix}.conv1"
+                conv1_scores = self._wanda_scores_conv(w1, s_in1)
+                conv1_k = max(int(block.conv1.out_channels * self.keep_ratio), self.min_channels)
+                keep1 = self._get_keep_indices(conv1_scores, conv1_k)
+
+                self._rebuild_conv(f"{prefix}.conv1", in_keep=in_keep, out_keep=keep1)
+                # bn1 sits BEFORE conv1, so it matches the block INPUT (in_keep)
+                self._adjust_bn(f"{prefix}.bn1", in_keep)
+
+                # conv2 (PreAct order: bn2 -> relu -> conv2)
+                s_in2 = self._get_s_in(f"{prefix}.conv2", in_keep=keep1, fallback_weight=block.conv2.weight)
+                w2 = self._slice_weight_in(block.conv2.weight, keep1)
+                assert w2.size(1) == s_in2.numel(), f"Cin mismatch @ {prefix}.conv2"
+                conv2_scores = self._wanda_scores_conv(w2, s_in2)
+                conv2_k = max(int(block.conv2.out_channels * self.keep_ratio), self.min_channels)
+
+                # shortcut mapping (if present, match downsample to conv2 OUT keep2)
+                if hasattr(block, 'shortcut') and isinstance(block.shortcut, nn.Sequential):
+                    keep2 = self._get_keep_indices(conv2_scores, conv2_k)
+                else:
+                    # identity: the add happens in this block; width/order must equal input
+                    keep2 = in_keep
+
+                self._rebuild_conv(f"{prefix}.conv2", in_keep=keep1, out_keep=keep2)
+                # bn2 sits BEFORE conv2, so it matches conv1 output (keep1)
+                self._adjust_bn(f"{prefix}.bn2", keep1)
+
+                if hasattr(block, 'shortcut') and isinstance(block.shortcut, nn.Sequential):
+                    self._rebuild_conv(f"{prefix}.shortcut.0", in_keep=in_keep, out_keep=keep2)
+
+                prev_keep = keep2
+
+        # final BN (PreAct tail BN) and classifier
+        self._adjust_bn("bn", prev_keep)
+        self._prune_linear("linear", prev_keep)
         return self.model
 
