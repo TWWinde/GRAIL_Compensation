@@ -76,7 +76,6 @@ class ResNet18_ModelFolding(BaseResNetCompression):
         return self.model
 
 
-
 class CLIPViT_ModelFolding(BaseCLIPViTCompression):
     def compress_function(self, axes, params):
         """
@@ -173,6 +172,7 @@ class CLIPViT_ModelFolding(BaseCLIPViTCompression):
         merge_sizes[module_proj] = new_proj.shape[1]
 
         return compressed, merge_sizes
+
 
 
 class PreActResNet18_ModelFolding(BasePreActResNetCompression):
@@ -364,4 +364,3 @@ class ViT_ModelFolding(BaseViTCompression):
         merge_sizes[module_proj] = new_proj.shape[1]
 
         return compressed, merge_sizes
-
