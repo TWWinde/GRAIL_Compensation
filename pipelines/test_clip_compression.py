@@ -14,6 +14,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from models.clip_vit import CLIPViT_B32
 from compression.fold import CLIPViT_ModelFolding
 from compression.mag_prune import CLIPViT_MagnitudePruning
+from compression.wanda import CLIPViT_WandaPruning
 from compression.rand_fold import CLIPViT_RandomFolding
 from compression.rand_prune import CLIPViT_RandomPruning
 from compression.singleton import CLIPViT_Singleton
@@ -58,7 +59,7 @@ def main():
     parser = argparse.ArgumentParser(description="Evaluate CLIP ViT-B/32 compression across ratios/checkpoints")
     parser.add_argument("--ckpt_dir", type=str, required=True, help="Directory with CLIP checkpoints (.pt)")
     parser.add_argument("--method", type=str, default="fold",
-                        choices=["fold", "mag-l1", "mag-l2", "rand-fold", "rand-prune", "singleton"])
+                        choices=["fold", "mag-l1", "mag-l2", "wanda", "rand-fold", "rand-prune", "singleton"])
     parser.add_argument("--epochs", type=int, default=5, help="Fine-tuning epochs after compression")
     parser.add_argument("--lr", type=float, default=1e-6, help="Learning rate for fine-tuning")
     parser.add_argument("--imagenet_root", type=str, default="../data", help="Path to ImageNet root")
@@ -88,6 +89,7 @@ def main():
         "fold":      lambda m, r: CLIPViT_ModelFolding(m, compression_ratio=r),
         "mag-l1":    lambda m, r: CLIPViT_MagnitudePruning(m, compression_ratio=r, p=1),
         "mag-l2":    lambda m, r: CLIPViT_MagnitudePruning(m, compression_ratio=r, p=2),
+        "wanda": lambda m, r: CLIPViT_WandaPruning(m, compression_ratio=r, mode="proj_cols", ignore_cls=True, alpha=0.35),
         "rand-fold": lambda m, r: CLIPViT_RandomFolding(m, compression_ratio=r),
         "rand-prune":lambda m, r: CLIPViT_RandomPruning(m, compression_ratio=r),
         "singleton": lambda m, r: CLIPViT_Singleton(m, compression_ratio=r),
@@ -112,6 +114,9 @@ def main():
 
             # Apply compression
             pruner = pruner_map[args.method](model, ratio)
+            # Wanda needs calibration before apply()
+            if isinstance(pruner, CLIPViT_WandaPruning):
+                pruner.run_calibration(train_loader, device, num_batches=100, forward_fn=model.encode_image)
             model = pruner.apply().to(device)
             pruned_params = count_parameters(model)
 

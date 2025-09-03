@@ -12,6 +12,7 @@ from models.clip_vit import CLIPViT_B32
 
 from compression.fold import CLIPViT_ModelFolding
 from compression.mag_prune import CLIPViT_MagnitudePruning
+from compression.wanda import CLIPViT_WandaPruning
 from compression.rand_fold import CLIPViT_RandomFolding
 from compression.rand_prune import CLIPViT_RandomPruning
 from compression.singleton import CLIPViT_Singleton
@@ -32,7 +33,7 @@ def fix_seed(seed=42):
     np.random.seed(seed)
     torch.manual_seed(seed)
     torch.cuda.manual_seed(seed)
-    torch.cuda.manual_seed_all(seed)  # if using multi-GPU
+    torch.cuda.manual_seed_all(seed)
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
 fix_seed(42)
@@ -71,11 +72,14 @@ def main():
 
     # Apply folding
     print("\n[INFO] Applying CLIP ViT-B/32 model compression...")
-    pruner = CLIPViT_ModelFolding(model, compression_ratio=COMPRESSION_RATIO)
+    # pruner = CLIPViT_ModelFolding(model, compression_ratio=COMPRESSION_RATIO)
     # pruner = CLIPViT_MagnitudePruning(model, compression_ratio=COMPRESSION_RATIO, p=2)
     # pruner = CLIPViT_RandomFolding(model, compression_ratio=COMPRESSION_RATIO)
     # pruner = CLIPViT_RandomPruning(model, compression_ratio=COMPRESSION_RATIO)
     # pruner = CLIPViT_Singleton(model, compression_ratio=COMPRESSION_RATIO)
+
+    pruner = CLIPViT_WandaPruning(model, compression_ratio=COMPRESSION_RATIO, mode="proj_cols", ignore_cls=True, alpha=0.35)
+    pruner.run_calibration(val_loader, DEVICE, num_batches=100, forward_fn=model.encode_image)  # clean/no-aug data
 
     pruned_model = pruner.apply()
 

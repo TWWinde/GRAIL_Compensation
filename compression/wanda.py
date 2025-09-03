@@ -4,6 +4,7 @@ import torch.nn as nn
 from compression.base_resnet import BaseResNetCompression
 from compression.base_preact_resnet import BasePreActResNetCompression
 from compression.base_vit import BaseViTCompression
+from compression.base_clip_vit import BaseCLIPViTCompression
 
 
 class ResNet18_WandaPruning(BaseResNetCompression):
@@ -168,6 +169,163 @@ class ResNet18_WandaPruning(BaseResNetCompression):
         # ----- Final FC (prune inputs only; outputs = classes unchanged) -----
         self._prune_linear("fc", prev_keep)
         return self.model
+
+
+
+import torch
+import torch.nn as nn
+
+class CLIPViT_WandaPruning(BaseCLIPViTCompression):
+    """
+    Wanda pruning for CLIP ViT MLPs (c_fc + c_proj).
+    - Same per-layer keep_ratio and mapping as magnitude (keep rows of c_fc; same cols in c_proj).
+    - mode="proj_cols" (default): score columns of c_proj with post-GELU hidden norms.
+      mode="fc_rows": score rows of c_fc with pre-activation norms (often ~magnitude on pre-LN).
+    - ignore_cls: drop CLS token when computing activation norms to avoid domination by CLS.
+    - alpha: temper activation weighting (use s**alpha; alpha in [0.2, 0.5] works well).
+    """
+
+    def __init__(self, model, min_channels=1, compression_ratio=0.5,
+                 mode="proj_cols", ignore_cls=True, alpha=0.35):
+        super().__init__(model, min_channels, compression_ratio)
+        self.mode = mode
+        self.ignore_cls = ignore_cls
+        self.alpha = alpha
+        self.act_scales = {}                 # module_name -> 1D CPU tensor of L2 norms of *inputs* to that Linear
+        self._hooks = []
+        self._named_modules = dict(self.model.named_modules())
+
+    # ---------- calibration ----------
+    def _register_activation_hooks(self):
+        self._sum_sq = {}
+
+        def make_hook(name):
+            def hook(mod, inputs):
+                x = inputs[0]
+                with torch.no_grad():
+                    # x is [B, T, C] (ViT) or [*, C]
+                    if x.dim() >= 2:
+                        xt = x
+                        if self.ignore_cls and x.dim() == 3 and x.size(1) >= 1:
+                            # drop CLS token at index 0
+                            xt = x[:, 1:, :]
+                        xt = xt.float().reshape(-1, xt.shape[-1])  # [tokens, C]
+                    else:
+                        xt = x.float().reshape(-1, x.shape[-1])
+                    ss = (xt ** 2).sum(dim=0).detach().cpu()      # [C]
+                    self._sum_sq[name] = self._sum_sq.get(name, 0)
+                    self._sum_sq[name] += ss
+            return hook
+
+        for name, mod in self._named_modules.items():
+            if isinstance(mod, nn.Linear):
+                self._hooks.append(mod.register_forward_pre_hook(make_hook(name)))
+
+    def _clear_hooks(self):
+        for h in self._hooks:
+            try: h.remove()
+            except: pass
+        self._hooks = []
+
+    @torch.no_grad()
+    def run_calibration(self, dataloader, device, num_batches=100, forward_fn=None):
+        """
+        Use forward_fn=self.model.encode_image for the visual tower.
+        Ensure inputs use CLIP normalization & resolution.
+        """
+        self.model.eval().to(device)
+        self._register_activation_hooks()
+
+        fwd = forward_fn
+        if fwd is None:
+            fwd = getattr(self.model, "encode_image", None) or (lambda x: self.model(x))
+
+        seen = 0
+        for batch in dataloader:
+            x = batch[0] if isinstance(batch, (list, tuple)) else batch
+            fwd(x.to(device))     # outputs not needed
+            seen += 1
+            if seen >= num_batches:
+                break
+        self._clear_hooks()
+        # L2 norms; temper later with alpha
+        self.act_scales = {name: ss.sqrt().clamp_min(1e-8) for name, ss in self._sum_sq.items()}
+
+    # ---------- scoring helpers ----------
+    @staticmethod
+    def _wanda_row_scores(W_fc: torch.Tensor, s_in: torch.Tensor):
+        return torch.matmul(W_fc.abs(), s_in.to(W_fc.device, dtype=W_fc.dtype))
+
+    @staticmethod
+    def _wanda_col_scores(W_proj: torch.Tensor, s_hidden: torch.Tensor):
+        col_sum = W_proj.abs().sum(dim=0)  # [H]
+        return col_sum * s_hidden.to(W_proj.device, dtype=W_proj.dtype)
+
+    def _get_scale(self, module_name: str, expected_dim: int, like: torch.Tensor):
+        s = self.act_scales.get(module_name, None)
+        if s is None or s.numel() != expected_dim:
+            return None
+        # temper activation weighting: s <- (s / mean(s)) ** alpha
+        s = s.clamp_min(1e-8)
+        s = (s / (s.mean().clamp_min(1e-8))).pow(self.alpha)
+        return s.to(like.device, dtype=like.dtype)
+
+    # ---------- one-MLP compression ----------
+    def compress_function(self, axes, params):
+        """
+        axes: [(module_fc_name, module_obj), (module_proj_name, module_obj)]
+        params:
+            params[module_fc]    -> weight tensor for c_fc   [H, C]
+            params[module_proj]  -> weight tensor for c_proj [O, H]
+            optional biases under module_name + '.bias'
+        """
+        compressed, merge_sizes = {}, {}
+        module_fc,   _ = axes[0]
+        module_proj, _ = axes[1]
+
+        W_fc   = params[module_fc]       # [H, C]
+        W_proj = params[module_proj]     # [O, H]
+        H, C   = W_fc.shape
+        assert W_proj.shape[1] == H, f"c_proj in_features {W_proj.shape[1]} != c_fc out_features {H}"
+
+        k = max(int(H * self.keep_ratio), self.min_channels)
+
+        if self.mode == "fc_rows":
+            s_in = self._get_scale(module_fc, C, like=W_fc)
+            if s_in is None:
+                s_in = W_fc.abs().mean(dim=0).to(W_fc.dtype).to(W_fc.device)
+            scores = self._wanda_row_scores(W_fc, s_in)         # [H]
+
+        elif self.mode == "proj_cols":
+            s_hidden = self._get_scale(module_proj, H, like=W_proj)
+            if s_hidden is None:
+                # near-uniform fallback
+                s_hidden = torch.ones(H, dtype=W_proj.dtype, device=W_proj.device)
+            scores = self._wanda_col_scores(W_proj, s_hidden)   # [H]
+
+        else:
+            raise ValueError("mode must be 'proj_cols' or 'fc_rows'")
+
+        topk = torch.topk(scores, k, largest=True).indices
+        topk, _ = torch.sort(topk)
+        topk = topk.to(W_fc.device)
+
+        new_fc   = W_fc[topk, :]     # [k, C]
+        new_proj = W_proj[:, topk]   # [O, k]
+
+        compressed[module_fc  + '.weight'] = new_fc
+        compressed[module_proj + '.weight'] = new_proj
+
+        if module_fc + '.bias' in params and params[module_fc + '.bias'] is not None:
+            compressed[module_fc + '.bias'] = params[module_fc + '.bias'][topk]
+        if module_proj + '.bias' in params and params[module_proj + '.bias'] is not None:
+            compressed[module_proj + '.bias'] = params[module_proj + '.bias']
+
+        merge_sizes[module_fc]   = new_fc.shape[0]
+        merge_sizes[module_proj] = new_proj.shape[1]
+        return compressed, merge_sizes
+
+
 
 
 class PreActResNet18_WandaPruning(BasePreActResNetCompression):
@@ -337,12 +495,11 @@ class ViT_WandaPruning(BaseViTCompression):
     - Per-layer keep ratio identical to the magnitude version.
     """
 
-    def __init__(self, model, min_channels=1, compression_ratio=0.5):
+    def __init__(self, model, min_channels=1, compression_ratio=0.5, mode="proj_cols"):
         super().__init__(model, min_channels, compression_ratio)
-        self.act_scales = {}   # module_name -> 1D CPU tensor [in_dim] with L2 norms
-        self._hooks = []
-        # optional: map of module names to modules (for robust hook naming)
-        self._named_modules = dict(self.model.named_modules())
+        self.mode = mode  # "fc_rows" (your current) or "proj_cols" (recommended)
+        self.act_scales, self._hooks, self._named_modules = {}, [], dict(self.model.named_modules())
+
 
     # -------------------- Calibration --------------------
     def _register_activation_hooks(self):
@@ -406,53 +563,49 @@ class ViT_WandaPruning(BaseViTCompression):
         return torch.matmul(W_fc.abs(), s_in.to(W_fc.device))
 
     # -------------------- Compress one MLP pair --------------------
+    def _get_scale(self, module_name, expected_dim):
+        s = self.act_scales.get(module_name, None)
+        if s is None or s.numel() != expected_dim:
+            return None
+        return s.clamp_min(1e-8)
+
     def compress_function(self, axes, params):
-        """
-        Compress weights for SimpleViT MLP (c_fc + c_proj) using Wanda.
-        axes: [module_fc_name, module_proj_name]
-        params: dict of tensors; keys like '<name>.weight' / '.bias'
-        """
-        compressed = {}
-        merge_sizes = {}
+        compressed, merge_sizes = {}, {}
+        module_fc, module_proj = axes  # c_fc then c_proj
 
-        module_fc   = axes[0]  # nn.Linear(in_dim -> hidden_dim)
-        module_proj = axes[1]  # nn.Linear(hidden_dim -> out_dim)  (usually out_dim == in_dim)
+        W_fc   = params[module_fc  + '.weight']  # [H, C]
+        W_proj = params[module_proj + '.weight'] # [O, H]
+        H, C   = W_fc.shape
+        k      = max(int(H * self.keep_ratio), self.min_channels)
 
-        # --- Extract weights ---
-        W_fc   = params[module_fc + '.weight']          # [H, C]
-        W_proj = params[module_proj + '.weight']        # [O, H]
-
-        H, C = W_fc.shape
-        keep_units = max(int(H * self.keep_ratio), self.min_channels)
-
-        # --- Get s_in for c_fc (input features of c_fc) ---
-        # Try calibrated value keyed by *module name*, else fall back to weight proxy
-        if module_fc in self.act_scales and self.act_scales[module_fc].numel() == C:
-            s_in = self.act_scales[module_fc]
+        # Wanda scores
+        if self.mode == "fc_rows":
+            s_in = self._get_scale(module_fc, C)
+            if s_in is None:  # fallback proxy
+                s_in = W_fc.abs().mean(dim=0).detach().cpu()
+            scores = W_fc.abs().matmul(s_in.to(W_fc.device))             # [H]
+        elif self.mode == "proj_cols":
+            s_hidden = self._get_scale(module_proj, H)  # input to c_proj = post-GELU hidden
+            if s_hidden is None:
+                s_hidden = W_proj.abs().sum(dim=0).detach().cpu() * 0 + 1  # fallback ~ uniform
+            col_sum = W_proj.abs().sum(dim=0)                              # [H]
+            scores  = col_sum * s_hidden.to(W_proj.device)                 # [H]
         else:
-            # fallback proxy per input dim: avg |W| over rows
-            s_in = W_fc.abs().mean(dim=0).detach().cpu()
-        s_in = s_in.clamp_min(1e-8)
+            raise ValueError("mode must be 'fc_rows' or 'proj_cols'")
 
-        # --- Wanda row scores for c_fc rows (hidden units) ---
-        scores = self._wanda_row_scores(W_fc, s_in)     # [H]
-        topk = torch.topk(scores, keep_units, largest=True).indices.sort()[0].to(W_fc.device)
+        topk = torch.topk(scores, k, largest=True).indices.sort()[0].to(W_fc.device)
 
-        # --- Apply selection ---
-        new_fc   = W_fc[topk, :]         # rows kept
-        new_proj = W_proj[:, topk]       # match columns
-
-        compressed[module_fc + '.weight']  = new_fc
+        # Apply selection (same mapping as your magnitude code)
+        new_fc   = W_fc[topk, :]
+        new_proj = W_proj[:, topk]
+        compressed[module_fc  + '.weight'] = new_fc
         compressed[module_proj + '.weight'] = new_proj
 
-        # biases
         if module_fc + '.bias' in params and params[module_fc + '.bias'] is not None:
             compressed[module_fc + '.bias'] = params[module_fc + '.bias'][topk]
         if module_proj + '.bias' in params and params[module_proj + '.bias'] is not None:
             compressed[module_proj + '.bias'] = params[module_proj + '.bias']
 
-        # sizes
         merge_sizes[module_fc]   = new_fc.shape[0]
         merge_sizes[module_proj] = new_proj.shape[1]
-
         return compressed, merge_sizes
