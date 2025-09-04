@@ -77,7 +77,7 @@ if __name__ == "__main__":
     print(f"Original Parameters: {original_params}")
 
     # Apply folding
-    print("\n[INFO] Applying ResNet18 model compression...")
+    print("\n[INFO] Applying ViT model compression...")
     # pruner = ViT_ModelFolding(model, compression_ratio=COMPRESSION_RATIO)
     # pruner = ViT_MagnitudePruning(model, compression_ratio=COMPRESSION_RATIO, p=2)
 
