@@ -10,9 +10,7 @@ class Normalize(nn.Module):
     def forward(self, x):
         return (x - self.mu) / self.std
 
-# ---------------------------------------------------------
-# Pre-activation Residual Block
-# ---------------------------------------------------------
+# --- Pre-activation Residual Block
 class PreActBlock(nn.Module):
     """ Pre-activation version of the BasicBlock. """
     expansion = 1
@@ -55,9 +53,7 @@ class PreActBlock(nn.Module):
         return out
 
 
-# ---------------------------------------------------------
-# Pre-activation ResNet
-# ---------------------------------------------------------
+# --- Pre-activation ResNet
 class PreActResNet(nn.Module):
     def __init__(self, block, num_blocks, n_cls, model_width=64, cuda=True, half_prec=False, activation='relu',
                  droprate=0.0, bn_flag=True, normalize_features=False, normalize_logits=False):
@@ -142,9 +138,7 @@ class PreActResNet(nn.Module):
 
         return out
 
-# ---------------------------------------------------------
-# Factory for PreActResNet18
-# ---------------------------------------------------------
+# --- Factory for PreActResNet18
 def PreActResNet18(n_cls, model_width=64, cuda=True, half_prec=False, activation='relu', droprate=0.0,
                    normalize_features=False, normalize_logits=False):
     bn_flag = True
@@ -153,9 +147,7 @@ def PreActResNet18(n_cls, model_width=64, cuda=True, half_prec=False, activation
                         normalize_features=normalize_features, normalize_logits=normalize_logits)
 
 
-# ---------------------------------------------------------
-# Axis-to-permutation mapping (for compression)
-# ---------------------------------------------------------
+# --- Axis-to-permutation mapping (for compression)
 def get_axis_to_perm_PreActResNet18(override=True):
     conv = lambda name, p_in, p_out: {
         f"{name}.weight": (p_out, p_in, None, None)

@@ -1,15 +1,10 @@
 import torch
 import torch.nn as nn
 
-from models.resnet import get_module_by_name_ResNet, get_axis_to_perm_ResNet18
-from models.preact_resnet import get_module_by_name_PreActResNet18, get_axis_to_perm_PreActResNet18
-
 from compression.base_clip_vit import BaseCLIPViTCompression
 from compression.base_resnet import BaseResNetCompression
 from compression.base_preact_resnet import BasePreActResNetCompression
 from compression.base_vit import BaseViTCompression
-
-from utils.weight_clustering import axes2perm_to_perm2axes
 
 
 class ResNet18_MagnitudePruning(BaseResNetCompression):

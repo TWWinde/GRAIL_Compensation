@@ -14,10 +14,6 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from models.preact_resnet import PreActResNet18
 from compression.fold import PreActResNet18_ModelFolding
 from compression.mag_prune import PreActResNet18_MagnitudePruning
-from compression.wanda import PreActResNet18_WandaPruning
-from compression.rand_fold import PreActResNet18_RandomFolding
-from compression.rand_prune import PreActResNet18_RandomPruning
-from compression.singleton import PreActResNet18_Singleton
 from utils.eval_utils import test, count_parameters, get_outputs
 from utils.tune_utils import repair_bn
 
@@ -84,7 +80,7 @@ def main():
     parser = argparse.ArgumentParser(description="Evaluate PreActResNet18 compression across ratios/checkpoints")
     parser.add_argument("--ckpt_dir", type=str, required=True)
     parser.add_argument("--method", type=str, default="fold",
-                        choices=["fold", "mag-l1", "mag-l2", "wanda", "rand-fold", "rand-prune", "singleton"])
+                        choices=["fold", "mag-l1", "mag-l2"])
     parser.add_argument("--epochs", type=int, default=5)
     parser.add_argument("--lr", type=float, default=1e-4)
     args = parser.parse_args()
@@ -100,10 +96,6 @@ def main():
         "fold":      lambda m, r: PreActResNet18_ModelFolding(m, compression_ratio=r),
         "mag-l1":    lambda m, r: PreActResNet18_MagnitudePruning(m, compression_ratio=r, p=1),
         "mag-l2":    lambda m, r: PreActResNet18_MagnitudePruning(m, compression_ratio=r, p=2),
-        "wanda":     lambda m, r: PreActResNet18_WandaPruning(m, compression_ratio=r),
-        "rand-fold": lambda m, r: PreActResNet18_RandomFolding(m, compression_ratio=r),
-        "rand-prune":lambda m, r: PreActResNet18_RandomPruning(m, compression_ratio=r),
-        "singleton": lambda m, r: PreActResNet18_Singleton(m, compression_ratio=r),
     }
 
     for i, ckpt_path in enumerate(ckpt_paths):
@@ -125,9 +117,6 @@ def main():
 
             # Apply pruning/folding
             pruner = pruner_map[args.method](model, ratio)
-            # Wanda needs calibration before apply()
-            if isinstance(pruner, PreActResNet18_WandaPruning):
-                pruner.run_calibration(train_loader, device, num_batches=50)
             model = pruner.apply().to(device)
             pruned_params = count_parameters(model)
 
@@ -139,9 +128,9 @@ def main():
             acc = test(model, test_loader, device)
             log_line(ratio, "REPAIR", acc=f"{acc:.2f}")
 
-            # Compute functional deviation
-            fd = torch.norm(orig_outputs - get_outputs(model.eval(), test_loader, device), dim=1).mean().item()
-            log_line(ratio, "FD", value=f"{fd:.4f}")
+            # # Compute functional deviation
+            # fd = torch.norm(orig_outputs - get_outputs(model.eval(), test_loader, device), dim=1).mean().item()
+            # log_line(ratio, "FD", value=f"{fd:.4f}")
 
             # Optional fine-tune
             if args.epochs > 0:

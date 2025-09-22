@@ -14,7 +14,6 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from vit_pytorch import SimpleViT
 from compression.fold import ViT_ModelFolding
 from compression.mag_prune import ViT_MagnitudePruning
-from compression.wanda import ViT_WandaPruning
 from utils.eval_utils import test, count_parameters, get_outputs
 from utils.tune_utils import retune_layernorm
 
@@ -86,7 +85,8 @@ def load_vit_model(checkpoint_path, device):
 def main():
     parser = argparse.ArgumentParser(description="Evaluate ViT compression across ratios/checkpoints")
     parser.add_argument("--ckpt_dir", type=str, required=True)
-    parser.add_argument("--method", type=str, default="fold", choices=["fold", "mag-l1", "mag-l2", "wanda"])
+    parser.add_argument("--method", type=str, default="fold",
+                        choices=["fold", "mag-l1", "mag-l2"])
     parser.add_argument("--epochs", type=int, default=5)
     parser.add_argument("--lr", type=float, default=5e-6)
     args = parser.parse_args()
@@ -102,7 +102,6 @@ def main():
         "fold":   lambda m, r: ViT_ModelFolding(m, compression_ratio=r),
         "mag-l1": lambda m, r: ViT_MagnitudePruning(m, compression_ratio=r, p=1),
         "mag-l2": lambda m, r: ViT_MagnitudePruning(m, compression_ratio=r, p=2),
-        "wanda": lambda m, r: ViT_WandaPruning(m, compression_ratio=r),
     }
 
     for i, ckpt_path in enumerate(ckpt_paths):
@@ -124,9 +123,6 @@ def main():
 
             # Compression
             pruner = pruner_map[args.method](model, ratio)
-            # Wanda needs calibration before apply()
-            if isinstance(pruner, ViT_WandaPruning):
-                pruner.run_calibration(train_loader, device, num_batches=50)
             model = pruner.apply().to(device)
             pruned_params = count_parameters(model)
 
@@ -139,9 +135,9 @@ def main():
             acc = test(model, val_loader, device)
             log_line(ratio, "REPAIR", acc=f"{acc:.2f}")
 
-            # Functional deviation
-            fd = torch.norm(orig_outputs - get_outputs(model.eval(), val_loader, device), dim=1).mean().item()
-            log_line(ratio, "FD", value=f"{fd:.4f}")
+            # # Functional deviation
+            # fd = torch.norm(orig_outputs - get_outputs(model.eval(), val_loader, device), dim=1).mean().item()
+            # log_line(ratio, "FD", value=f"{fd:.4f}")
 
             # Optional fine-tuning
             if args.epochs > 0:

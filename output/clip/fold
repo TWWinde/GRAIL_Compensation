@@ -1,0 +1,2599 @@
+✅ Vision + classification head loaded
+✅ Vision + classification head loaded
+
+[MODEL] 1/72 model_0.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=73.31
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.5293, Inter=39.0616
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.2834, Inter=39.0243
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.4894, Inter=38.6928
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5631, Inter=38.6664
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5267, Inter=38.7501
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.4693, Inter=38.8597
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.3204, Inter=39.0599
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.1774, Inter=39.1680
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=0.7692, Inter=39.4730
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=0.7371, Inter=39.6091
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=1.0048, Inter=39.2853
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.2351, Inter=38.9326
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=60.83
+RATIO=0.1 EVENT=REPAIR acc=61.91
+RATIO=0.1 EVENT=FD value=800.8193
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=73.37
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=74.07
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=74.35
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=74.31
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=73.49
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.0112, Inter=40.6470
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.7912, Inter=38.9338
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.2768, Inter=38.1941
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.3380, Inter=38.2580
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.3430, Inter=38.3492
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.0943, Inter=38.7273
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.4818, Inter=39.3659
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.1768, Inter=39.5178
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=1.7571, Inter=39.9316
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=1.5555, Inter=40.2681
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=1.9209, Inter=39.7855
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=2.7362, Inter=38.6405
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=29.29
+RATIO=0.2 EVENT=REPAIR acc=53.00
+RATIO=0.2 EVENT=FD value=858.1581
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=70.70
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=72.30
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=72.48
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=72.24
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=71.92
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.6656, Inter=42.3818
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.6945, Inter=38.5750
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.4431, Inter=37.5880
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.5440, Inter=37.5993
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.4611, Inter=37.7773
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=4.7555, Inter=38.5987
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=3.5964, Inter=39.6201
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=3.4846, Inter=39.5799
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=3.1845, Inter=40.0841
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=2.4803, Inter=40.8558
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=2.9684, Inter=40.2327
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.3892, Inter=38.3457
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=10.10
+RATIO=0.3 EVENT=REPAIR acc=44.53
+RATIO=0.3 EVENT=FD value=906.8375
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=67.57
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=69.60
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=70.24
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=70.45
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=69.99
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.7247, Inter=43.7532
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.6839, Inter=38.0649
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=7.9830, Inter=36.6517
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=7.7689, Inter=36.8549
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=7.8350, Inter=37.0825
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.2982, Inter=38.5057
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=5.0839, Inter=39.6498
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.1959, Inter=39.3582
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=4.6397, Inter=40.1785
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=3.5666, Inter=41.3071
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=4.0506, Inter=40.6952
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=6.2843, Inter=37.8664
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=1.28
+RATIO=0.4 EVENT=REPAIR acc=33.97
+RATIO=0.4 EVENT=FD value=940.0551
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=63.18
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=66.15
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=67.40
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=67.92
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=67.71
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.2044, Inter=44.7380
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.4063, Inter=36.9761
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=10.7873, Inter=35.4701
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=10.5005, Inter=35.7298
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=9.9617, Inter=36.3214
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=8.2038, Inter=38.1040
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=6.9427, Inter=39.4802
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=7.1445, Inter=38.9775
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=6.2486, Inter=40.2055
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=4.8490, Inter=41.6342
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=5.3545, Inter=41.0551
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=8.5326, Inter=37.1815
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.37
+RATIO=0.5 EVENT=REPAIR acc=21.41
+RATIO=0.5 EVENT=FD value=957.1461
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=57.98
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=62.31
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=63.91
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=64.42
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=64.95
+✅ Vision + classification head loaded
+
+[MODEL] 2/72 model_1.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.23
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.5154, Inter=39.0956
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.2818, Inter=39.0269
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.5027, Inter=38.6811
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5631, Inter=38.6641
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5242, Inter=38.7433
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.4680, Inter=38.8653
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.3051, Inter=39.0625
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.1798, Inter=39.1654
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=0.7828, Inter=39.4635
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=0.7576, Inter=39.5956
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=0.9911, Inter=39.2912
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.2627, Inter=38.9241
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=66.09
+RATIO=0.1 EVENT=REPAIR acc=66.22
+RATIO=0.1 EVENT=FD value=518.3698
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=74.37
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=75.50
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=75.25
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=74.87
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=74.15
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.0344, Inter=40.6403
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.7918, Inter=38.9309
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.2999, Inter=38.1924
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.3295, Inter=38.2624
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.3575, Inter=38.3293
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.0729, Inter=38.7448
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.4423, Inter=39.3880
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.1734, Inter=39.5090
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=1.7629, Inter=39.9259
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=1.5532, Inter=40.2679
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=1.9144, Inter=39.7912
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=2.7333, Inter=38.6517
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=42.02
+RATIO=0.2 EVENT=REPAIR acc=58.97
+RATIO=0.2 EVENT=FD value=532.6650
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=71.79
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=72.94
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=73.43
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=73.21
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=72.85
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.6422, Inter=42.3713
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.6891, Inter=38.5794
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.5136, Inter=37.5512
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.5039, Inter=37.6161
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.4500, Inter=37.8006
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=4.7973, Inter=38.5712
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=3.6878, Inter=39.5672
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=3.4882, Inter=39.5821
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=3.1991, Inter=40.0749
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=2.4174, Inter=40.8710
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=2.9472, Inter=40.2355
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.4611, Inter=38.3028
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=17.93
+RATIO=0.3 EVENT=REPAIR acc=49.42
+RATIO=0.3 EVENT=FD value=552.0311
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=68.93
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=70.71
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=71.15
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=71.32
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=70.62
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.7200, Inter=43.7695
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.7410, Inter=38.0135
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=8.0094, Inter=36.6342
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=7.9094, Inter=36.7864
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=7.6942, Inter=37.1209
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.3907, Inter=38.4716
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=5.0687, Inter=39.6329
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.1411, Inter=39.3888
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=4.6645, Inter=40.1560
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=3.5523, Inter=41.3152
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=4.1261, Inter=40.6010
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=6.2095, Inter=37.8843
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=5.07
+RATIO=0.4 EVENT=REPAIR acc=40.56
+RATIO=0.4 EVENT=FD value=556.0710
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=64.99
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=67.76
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=68.62
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=68.91
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=68.94
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.3329, Inter=44.6604
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.3477, Inter=37.0312
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=10.7818, Inter=35.4679
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=10.6357, Inter=35.6439
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=9.8508, Inter=36.3750
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=8.5488, Inter=37.8878
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=6.8773, Inter=39.5210
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=7.2165, Inter=38.9343
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=6.3229, Inter=40.1393
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=4.8949, Inter=41.6113
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=5.3279, Inter=41.0541
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=8.6268, Inter=37.0921
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.97
+RATIO=0.5 EVENT=REPAIR acc=28.53
+RATIO=0.5 EVENT=FD value=568.1951
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=60.26
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=63.61
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=65.24
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=65.75
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=65.86
+✅ Vision + classification head loaded
+
+[MODEL] 3/72 model_10.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.45
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.5164, Inter=39.0762
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.2779, Inter=39.0321
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.5030, Inter=38.6903
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5502, Inter=38.6711
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5450, Inter=38.7399
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.4785, Inter=38.8623
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.2981, Inter=39.0751
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.1693, Inter=39.1702
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=0.7754, Inter=39.4650
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=0.7521, Inter=39.5981
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=0.9655, Inter=39.3070
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.2583, Inter=38.9084
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=65.66
+RATIO=0.1 EVENT=REPAIR acc=70.62
+RATIO=0.1 EVENT=FD value=374.2531
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=75.68
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=75.97
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=75.38
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=74.88
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=74.68
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.0330, Inter=40.6201
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.7646, Inter=38.9548
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.2979, Inter=38.1922
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.3629, Inter=38.2491
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.4093, Inter=38.3046
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.0879, Inter=38.7208
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.4527, Inter=39.3677
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.1811, Inter=39.5070
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=1.7917, Inter=39.8994
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=1.5556, Inter=40.2572
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=1.8775, Inter=39.7991
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=2.7837, Inter=38.5860
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=39.09
+RATIO=0.2 EVENT=REPAIR acc=63.11
+RATIO=0.2 EVENT=FD value=407.4216
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=73.68
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=74.17
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=73.83
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=73.41
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=73.26
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.6766, Inter=42.3223
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.5910, Inter=38.6389
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.4988, Inter=37.5324
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.4486, Inter=37.6513
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.5149, Inter=37.7742
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=4.8230, Inter=38.5609
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=3.7136, Inter=39.5200
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=3.4483, Inter=39.5849
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=3.2388, Inter=40.0209
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=2.4620, Inter=40.8290
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=2.9899, Inter=40.1755
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.5440, Inter=38.2212
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=13.28
+RATIO=0.3 EVENT=REPAIR acc=54.46
+RATIO=0.3 EVENT=FD value=419.0964
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=70.70
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=72.07
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=72.24
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=72.18
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=71.60
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.7258, Inter=43.6750
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.6497, Inter=38.0564
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=8.1023, Inter=36.5467
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=7.9187, Inter=36.7743
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=7.6744, Inter=37.1525
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.4725, Inter=38.3914
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=5.1666, Inter=39.5551
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.1109, Inter=39.3681
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=4.7672, Inter=40.0579
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=3.4837, Inter=41.3144
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=4.1832, Inter=40.5445
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=6.4377, Inter=37.7015
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=2.72
+RATIO=0.4 EVENT=REPAIR acc=44.75
+RATIO=0.4 EVENT=FD value=426.7410
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=67.39
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=69.26
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=69.77
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=70.11
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=69.44
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.3737, Inter=44.5794
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.1855, Inter=37.1130
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=10.9665, Inter=35.3525
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=10.5076, Inter=35.6969
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=9.9170, Inter=36.3182
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=8.4107, Inter=37.9403
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=7.0833, Inter=39.3214
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=7.1098, Inter=38.9932
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=6.5333, Inter=39.9414
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=4.8095, Inter=41.5874
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=5.4600, Inter=40.9089
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=8.6132, Inter=36.9721
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.88
+RATIO=0.5 EVENT=REPAIR acc=33.36
+RATIO=0.5 EVENT=FD value=432.0081
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=62.52
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=65.56
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=66.59
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=67.36
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=67.32
+✅ Vision + classification head loaded
+
+[MODEL] 4/72 model_11.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.31
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.5651, Inter=39.0327
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.2866, Inter=39.0330
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.5065, Inter=38.6766
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5522, Inter=38.6824
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5246, Inter=38.7451
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.4926, Inter=38.8582
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.3370, Inter=39.0533
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.1986, Inter=39.1604
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=0.8546, Inter=39.4279
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=0.7545, Inter=39.5756
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=1.0386, Inter=39.2541
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.3413, Inter=38.8668
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=70.43
+RATIO=0.1 EVENT=REPAIR acc=70.67
+RATIO=0.1 EVENT=FD value=431.4573
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=75.24
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=75.00
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=74.82
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=74.62
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=74.58
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.1248, Inter=40.4843
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.8023, Inter=38.9322
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.3073, Inter=38.1604
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.3856, Inter=38.2518
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.3602, Inter=38.3302
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.1925, Inter=38.6545
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.5439, Inter=39.2996
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.2578, Inter=39.4195
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=1.8252, Inter=39.8024
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=1.6642, Inter=40.1318
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=1.9923, Inter=39.6683
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=2.9102, Inter=38.4838
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=54.70
+RATIO=0.2 EVENT=REPAIR acc=63.20
+RATIO=0.2 EVENT=FD value=503.7240
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=73.39
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=73.77
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=73.32
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=73.17
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=72.81
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.6677, Inter=42.2618
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.7354, Inter=38.5511
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.5727, Inter=37.4702
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.5424, Inter=37.5998
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.4955, Inter=37.7405
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=4.7732, Inter=38.5614
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=3.8076, Inter=39.4113
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=3.4821, Inter=39.4768
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=3.3527, Inter=39.8342
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=2.6306, Inter=40.6023
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=3.1825, Inter=39.9565
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.7464, Inter=38.0175
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=35.92
+RATIO=0.3 EVENT=REPAIR acc=54.12
+RATIO=0.3 EVENT=FD value=527.5059
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=70.73
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=71.80
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=71.95
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=71.46
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=70.84
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.8414, Inter=43.4925
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.6872, Inter=37.9878
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=8.1128, Inter=36.5189
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=8.1081, Inter=36.6695
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=7.8779, Inter=36.9902
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.5648, Inter=38.2911
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=5.2244, Inter=39.4513
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.2417, Inter=39.1911
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=4.8771, Inter=39.8169
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=3.6023, Inter=41.0751
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=4.3368, Inter=40.2611
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=6.8000, Inter=37.3068
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=15.40
+RATIO=0.4 EVENT=REPAIR acc=44.82
+RATIO=0.4 EVENT=FD value=536.7954
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=67.06
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=68.98
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=69.66
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=69.48
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=69.06
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.4107, Inter=44.3571
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.4876, Inter=36.8039
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=11.0853, Inter=35.1855
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=10.6607, Inter=35.5318
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=9.9569, Inter=36.2336
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=8.3459, Inter=37.8856
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=7.1006, Inter=39.1734
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=7.3879, Inter=38.6431
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=6.6369, Inter=39.6177
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=5.0465, Inter=41.2128
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=5.6613, Inter=40.5550
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=9.0234, Inter=36.4590
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=4.16
+RATIO=0.5 EVENT=REPAIR acc=33.07
+RATIO=0.5 EVENT=FD value=543.9719
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=62.88
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=65.74
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=66.70
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=66.97
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=66.56
+✅ Vision + classification head loaded
+
+[MODEL] 5/72 model_12.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.12
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.5304, Inter=39.0529
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.2746, Inter=39.0293
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.5060, Inter=38.6849
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5577, Inter=38.6631
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5350, Inter=38.7461
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.4810, Inter=38.8586
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.2877, Inter=39.0756
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.1665, Inter=39.1720
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=0.7710, Inter=39.4813
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=0.7529, Inter=39.5936
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=0.9878, Inter=39.2927
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.2552, Inter=38.9227
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=63.92
+RATIO=0.1 EVENT=REPAIR acc=66.61
+RATIO=0.1 EVENT=FD value=553.7975
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=74.44
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=75.23
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=75.11
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=74.94
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=74.36
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.0150, Inter=40.6498
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.7663, Inter=38.9602
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.2805, Inter=38.2022
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.3451, Inter=38.2621
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.3564, Inter=38.3252
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.0943, Inter=38.7242
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.4322, Inter=39.3832
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.1764, Inter=39.5153
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=1.8046, Inter=39.8981
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=1.5602, Inter=40.2698
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=1.9427, Inter=39.7727
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=2.7932, Inter=38.6207
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=36.66
+RATIO=0.2 EVENT=REPAIR acc=57.90
+RATIO=0.2 EVENT=FD value=568.5095
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=71.98
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=73.36
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=73.47
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=73.12
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=72.76
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.6955, Inter=42.3145
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.7130, Inter=38.5619
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.5434, Inter=37.5367
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.4364, Inter=37.6444
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.4280, Inter=37.8133
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=4.7622, Inter=38.5981
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=3.6345, Inter=39.5958
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=3.4270, Inter=39.6139
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=3.1931, Inter=40.0882
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=2.4632, Inter=40.8544
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=2.9017, Inter=40.2590
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.4631, Inter=38.3049
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=13.65
+RATIO=0.3 EVENT=REPAIR acc=49.65
+RATIO=0.3 EVENT=FD value=580.3618
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=68.88
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=70.93
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=71.34
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=71.27
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=70.66
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.7580, Inter=43.7426
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.6610, Inter=38.0882
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=7.9778, Inter=36.6462
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=7.7973, Inter=36.8521
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=7.8145, Inter=37.0702
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.4111, Inter=38.4230
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=5.1085, Inter=39.6355
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.1420, Inter=39.3842
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=4.7150, Inter=40.1359
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=3.4563, Inter=41.3692
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=4.0341, Inter=40.6606
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=6.3047, Inter=37.8524
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=3.38
+RATIO=0.4 EVENT=REPAIR acc=41.55
+RATIO=0.4 EVENT=FD value=585.9016
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=65.06
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=67.74
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=68.93
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=69.26
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=68.96
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.2345, Inter=44.7327
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.2429, Inter=37.0632
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=10.7732, Inter=35.4641
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=10.5764, Inter=35.6503
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=9.9370, Inter=36.3670
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=8.3327, Inter=38.0103
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=6.8998, Inter=39.5188
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=7.1785, Inter=38.9738
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=6.3683, Inter=40.1251
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=4.9133, Inter=41.5922
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=5.4515, Inter=40.9794
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=8.5562, Inter=37.1290
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.75
+RATIO=0.5 EVENT=REPAIR acc=28.48
+RATIO=0.5 EVENT=FD value=596.6141
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=60.48
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=63.76
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=65.41
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=66.29
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=65.83
+✅ Vision + classification head loaded
+
+[MODEL] 6/72 model_13.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.49
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.5318, Inter=39.0697
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.2791, Inter=39.0252
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.4975, Inter=38.6892
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5664, Inter=38.6653
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5202, Inter=38.7471
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.4775, Inter=38.8570
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.3070, Inter=39.0653
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.1850, Inter=39.1605
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=0.8009, Inter=39.4602
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=0.7266, Inter=39.6047
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=0.9848, Inter=39.2933
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.2222, Inter=38.9437
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=66.18
+RATIO=0.1 EVENT=REPAIR acc=66.68
+RATIO=0.1 EVENT=FD value=738.0837
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=75.03
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=75.48
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=75.33
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=75.17
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=74.47
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.0038, Inter=40.6548
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.8103, Inter=38.9166
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.2513, Inter=38.2187
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.3391, Inter=38.2617
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.3877, Inter=38.3117
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.0412, Inter=38.7539
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.4174, Inter=39.3994
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.1706, Inter=39.5085
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=1.7585, Inter=39.9398
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=1.5801, Inter=40.2640
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=1.9481, Inter=39.7760
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=2.7454, Inter=38.6417
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=39.07
+RATIO=0.2 EVENT=REPAIR acc=57.63
+RATIO=0.2 EVENT=FD value=814.3493
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=72.18
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=73.25
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=73.53
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=73.07
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=72.83
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.6744, Inter=42.3519
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.6863, Inter=38.5810
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.4939, Inter=37.5599
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.4538, Inter=37.6398
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.4869, Inter=37.7860
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=4.7260, Inter=38.6097
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=3.6251, Inter=39.5967
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=3.4823, Inter=39.5751
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=3.2210, Inter=40.0701
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=2.4133, Inter=40.8856
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=2.9625, Inter=40.2320
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.4308, Inter=38.3188
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=15.12
+RATIO=0.3 EVENT=REPAIR acc=48.82
+RATIO=0.3 EVENT=FD value=834.3129
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=69.05
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=70.74
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=71.35
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=71.24
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=70.57
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.7012, Inter=43.7650
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.6511, Inter=38.0514
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=8.0104, Inter=36.6245
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=7.8980, Inter=36.7916
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=7.7779, Inter=37.1078
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.4089, Inter=38.4361
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=5.0633, Inter=39.6690
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.1626, Inter=39.3847
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=4.6233, Inter=40.1818
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=3.5195, Inter=41.3164
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=4.1308, Inter=40.6146
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=6.3277, Inter=37.8450
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=2.54
+RATIO=0.4 EVENT=REPAIR acc=38.74
+RATIO=0.4 EVENT=FD value=858.2305
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=64.82
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=67.90
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=68.73
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=68.80
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=68.51
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.2340, Inter=44.7357
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.3173, Inter=37.0241
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=10.8902, Inter=35.3823
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=10.5996, Inter=35.6712
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=9.9041, Inter=36.3469
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=8.2837, Inter=38.0585
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=6.9734, Inter=39.4279
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=7.2249, Inter=38.9305
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=6.3589, Inter=40.1093
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=4.8396, Inter=41.6106
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=5.2743, Inter=41.0853
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=8.5716, Inter=37.1334
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.65
+RATIO=0.5 EVENT=REPAIR acc=25.80
+RATIO=0.5 EVENT=FD value=880.4282
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=59.83
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=63.37
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=64.95
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=65.80
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=65.96
+✅ Vision + classification head loaded
+
+[MODEL] 7/72 model_14.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.01
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.6528, Inter=38.8936
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.3164, Inter=39.0742
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.4793, Inter=38.7580
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5507, Inter=38.6978
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5685, Inter=38.7248
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.5030, Inter=38.8657
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.4719, Inter=38.9535
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.4220, Inter=39.0022
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=1.1638, Inter=39.1685
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=1.0734, Inter=39.3015
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=1.2809, Inter=39.0466
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.4020, Inter=38.8260
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=73.21
+RATIO=0.1 EVENT=REPAIR acc=73.04
+RATIO=0.1 EVENT=FD value=406.8436
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=74.23
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=74.30
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=73.70
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=73.67
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=73.68
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.2920, Inter=40.1192
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.8781, Inter=38.8888
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.2216, Inter=38.2805
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.3869, Inter=38.2034
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.4373, Inter=38.2684
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.2931, Inter=38.5452
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.9232, Inter=38.9533
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.6344, Inter=39.0298
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=2.3021, Inter=39.2506
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=2.1497, Inter=39.5396
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=2.5898, Inter=39.0515
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=3.0739, Inter=38.3541
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=69.03
+RATIO=0.2 EVENT=REPAIR acc=70.50
+RATIO=0.2 EVENT=FD value=482.3200
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=73.77
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=73.81
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=73.45
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=73.20
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=72.90
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.9543, Inter=41.5422
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.6510, Inter=38.5244
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.4943, Inter=37.5382
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.7209, Inter=37.4339
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.5937, Inter=37.6391
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=5.1123, Inter=38.1962
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=4.3721, Inter=38.8114
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=4.1278, Inter=38.7925
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=4.1187, Inter=38.9011
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=3.2795, Inter=39.6862
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=3.8630, Inter=39.0277
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.8955, Inter=37.7565
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=60.65
+RATIO=0.3 EVENT=REPAIR acc=66.72
+RATIO=0.3 EVENT=FD value=553.0847
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=72.69
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=73.12
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=72.73
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=72.16
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=71.91
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.9307, Inter=42.9629
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.9005, Inter=37.7490
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=8.2601, Inter=36.4193
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=8.0629, Inter=36.5793
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=8.0262, Inter=36.7964
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.9724, Inter=37.7644
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=6.0095, Inter=38.5155
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.9601, Inter=38.2908
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=5.8884, Inter=38.5090
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=4.7353, Inter=39.6011
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=5.3072, Inter=38.8930
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=7.2082, Inter=36.8026
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=46.79
+RATIO=0.4 EVENT=REPAIR acc=61.46
+RATIO=0.4 EVENT=FD value=604.3443
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=70.77
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=71.45
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=71.45
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=70.99
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=70.51
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.1172, Inter=44.0456
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.7088, Inter=36.4953
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=10.9764, Inter=35.2061
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=11.0156, Inter=35.1320
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=10.5255, Inter=35.6633
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=9.1214, Inter=36.9699
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=8.1184, Inter=37.9082
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=8.5820, Inter=37.2715
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=8.2073, Inter=37.7244
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=6.3166, Inter=39.3936
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=6.6918, Inter=38.7905
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=9.7065, Inter=35.6368
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=27.13
+RATIO=0.5 EVENT=REPAIR acc=54.41
+RATIO=0.5 EVENT=FD value=647.7200
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=68.22
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=69.61
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=69.85
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=69.63
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=69.02
+✅ Vision + classification head loaded
+
+[MODEL] 8/72 model_15.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.29
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.5261, Inter=39.0665
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.2697, Inter=39.0351
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.5001, Inter=38.6925
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5507, Inter=38.6771
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5248, Inter=38.7462
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.4643, Inter=38.8647
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.2797, Inter=39.0750
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.1827, Inter=39.1592
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=0.7937, Inter=39.4724
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=0.7481, Inter=39.5977
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=0.9711, Inter=39.3013
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.2496, Inter=38.9286
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=62.73
+RATIO=0.1 EVENT=REPAIR acc=68.33
+RATIO=0.1 EVENT=FD value=569.3613
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=74.45
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=74.83
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=74.18
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=73.87
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=73.59
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.0227, Inter=40.6208
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.8324, Inter=38.8962
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.2840, Inter=38.2136
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.3706, Inter=38.2493
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.3660, Inter=38.3446
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.0947, Inter=38.7115
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.3940, Inter=39.4113
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.1944, Inter=39.5001
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=1.7339, Inter=39.9434
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=1.5421, Inter=40.2713
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=1.9296, Inter=39.7827
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=2.7117, Inter=38.6504
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=34.46
+RATIO=0.2 EVENT=REPAIR acc=57.51
+RATIO=0.2 EVENT=FD value=644.1403
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=72.14
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=73.22
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=73.10
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=72.63
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=72.18
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.6788, Inter=42.3558
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.7303, Inter=38.5966
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.4272, Inter=37.5714
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.4359, Inter=37.6542
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.4353, Inter=37.8134
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=4.7791, Inter=38.5965
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=3.6745, Inter=39.5592
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=3.5056, Inter=39.5583
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=3.2538, Inter=40.0228
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=2.5205, Inter=40.8160
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=2.9567, Inter=40.2196
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.5292, Inter=38.2631
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=11.22
+RATIO=0.3 EVENT=REPAIR acc=47.00
+RATIO=0.3 EVENT=FD value=666.7887
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=68.93
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=70.62
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=70.91
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=70.59
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=69.98
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.7273, Inter=43.7025
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.7095, Inter=38.0129
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=7.9596, Inter=36.6286
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=7.9208, Inter=36.7916
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=7.7538, Inter=37.0971
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.4621, Inter=38.3984
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=5.0935, Inter=39.6295
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.1325, Inter=39.3781
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=4.6836, Inter=40.1257
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=3.5252, Inter=41.3050
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=4.1148, Inter=40.6058
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=6.4647, Inter=37.7323
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=2.45
+RATIO=0.4 EVENT=REPAIR acc=36.52
+RATIO=0.4 EVENT=FD value=678.8602
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=64.71
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=67.45
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=68.00
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=68.24
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=68.17
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.3733, Inter=44.6042
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.2250, Inter=37.0772
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=10.9440, Inter=35.3937
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=10.6558, Inter=35.6147
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=9.8980, Inter=36.3325
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=8.3771, Inter=37.9956
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=6.9019, Inter=39.4653
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=7.1094, Inter=38.9956
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=6.4039, Inter=40.0314
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=5.0287, Inter=41.5011
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=5.3602, Inter=41.0154
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=8.6086, Inter=37.0568
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.56
+RATIO=0.5 EVENT=REPAIR acc=25.35
+RATIO=0.5 EVENT=FD value=687.7549
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=59.70
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=63.28
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=65.10
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=65.49
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=65.30
+✅ Vision + classification head loaded
+
+[MODEL] 9/72 model_16.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.55
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.5726, Inter=39.0415
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.3107, Inter=39.0279
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.5354, Inter=38.6794
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5345, Inter=38.6876
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5616, Inter=38.7336
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.4898, Inter=38.8761
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.3897, Inter=39.0310
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.2510, Inter=39.1314
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=0.8941, Inter=39.3851
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=0.8032, Inter=39.5252
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=1.0811, Inter=39.2250
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.3581, Inter=38.8530
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=71.00
+RATIO=0.1 EVENT=REPAIR acc=71.31
+RATIO=0.1 EVENT=FD value=430.4340
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=74.20
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=74.08
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=73.83
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=74.06
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=73.89
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.1054, Inter=40.5176
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.8253, Inter=38.9419
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.2903, Inter=38.1802
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.3791, Inter=38.2348
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.4132, Inter=38.2943
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.1110, Inter=38.6907
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.5643, Inter=39.2681
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.3090, Inter=39.3640
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=1.8913, Inter=39.7197
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=1.7491, Inter=40.0269
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=2.1578, Inter=39.5205
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=2.9767, Inter=38.4275
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=59.19
+RATIO=0.2 EVENT=REPAIR acc=64.87
+RATIO=0.2 EVENT=FD value=524.4481
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=72.92
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=73.04
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=72.67
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=72.45
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=72.55
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.7757, Inter=42.0685
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.6485, Inter=38.5873
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.5512, Inter=37.4501
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.5435, Inter=37.5480
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.4935, Inter=37.7232
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=4.7739, Inter=38.5061
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=3.8281, Inter=39.3322
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=3.7076, Inter=39.2737
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=3.4585, Inter=39.6721
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=2.7474, Inter=40.4364
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=3.2914, Inter=39.7947
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.7406, Inter=37.9222
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=43.04
+RATIO=0.3 EVENT=REPAIR acc=57.15
+RATIO=0.3 EVENT=FD value=563.0548
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=70.62
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=71.50
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=71.25
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=71.02
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=70.51
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.7881, Inter=43.4452
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.8146, Inter=37.8823
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=8.1704, Inter=36.4944
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=8.1723, Inter=36.5732
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=7.8513, Inter=36.9671
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.4672, Inter=38.2503
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=5.2805, Inter=39.3224
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.2560, Inter=39.1133
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=5.2218, Inter=39.4696
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=3.8775, Inter=40.6998
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=4.4094, Inter=40.0612
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=7.0245, Inter=37.0580
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=19.96
+RATIO=0.4 EVENT=REPAIR acc=47.04
+RATIO=0.4 EVENT=FD value=579.5806
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=67.47
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=69.27
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=69.58
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=69.34
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=68.73
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.3782, Inter=44.2630
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.6277, Inter=36.6460
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=11.0545, Inter=35.1790
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=10.8333, Inter=35.4057
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=10.1236, Inter=36.0788
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=8.5143, Inter=37.6633
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=7.1905, Inter=38.9756
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=7.5862, Inter=38.4043
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=6.9033, Inter=39.2225
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=5.3544, Inter=40.7765
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=5.8409, Inter=40.2121
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=9.2487, Inter=36.1776
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=7.59
+RATIO=0.5 EVENT=REPAIR acc=36.62
+RATIO=0.5 EVENT=FD value=589.2925
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=63.54
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=65.92
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=66.91
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=66.91
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=66.64
+✅ Vision + classification head loaded
+
+[MODEL] 10/72 model_17.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.46
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.5131, Inter=39.1003
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.2823, Inter=39.0217
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.5056, Inter=38.6868
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5709, Inter=38.6630
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5239, Inter=38.7423
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.4603, Inter=38.8624
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.2947, Inter=39.0747
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.1812, Inter=39.1549
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=0.7797, Inter=39.4707
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=0.7296, Inter=39.6026
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=0.9943, Inter=39.2891
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.2512, Inter=38.9212
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=65.51
+RATIO=0.1 EVENT=REPAIR acc=66.80
+RATIO=0.1 EVENT=FD value=466.2433
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=74.57
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=75.69
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=75.50
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=75.10
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=74.62
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.0172, Inter=40.6470
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.7784, Inter=38.9390
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.2882, Inter=38.1966
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.3110, Inter=38.2852
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.3689, Inter=38.3220
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.0947, Inter=38.7306
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.4451, Inter=39.3814
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.1663, Inter=39.5131
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=1.7607, Inter=39.9323
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=1.5762, Inter=40.2601
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=1.9405, Inter=39.7793
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=2.6967, Inter=38.6528
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=36.53
+RATIO=0.2 EVENT=REPAIR acc=58.68
+RATIO=0.2 EVENT=FD value=495.4502
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=72.24
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=73.50
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=73.62
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=73.31
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=72.77
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.6588, Inter=42.3940
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.6946, Inter=38.5575
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.5232, Inter=37.5581
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.4171, Inter=37.6610
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.4499, Inter=37.8116
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=4.8107, Inter=38.5653
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=3.5952, Inter=39.6217
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=3.5593, Inter=39.5415
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=3.2285, Inter=40.0608
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=2.4808, Inter=40.8411
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=2.9905, Inter=40.2163
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.4865, Inter=38.3035
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=14.06
+RATIO=0.3 EVENT=REPAIR acc=49.41
+RATIO=0.3 EVENT=FD value=507.1903
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=68.94
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=70.77
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=71.33
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=71.43
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=70.91
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.7357, Inter=43.7254
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.7203, Inter=38.0492
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=8.0363, Inter=36.6378
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=7.9062, Inter=36.7956
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=7.7754, Inter=37.0840
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.3452, Inter=38.4883
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=5.1172, Inter=39.6317
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.1356, Inter=39.3994
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=4.6642, Inter=40.1718
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=3.4013, Inter=41.3928
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=4.0935, Inter=40.6300
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=6.3369, Inter=37.8264
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=2.04
+RATIO=0.4 EVENT=REPAIR acc=38.73
+RATIO=0.4 EVENT=FD value=514.9114
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=65.17
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=67.39
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=68.69
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=68.95
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=68.45
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.2090, Inter=44.7599
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.3462, Inter=37.0072
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=10.8346, Inter=35.4290
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=10.5747, Inter=35.6618
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=9.9088, Inter=36.3689
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=8.2757, Inter=38.0765
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=7.0260, Inter=39.3970
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=7.1245, Inter=39.0159
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=6.3323, Inter=40.1283
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=4.7905, Inter=41.6638
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=5.3921, Inter=41.0312
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=8.5751, Inter=37.1157
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.69
+RATIO=0.5 EVENT=REPAIR acc=27.11
+RATIO=0.5 EVENT=FD value=522.1130
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=59.94
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=63.79
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=65.10
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=65.64
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=65.64
+✅ Vision + classification head loaded
+
+[MODEL] 11/72 model_18.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.07
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.5508, Inter=39.0646
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.2956, Inter=39.0342
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.5288, Inter=38.6646
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5549, Inter=38.6804
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5491, Inter=38.7486
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.4712, Inter=38.8804
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.3612, Inter=39.0380
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.2354, Inter=39.1422
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=0.8694, Inter=39.4203
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=0.8028, Inter=39.5423
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=1.0611, Inter=39.2353
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.3320, Inter=38.8792
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=69.95
+RATIO=0.1 EVENT=REPAIR acc=71.83
+RATIO=0.1 EVENT=FD value=484.2679
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=72.96
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=73.30
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=73.19
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=73.37
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=73.55
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.1490, Inter=40.4194
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.8445, Inter=38.9020
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.3020, Inter=38.1669
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.4226, Inter=38.2294
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.3891, Inter=38.3013
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.0903, Inter=38.7251
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.5639, Inter=39.2758
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.2397, Inter=39.4360
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=1.9114, Inter=39.7530
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=1.7420, Inter=40.0582
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=2.0934, Inter=39.5880
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=2.8900, Inter=38.5219
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=59.02
+RATIO=0.2 EVENT=REPAIR acc=65.84
+RATIO=0.2 EVENT=FD value=658.2510
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=71.86
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=71.86
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=71.96
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=71.81
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=71.88
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.7819, Inter=42.1006
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.6678, Inter=38.6001
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.6190, Inter=37.4714
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.5808, Inter=37.5639
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.5374, Inter=37.7090
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=4.8771, Inter=38.4839
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=3.7309, Inter=39.4196
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=3.5463, Inter=39.4014
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=3.4251, Inter=39.7508
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=2.5905, Inter=40.5672
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=3.1258, Inter=39.9205
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.6678, Inter=38.0443
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=43.35
+RATIO=0.3 EVENT=REPAIR acc=56.52
+RATIO=0.3 EVENT=FD value=790.9290
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=69.77
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=70.88
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=70.77
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=70.47
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=70.25
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.8628, Inter=43.3944
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.7221, Inter=37.9654
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=8.1943, Inter=36.4973
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=8.1093, Inter=36.6033
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=7.7626, Inter=37.0395
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.4368, Inter=38.2938
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=5.3177, Inter=39.3597
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.2947, Inter=39.1364
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=4.9815, Inter=39.6949
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=3.7361, Inter=40.8967
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=4.3392, Inter=40.1921
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=6.7029, Inter=37.3871
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=22.52
+RATIO=0.4 EVENT=REPAIR acc=45.44
+RATIO=0.4 EVENT=FD value=837.0032
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=67.00
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=68.54
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=69.14
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=68.63
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=68.22
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.3682, Inter=44.3077
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.5016, Inter=36.8097
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=11.0186, Inter=35.2156
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=10.7887, Inter=35.4602
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=10.1833, Inter=36.0922
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=8.4123, Inter=37.7971
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=7.0150, Inter=39.2030
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=7.3913, Inter=38.6149
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=6.7866, Inter=39.4350
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=5.1141, Inter=41.0563
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=5.6570, Inter=40.4521
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=9.0630, Inter=36.4656
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=8.47
+RATIO=0.5 EVENT=REPAIR acc=34.92
+RATIO=0.5 EVENT=FD value=857.1397
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=62.59
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=65.38
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=66.43
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=66.31
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=66.13
+✅ Vision + classification head loaded
+
+[MODEL] 12/72 model_19.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.27
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.5172, Inter=39.0899
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.2817, Inter=39.0332
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.4985, Inter=38.6873
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5683, Inter=38.6635
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5229, Inter=38.7519
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.4459, Inter=38.8720
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.2925, Inter=39.0683
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.1593, Inter=39.1680
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=0.7642, Inter=39.4754
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=0.7405, Inter=39.6019
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=0.9956, Inter=39.2932
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.2339, Inter=38.9287
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=65.48
+RATIO=0.1 EVENT=REPAIR acc=66.70
+RATIO=0.1 EVENT=FD value=508.6423
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=74.27
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=75.26
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=75.20
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=74.85
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=74.27
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.0065, Inter=40.6508
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.7873, Inter=38.9354
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.2612, Inter=38.2084
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.3269, Inter=38.2594
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.3636, Inter=38.3252
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.0911, Inter=38.7429
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.4748, Inter=39.3680
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.1987, Inter=39.4954
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=1.7871, Inter=39.9192
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=1.5535, Inter=40.2728
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=1.9636, Inter=39.7658
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=2.7329, Inter=38.6462
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=38.04
+RATIO=0.2 EVENT=REPAIR acc=58.06
+RATIO=0.2 EVENT=FD value=542.8968
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=72.07
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=73.52
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=73.57
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=73.22
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=72.60
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.6827, Inter=42.3672
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.6856, Inter=38.5873
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.4861, Inter=37.5539
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.5144, Inter=37.6216
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.4594, Inter=37.8129
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=4.7343, Inter=38.6238
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=3.6632, Inter=39.5694
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=3.4010, Inter=39.6382
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=3.2084, Inter=40.0829
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=2.3951, Inter=40.8850
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=3.0130, Inter=40.2020
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.4784, Inter=38.3145
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=13.52
+RATIO=0.3 EVENT=REPAIR acc=48.64
+RATIO=0.3 EVENT=FD value=555.8072
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=68.58
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=70.56
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=71.23
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=71.16
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=70.54
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.7081, Inter=43.7743
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.6691, Inter=38.0550
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=7.9984, Inter=36.6269
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=7.8437, Inter=36.8149
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=7.7859, Inter=37.1126
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.4808, Inter=38.3983
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=5.1375, Inter=39.5946
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.0950, Inter=39.4215
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=4.6657, Inter=40.1604
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=3.5944, Inter=41.2758
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=4.0893, Inter=40.6402
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=6.3118, Inter=37.8208
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=2.42
+RATIO=0.4 EVENT=REPAIR acc=38.59
+RATIO=0.4 EVENT=FD value=565.6500
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=64.76
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=67.66
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=68.59
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=68.89
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=68.45
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.3017, Inter=44.6922
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.2622, Inter=37.0606
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=10.8695, Inter=35.4246
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=10.4801, Inter=35.7442
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=9.9851, Inter=36.3242
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=8.3238, Inter=38.0343
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=6.9721, Inter=39.4237
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=7.2554, Inter=38.9499
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=6.3871, Inter=40.1066
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=4.9252, Inter=41.5662
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=5.3213, Inter=41.0652
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=8.4496, Inter=37.2006
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.78
+RATIO=0.5 EVENT=REPAIR acc=26.93
+RATIO=0.5 EVENT=FD value=576.6559
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=59.92
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=63.64
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=65.08
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=65.69
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=65.75
+✅ Vision + classification head loaded
+
+[MODEL] 13/72 model_2.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.30
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.6707, Inter=38.9755
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.3632, Inter=39.0176
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.4615, Inter=38.7910
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5786, Inter=38.6775
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.6059, Inter=38.6855
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.5342, Inter=38.8090
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.4919, Inter=38.8878
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.4861, Inter=38.9075
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=1.3160, Inter=39.0473
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=1.3041, Inter=39.0966
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=1.4407, Inter=38.9270
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.4610, Inter=38.7977
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=72.77
+RATIO=0.1 EVENT=REPAIR acc=72.18
+RATIO=0.1 EVENT=FD value=845.9095
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=74.02
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=74.29
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=73.90
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=73.52
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=72.98
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.2722, Inter=40.1836
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.9141, Inter=38.8113
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.2101, Inter=38.2837
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.4642, Inter=38.1345
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.5376, Inter=38.1562
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.3098, Inter=38.4217
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=3.1364, Inter=38.6538
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.9045, Inter=38.7276
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=2.5891, Inter=38.9568
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=2.6421, Inter=39.0538
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=2.9390, Inter=38.7104
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=3.0933, Inter=38.3027
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=68.84
+RATIO=0.2 EVENT=REPAIR acc=69.61
+RATIO=0.2 EVENT=FD value=961.1056
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=73.03
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=73.73
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=73.29
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=72.96
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=72.56
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=2.0206, Inter=41.4788
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.7676, Inter=38.3843
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.5205, Inter=37.4932
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.7116, Inter=37.3536
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.6963, Inter=37.4149
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=5.3049, Inter=37.9164
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=4.7767, Inter=38.3399
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=4.5500, Inter=38.3322
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=4.5932, Inter=38.4332
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=4.0616, Inter=38.8944
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=4.4422, Inter=38.4210
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=5.0675, Inter=37.5746
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=62.36
+RATIO=0.3 EVENT=REPAIR acc=65.76
+RATIO=0.3 EVENT=FD value=1089.8441
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=72.11
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=72.72
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=72.58
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=72.25
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=71.53
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=3.0118, Inter=42.6836
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=7.0510, Inter=37.5798
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=8.1254, Inter=36.4177
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=8.2723, Inter=36.3831
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=8.2817, Inter=36.4541
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=7.3201, Inter=37.2497
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=6.5641, Inter=37.8358
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=6.6456, Inter=37.6526
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=6.6455, Inter=37.7782
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=5.5589, Inter=38.6154
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=6.1500, Inter=37.9816
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=7.4634, Inter=36.5438
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=50.11
+RATIO=0.4 EVENT=REPAIR acc=60.89
+RATIO=0.4 EVENT=FD value=1165.0139
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=70.39
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=71.30
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=71.40
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=71.28
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=70.62
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.3502, Inter=43.5631
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.8220, Inter=36.2996
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=11.2704, Inter=34.9349
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=11.2301, Inter=34.9203
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=10.8369, Inter=35.2680
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=9.8258, Inter=36.1953
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=8.8486, Inter=37.0368
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=9.1319, Inter=36.6109
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=8.8404, Inter=36.9253
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=7.6339, Inter=37.9073
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=7.7596, Inter=37.5056
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=10.0953, Inter=35.2115
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=33.32
+RATIO=0.5 EVENT=REPAIR acc=54.75
+RATIO=0.5 EVENT=FD value=1210.6919
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=67.92
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=69.68
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=69.88
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=69.78
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=69.34
+✅ Vision + classification head loaded
+
+[MODEL] 14/72 model_20.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.16
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.5312, Inter=39.0523
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.2813, Inter=39.0251
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.4894, Inter=38.6970
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5738, Inter=38.6646
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5297, Inter=38.7391
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.4594, Inter=38.8647
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.3078, Inter=39.0707
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.1705, Inter=39.1673
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=0.7864, Inter=39.4697
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=0.7332, Inter=39.6029
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=0.9753, Inter=39.3020
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.2301, Inter=38.9379
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=61.55
+RATIO=0.1 EVENT=REPAIR acc=66.56
+RATIO=0.1 EVENT=FD value=648.4832
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=74.31
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=74.79
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=74.91
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=74.29
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=73.67
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.0151, Inter=40.6571
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.7756, Inter=38.9326
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.2854, Inter=38.2020
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.3360, Inter=38.2494
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.3556, Inter=38.3415
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.0723, Inter=38.7403
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.4627, Inter=39.3726
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.2030, Inter=39.4982
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=1.7741, Inter=39.9278
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=1.5488, Inter=40.2714
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=1.9472, Inter=39.7759
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=2.7214, Inter=38.6578
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=30.60
+RATIO=0.2 EVENT=REPAIR acc=56.28
+RATIO=0.2 EVENT=FD value=702.0018
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=71.56
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=72.74
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=73.13
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=72.76
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=72.04
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.6748, Inter=42.3456
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.7127, Inter=38.5892
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.4944, Inter=37.5546
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.4701, Inter=37.6368
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.4581, Inter=37.8037
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=4.7873, Inter=38.5800
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=3.6610, Inter=39.5836
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=3.4645, Inter=39.5865
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=3.2291, Inter=40.0580
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=2.4082, Inter=40.8821
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=2.9576, Inter=40.2374
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.4796, Inter=38.3002
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=9.16
+RATIO=0.3 EVENT=REPAIR acc=46.70
+RATIO=0.3 EVENT=FD value=733.7834
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=68.11
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=70.42
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=70.86
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=70.81
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=70.49
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.7463, Inter=43.7018
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.7387, Inter=38.0146
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=7.9809, Inter=36.6617
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=7.9311, Inter=36.8047
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=7.7145, Inter=37.1444
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.2601, Inter=38.5188
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=5.0829, Inter=39.6577
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.1642, Inter=39.3852
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=4.6305, Inter=40.1832
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=3.5074, Inter=41.3289
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=4.2110, Inter=40.5748
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=6.2840, Inter=37.8637
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=1.19
+RATIO=0.4 EVENT=REPAIR acc=35.22
+RATIO=0.4 EVENT=FD value=747.7696
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=63.94
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=67.09
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=67.90
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=68.19
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=68.09
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.2731, Inter=44.6967
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.2900, Inter=37.0506
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=10.9473, Inter=35.3658
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=10.7368, Inter=35.5731
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=9.9686, Inter=36.2969
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=8.3062, Inter=38.0455
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=6.8988, Inter=39.5124
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=7.1745, Inter=38.9980
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=6.1472, Inter=40.2673
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=4.8110, Inter=41.6529
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=5.2488, Inter=41.1022
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=8.6176, Inter=37.0950
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.33
+RATIO=0.5 EVENT=REPAIR acc=22.15
+RATIO=0.5 EVENT=FD value=761.4157
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=59.17
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=62.83
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=64.54
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=65.31
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=65.46
+✅ Vision + classification head loaded
+
+[MODEL] 15/72 model_21.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.98
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.5514, Inter=39.0288
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.3002, Inter=39.0264
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.5020, Inter=38.6824
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5548, Inter=38.6729
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5280, Inter=38.7365
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.4565, Inter=38.8646
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.3154, Inter=39.0532
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.1886, Inter=39.1583
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=0.7759, Inter=39.4732
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=0.7277, Inter=39.6094
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=0.9694, Inter=39.2946
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.2577, Inter=38.9083
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=67.79
+RATIO=0.1 EVENT=REPAIR acc=70.00
+RATIO=0.1 EVENT=FD value=518.0460
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=75.44
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=75.54
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=74.92
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=74.46
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=74.42
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.0345, Inter=40.6434
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.8326, Inter=38.9247
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.2350, Inter=38.2369
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.3538, Inter=38.2548
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.3647, Inter=38.3310
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.1216, Inter=38.7077
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.4532, Inter=39.3752
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.2135, Inter=39.4755
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=1.8071, Inter=39.8955
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=1.5702, Inter=40.2542
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=1.8970, Inter=39.7938
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=2.7657, Inter=38.6161
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=46.83
+RATIO=0.2 EVENT=REPAIR acc=60.33
+RATIO=0.2 EVENT=FD value=585.6378
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=73.01
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=73.94
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=73.54
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=73.21
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=72.59
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.6662, Inter=42.3491
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.6801, Inter=38.5962
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.4578, Inter=37.5761
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.5162, Inter=37.6076
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.4481, Inter=37.8006
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=4.7246, Inter=38.6181
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=3.6086, Inter=39.5859
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=3.3732, Inter=39.6299
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=3.2168, Inter=40.0308
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=2.4780, Inter=40.8172
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=3.0035, Inter=40.1899
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.4889, Inter=38.2656
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=23.90
+RATIO=0.3 EVENT=REPAIR acc=51.77
+RATIO=0.3 EVENT=FD value=602.4485
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=70.18
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=71.56
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=71.90
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=71.56
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=70.89
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.7287, Inter=43.7359
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.6585, Inter=38.0586
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=8.0926, Inter=36.5751
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=7.9574, Inter=36.7696
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=7.7671, Inter=37.1024
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.3639, Inter=38.4641
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=5.1748, Inter=39.5509
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.1096, Inter=39.3927
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=4.7558, Inter=40.0762
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=3.5914, Inter=41.2596
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=4.2093, Inter=40.5597
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=6.3744, Inter=37.7744
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=6.37
+RATIO=0.4 EVENT=REPAIR acc=41.77
+RATIO=0.4 EVENT=FD value=613.9024
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=66.40
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=68.73
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=69.31
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=69.37
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=69.00
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.2972, Inter=44.6585
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.2105, Inter=37.0608
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=11.0146, Inter=35.3290
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=10.6911, Inter=35.5989
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=9.9105, Inter=36.3381
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=8.3118, Inter=38.0311
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=6.9547, Inter=39.4281
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=7.2137, Inter=38.9395
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=6.4093, Inter=40.0437
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=5.0627, Inter=41.4469
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=5.2606, Inter=41.0533
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=8.4321, Inter=37.1280
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=1.83
+RATIO=0.5 EVENT=REPAIR acc=30.46
+RATIO=0.5 EVENT=FD value=622.2171
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=61.62
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=64.85
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=66.24
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=66.74
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=66.42
+✅ Vision + classification head loaded
+
+[MODEL] 16/72 model_22.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.81
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.5156, Inter=39.0887
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.2872, Inter=39.0244
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.4988, Inter=38.6889
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5657, Inter=38.6667
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5245, Inter=38.7447
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.4558, Inter=38.8653
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.2792, Inter=39.0750
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.1874, Inter=39.1576
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=0.7786, Inter=39.4703
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=0.7426, Inter=39.5951
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=0.9772, Inter=39.2968
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.2331, Inter=38.9373
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=65.12
+RATIO=0.1 EVENT=REPAIR acc=65.68
+RATIO=0.1 EVENT=FD value=761.5264
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=74.32
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=75.06
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=75.15
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=74.58
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=73.87
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=0.9891, Inter=40.6796
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.8000, Inter=38.9311
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.2858, Inter=38.1965
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.3360, Inter=38.2630
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.3647, Inter=38.3231
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.0590, Inter=38.7373
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.4962, Inter=39.3629
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.2043, Inter=39.4919
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=1.7893, Inter=39.9176
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=1.5309, Inter=40.2832
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=1.9322, Inter=39.7758
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=2.7045, Inter=38.6627
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=40.06
+RATIO=0.2 EVENT=REPAIR acc=56.79
+RATIO=0.2 EVENT=FD value=816.8983
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=71.63
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=72.91
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=73.15
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=72.56
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=72.19
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.6921, Inter=42.3540
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.6813, Inter=38.5822
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.4980, Inter=37.5599
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.4947, Inter=37.6248
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.4867, Inter=37.7772
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=4.7797, Inter=38.5920
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=3.6631, Inter=39.5827
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=3.4687, Inter=39.6071
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=3.2276, Inter=40.0662
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=2.4199, Inter=40.8781
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=2.8824, Inter=40.2669
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.4305, Inter=38.3392
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=15.14
+RATIO=0.3 EVENT=REPAIR acc=48.07
+RATIO=0.3 EVENT=FD value=870.2502
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=68.28
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=70.23
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=70.82
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=70.72
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=70.20
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.7403, Inter=43.7221
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.7223, Inter=38.0567
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=8.0394, Inter=36.6233
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=7.8947, Inter=36.7861
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=7.8006, Inter=37.0809
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.3740, Inter=38.4795
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=5.0647, Inter=39.6502
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.0423, Inter=39.4543
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=4.6808, Inter=40.1321
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=3.4842, Inter=41.3562
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=4.0760, Inter=40.6457
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=6.2302, Inter=37.8826
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=2.72
+RATIO=0.4 EVENT=REPAIR acc=36.42
+RATIO=0.4 EVENT=FD value=892.9982
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=64.11
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=67.16
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=68.18
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=68.37
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=67.95
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.1610, Inter=44.8080
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.1882, Inter=37.0968
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=10.7264, Inter=35.4849
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=10.5899, Inter=35.6795
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=10.0029, Inter=36.2700
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=8.2936, Inter=38.0586
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=6.9047, Inter=39.4978
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=7.2400, Inter=38.9784
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=6.3966, Inter=40.1158
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=4.8577, Inter=41.6130
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=5.4443, Inter=40.9783
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=8.5036, Inter=37.1805
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.69
+RATIO=0.5 EVENT=REPAIR acc=24.33
+RATIO=0.5 EVENT=FD value=916.5922
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=59.18
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=63.12
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=64.60
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=65.57
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=65.37
+✅ Vision + classification head loaded
+
+[MODEL] 17/72 model_23.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=74.83
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.5128, Inter=39.0978
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.2856, Inter=39.0209
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.4983, Inter=38.6879
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5701, Inter=38.6629
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5288, Inter=38.7406
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.4550, Inter=38.8675
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.3037, Inter=39.0641
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.1668, Inter=39.1682
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=0.7704, Inter=39.4779
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=0.7418, Inter=39.5999
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=0.9702, Inter=39.3023
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.2478, Inter=38.9304
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=64.02
+RATIO=0.1 EVENT=REPAIR acc=63.51
+RATIO=0.1 EVENT=FD value=768.8244
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=73.66
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=74.65
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=74.52
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=74.02
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=73.65
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.0230, Inter=40.6180
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.7782, Inter=38.9380
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.2729, Inter=38.2022
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.3200, Inter=38.2734
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.3717, Inter=38.3316
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.0636, Inter=38.7429
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.4867, Inter=39.3593
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.1841, Inter=39.5046
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=1.7921, Inter=39.9079
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=1.5815, Inter=40.2637
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=1.9302, Inter=39.7815
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=2.6954, Inter=38.6637
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=37.58
+RATIO=0.2 EVENT=REPAIR acc=55.62
+RATIO=0.2 EVENT=FD value=827.0208
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=71.10
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=72.51
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=72.94
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=72.67
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=72.02
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.6674, Inter=42.3638
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.6629, Inter=38.5790
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.4443, Inter=37.5960
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.5462, Inter=37.6076
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.4328, Inter=37.8035
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=4.8075, Inter=38.5797
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=3.6581, Inter=39.5681
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=3.3451, Inter=39.6693
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=3.1909, Inter=40.0827
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=2.4627, Inter=40.8597
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=2.9134, Inter=40.2601
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.4449, Inter=38.3269
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=14.04
+RATIO=0.3 EVENT=REPAIR acc=46.12
+RATIO=0.3 EVENT=FD value=877.6573
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=67.75
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=69.76
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=70.71
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=70.54
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=70.20
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.6861, Inter=43.7798
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.7066, Inter=38.0418
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=8.0060, Inter=36.6394
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=7.7931, Inter=36.8421
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=7.7314, Inter=37.1315
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.4400, Inter=38.4246
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=5.1177, Inter=39.6221
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.1897, Inter=39.3550
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=4.6661, Inter=40.1386
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=3.4411, Inter=41.3657
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=4.0927, Inter=40.6422
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=6.3186, Inter=37.8585
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=2.45
+RATIO=0.4 EVENT=REPAIR acc=37.07
+RATIO=0.4 EVENT=FD value=899.4370
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=63.98
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=67.12
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=68.15
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=68.46
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=68.02
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.2493, Inter=44.7208
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.3341, Inter=37.0177
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=10.8284, Inter=35.4714
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=10.5532, Inter=35.6944
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=9.9929, Inter=36.3002
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=8.2924, Inter=38.0444
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=6.9407, Inter=39.4636
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=7.2455, Inter=38.9223
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=6.3772, Inter=40.1257
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=4.8309, Inter=41.6560
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=5.3360, Inter=41.0548
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=8.5164, Inter=37.1810
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.55
+RATIO=0.5 EVENT=REPAIR acc=24.83
+RATIO=0.5 EVENT=FD value=920.8728
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=58.97
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=62.76
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=64.56
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=65.20
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=65.19
+✅ Vision + classification head loaded
+
+[MODEL] 18/72 model_24.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=77.99
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.5196, Inter=39.0797
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.2820, Inter=39.0387
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.5070, Inter=38.6821
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5540, Inter=38.6857
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5190, Inter=38.7510
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.4634, Inter=38.8611
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.3352, Inter=39.0508
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.2043, Inter=39.1497
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=0.8140, Inter=39.4513
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=0.7644, Inter=39.5746
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=0.9955, Inter=39.2778
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.2802, Inter=38.9084
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=71.96
+RATIO=0.1 EVENT=REPAIR acc=72.15
+RATIO=0.1 EVENT=FD value=614.7657
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=75.99
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=76.26
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=75.96
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=75.25
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=74.99
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.0158, Inter=40.6651
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.8304, Inter=38.9316
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.3072, Inter=38.1763
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.4133, Inter=38.2219
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.4025, Inter=38.3119
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.0759, Inter=38.7332
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.4920, Inter=39.3349
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.2053, Inter=39.4728
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=1.8294, Inter=39.8585
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=1.6491, Inter=40.1717
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=1.9352, Inter=39.7417
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=2.7576, Inter=38.6172
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=59.12
+RATIO=0.2 EVENT=REPAIR acc=64.99
+RATIO=0.2 EVENT=FD value=740.0577
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=74.26
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=74.71
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=74.76
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=73.78
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=73.51
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.6959, Inter=42.2792
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.6170, Inter=38.6166
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.5136, Inter=37.5194
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.5200, Inter=37.6068
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.4329, Inter=37.8073
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=4.7932, Inter=38.5548
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=3.6616, Inter=39.5341
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=3.4959, Inter=39.5292
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=3.2588, Inter=39.9692
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=2.5441, Inter=40.7264
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=3.0825, Inter=40.0824
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.5749, Inter=38.1983
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=37.76
+RATIO=0.3 EVENT=REPAIR acc=56.85
+RATIO=0.3 EVENT=FD value=802.6939
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=71.99
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=73.04
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=72.90
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=72.44
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=72.11
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.7859, Inter=43.6358
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.7133, Inter=38.0425
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=8.1347, Inter=36.5391
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=8.0030, Inter=36.7413
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=7.7131, Inter=37.1119
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.5590, Inter=38.3101
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=5.1408, Inter=39.5365
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.2884, Inter=39.2237
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=4.8195, Inter=39.9546
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=3.5815, Inter=41.1782
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=4.1603, Inter=40.4836
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=6.4105, Inter=37.6707
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=17.72
+RATIO=0.4 EVENT=REPAIR acc=47.17
+RATIO=0.4 EVENT=FD value=834.5875
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=68.20
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=70.01
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=70.41
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=70.52
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=69.93
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.2729, Inter=44.5806
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.3326, Inter=37.0209
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=10.9209, Inter=35.3243
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=10.7482, Inter=35.5265
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=9.9864, Inter=36.2510
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=8.3686, Inter=37.9073
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=6.9960, Inter=39.3036
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=7.1638, Inter=38.8811
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=6.5863, Inter=39.8368
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=5.0096, Inter=41.3714
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=5.4513, Inter=40.8281
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=8.7912, Inter=36.8868
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=4.13
+RATIO=0.5 EVENT=REPAIR acc=37.39
+RATIO=0.5 EVENT=FD value=850.8156
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=64.21
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=66.68
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=67.55
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=67.59
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=67.30
+✅ Vision + classification head loaded
+
+[MODEL] 19/72 model_25.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.45
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.5311, Inter=39.0524
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.2745, Inter=39.0281
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.5139, Inter=38.6780
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5662, Inter=38.6618
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5357, Inter=38.7443
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.4598, Inter=38.8608
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.2815, Inter=39.0714
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.1709, Inter=39.1623
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=0.7674, Inter=39.4787
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=0.7387, Inter=39.6003
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=0.9983, Inter=39.2898
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.2474, Inter=38.9153
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=66.93
+RATIO=0.1 EVENT=REPAIR acc=67.51
+RATIO=0.1 EVENT=FD value=461.9205
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=75.10
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=75.98
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=75.54
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=75.27
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=74.81
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.0012, Inter=40.6744
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.7898, Inter=38.9265
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.2812, Inter=38.1981
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.3749, Inter=38.2494
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.3808, Inter=38.3322
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.0775, Inter=38.7444
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.4751, Inter=39.3634
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.1698, Inter=39.5089
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=1.7561, Inter=39.9449
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=1.5741, Inter=40.2604
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=1.9406, Inter=39.7795
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=2.7475, Inter=38.6228
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=40.54
+RATIO=0.2 EVENT=REPAIR acc=60.51
+RATIO=0.2 EVENT=FD value=484.4652
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=72.74
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=73.71
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=73.96
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=73.59
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=72.98
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.6738, Inter=42.3432
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.6332, Inter=38.6246
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.4775, Inter=37.5771
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.4999, Inter=37.6155
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.4846, Inter=37.8003
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=4.7934, Inter=38.5938
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=3.6743, Inter=39.5743
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=3.4438, Inter=39.6063
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=3.1408, Inter=40.1154
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=2.5148, Inter=40.8193
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=3.0304, Inter=40.1750
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.4527, Inter=38.3034
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=17.47
+RATIO=0.3 EVENT=REPAIR acc=51.74
+RATIO=0.3 EVENT=FD value=492.5636
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=69.99
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=71.35
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=71.66
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=71.44
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=71.27
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.7608, Inter=43.7247
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.6207, Inter=38.1110
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=8.0058, Inter=36.6540
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=7.9254, Inter=36.7849
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=7.7170, Inter=37.1074
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.4176, Inter=38.4479
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=5.0480, Inter=39.6817
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.1196, Inter=39.4176
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=4.7888, Inter=40.0814
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=3.5068, Inter=41.3233
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=4.1869, Inter=40.5675
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=6.3717, Inter=37.7725
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=4.23
+RATIO=0.4 EVENT=REPAIR acc=41.69
+RATIO=0.4 EVENT=FD value=495.0192
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=65.68
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=68.19
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=69.32
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=69.30
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=69.23
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.2790, Inter=44.6794
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.3171, Inter=37.0528
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=10.8748, Inter=35.4016
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=10.5761, Inter=35.6949
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=9.8410, Inter=36.3787
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=8.3087, Inter=38.0342
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=6.8448, Inter=39.5333
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=7.1672, Inter=38.9614
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=6.3579, Inter=40.1161
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=4.8411, Inter=41.6247
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=5.4276, Inter=40.9856
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=8.6513, Inter=37.0296
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.75
+RATIO=0.5 EVENT=REPAIR acc=30.75
+RATIO=0.5 EVENT=FD value=501.1665
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=60.98
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=64.39
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=65.77
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=66.39
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=66.37
+✅ Vision + classification head loaded
+
+[MODEL] 20/72 model_26.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=77.55
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.5989, Inter=39.0385
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.3079, Inter=39.0602
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.5060, Inter=38.7141
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5672, Inter=38.6894
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5605, Inter=38.7490
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.5052, Inter=38.8580
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.4098, Inter=38.9785
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.3977, Inter=39.0189
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=0.9604, Inter=39.3318
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=0.9511, Inter=39.4213
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=1.1087, Inter=39.1941
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.3422, Inter=38.8959
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=74.86
+RATIO=0.1 EVENT=REPAIR acc=70.10
+RATIO=0.1 EVENT=FD value=530.8831
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=76.16
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=76.45
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=76.28
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=75.75
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=74.95
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.1221, Inter=40.4721
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.8296, Inter=38.9730
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.2532, Inter=38.2210
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.4056, Inter=38.2100
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.4393, Inter=38.2901
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.2251, Inter=38.6132
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.8047, Inter=39.0726
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.4581, Inter=39.2206
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=2.0696, Inter=39.5272
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=2.0025, Inter=39.7798
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=2.3809, Inter=39.3144
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=2.9920, Inter=38.4518
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=69.75
+RATIO=0.2 EVENT=REPAIR acc=67.24
+RATIO=0.2 EVENT=FD value=554.8022
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=74.81
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=75.47
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=75.22
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=74.84
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=74.00
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.8714, Inter=41.8402
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.6012, Inter=38.6560
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.4523, Inter=37.5420
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.5541, Inter=37.5609
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.5308, Inter=37.6740
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=4.9787, Inter=38.3482
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=4.0482, Inter=39.0893
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=3.8876, Inter=39.0749
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=3.6823, Inter=39.3897
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=3.0324, Inter=40.0912
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=3.5139, Inter=39.4902
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.8030, Inter=37.9036
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=60.26
+RATIO=0.3 EVENT=REPAIR acc=63.13
+RATIO=0.3 EVENT=FD value=569.1772
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=73.21
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=74.05
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=73.99
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=73.71
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=72.97
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.8570, Inter=43.2228
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.7492, Inter=37.9998
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=8.1441, Inter=36.4841
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=8.2220, Inter=36.5484
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=7.9346, Inter=36.9132
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.7262, Inter=37.9962
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=5.6038, Inter=38.9112
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.7286, Inter=38.6383
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=5.5483, Inter=39.0419
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=4.2156, Inter=40.2984
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=4.9451, Inter=39.4937
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=7.0362, Inter=37.0486
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=46.39
+RATIO=0.4 EVENT=REPAIR acc=58.09
+RATIO=0.4 EVENT=FD value=578.7040
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=71.11
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=72.34
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=72.63
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=72.42
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=71.98
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.2088, Inter=44.2268
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.4685, Inter=36.8214
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=10.9240, Inter=35.1995
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=10.8017, Inter=35.3598
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=10.4976, Inter=35.7895
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=8.8666, Inter=37.3199
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=7.7527, Inter=38.3725
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=7.8237, Inter=38.0526
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=7.4392, Inter=38.5853
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=5.7701, Inter=40.1990
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=6.2993, Inter=39.5731
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=9.5263, Inter=35.9947
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=27.06
+RATIO=0.5 EVENT=REPAIR acc=50.27
+RATIO=0.5 EVENT=FD value=588.5104
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=67.87
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=69.62
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=70.09
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=70.18
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=69.75
+✅ Vision + classification head loaded
+
+[MODEL] 21/72 model_27.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=77.92
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.5302, Inter=39.0518
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.2681, Inter=39.0290
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.4959, Inter=38.6878
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5668, Inter=38.6639
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5240, Inter=38.7426
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.4706, Inter=38.8518
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.3233, Inter=39.0549
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.1879, Inter=39.1498
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=0.7780, Inter=39.4662
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=0.7592, Inter=39.5893
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=0.9642, Inter=39.2974
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.2424, Inter=38.9157
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=68.07
+RATIO=0.1 EVENT=REPAIR acc=68.26
+RATIO=0.1 EVENT=FD value=506.7168
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=76.13
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=76.47
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=76.14
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=75.46
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=75.13
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.0223, Inter=40.6334
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.8006, Inter=38.9241
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.2897, Inter=38.1975
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.3389, Inter=38.2672
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.3937, Inter=38.3206
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.1082, Inter=38.7138
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.4618, Inter=39.3694
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.1979, Inter=39.4874
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=1.7931, Inter=39.9165
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=1.5804, Inter=40.2545
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=1.9022, Inter=39.7835
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=2.7583, Inter=38.6222
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=42.79
+RATIO=0.2 EVENT=REPAIR acc=60.51
+RATIO=0.2 EVENT=FD value=536.4083
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=73.50
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=74.42
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=74.42
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=73.92
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=73.28
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.6563, Inter=42.3884
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.6876, Inter=38.5892
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.4897, Inter=37.5586
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.4898, Inter=37.6123
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.4776, Inter=37.7990
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=4.7832, Inter=38.5794
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=3.6439, Inter=39.5954
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=3.4380, Inter=39.5961
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=3.1994, Inter=40.0756
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=2.4636, Inter=40.8478
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=2.8912, Inter=40.2566
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.5639, Inter=38.2307
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=18.88
+RATIO=0.3 EVENT=REPAIR acc=51.23
+RATIO=0.3 EVENT=FD value=549.9773
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=70.34
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=71.85
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=72.53
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=71.87
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=71.40
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.7117, Inter=43.7613
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.7280, Inter=38.0336
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=8.0368, Inter=36.6001
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=7.8526, Inter=36.8212
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=7.6918, Inter=37.1327
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.3367, Inter=38.4620
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=5.1718, Inter=39.6026
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.1127, Inter=39.4151
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=4.6482, Inter=40.1533
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=3.4639, Inter=41.3564
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=4.0742, Inter=40.6449
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=6.3942, Inter=37.7753
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=3.33
+RATIO=0.4 EVENT=REPAIR acc=41.12
+RATIO=0.4 EVENT=FD value=559.6435
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=66.61
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=68.79
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=69.63
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=69.78
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=69.13
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.3524, Inter=44.6191
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.2422, Inter=37.0767
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=10.9306, Inter=35.3937
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=10.5008, Inter=35.7057
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=9.9595, Inter=36.3289
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=8.3594, Inter=37.9536
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=6.9239, Inter=39.4646
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=7.2796, Inter=38.9039
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=6.3585, Inter=40.1167
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=4.9698, Inter=41.5149
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=5.3386, Inter=41.0255
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=8.5402, Inter=37.1099
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.88
+RATIO=0.5 EVENT=REPAIR acc=29.45
+RATIO=0.5 EVENT=FD value=568.8875
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=61.35
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=64.72
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=66.07
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=66.56
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=66.62
+✅ Vision + classification head loaded
+
+[MODEL] 22/72 model_28.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.56
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.5240, Inter=39.0773
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.2904, Inter=39.0143
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.4942, Inter=38.6923
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5609, Inter=38.6682
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5204, Inter=38.7472
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.4590, Inter=38.8667
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.3083, Inter=39.0674
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.1627, Inter=39.1720
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=0.7926, Inter=39.4647
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=0.7523, Inter=39.5969
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=0.9516, Inter=39.3125
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.2411, Inter=38.9319
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=64.41
+RATIO=0.1 EVENT=REPAIR acc=65.34
+RATIO=0.1 EVENT=FD value=613.8224
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=74.18
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=74.84
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=74.61
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=74.25
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=73.73
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.0157, Inter=40.6406
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.7879, Inter=38.9389
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.2797, Inter=38.2063
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.3360, Inter=38.2590
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.3541, Inter=38.3359
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.1000, Inter=38.7240
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.4757, Inter=39.3728
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.1940, Inter=39.5072
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=1.7131, Inter=39.9591
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=1.5217, Inter=40.2967
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=1.9645, Inter=39.7652
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=2.7309, Inter=38.6430
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=37.39
+RATIO=0.2 EVENT=REPAIR acc=56.11
+RATIO=0.2 EVENT=FD value=669.2615
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=71.61
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=72.65
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=73.09
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=72.78
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=72.48
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.6787, Inter=42.3428
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.6959, Inter=38.5830
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.4818, Inter=37.5610
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.4547, Inter=37.6398
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.4184, Inter=37.8184
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=4.7332, Inter=38.6185
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=3.6639, Inter=39.5680
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=3.4350, Inter=39.6116
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=3.2016, Inter=40.0719
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=2.3988, Inter=40.8950
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=2.9813, Inter=40.2214
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.4359, Inter=38.3183
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=14.55
+RATIO=0.3 EVENT=REPAIR acc=47.02
+RATIO=0.3 EVENT=FD value=690.7498
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=68.19
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=70.23
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=70.58
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=70.70
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=70.08
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.6864, Inter=43.7667
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.7093, Inter=38.0458
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=8.0123, Inter=36.6344
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=7.7987, Inter=36.8536
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=7.8436, Inter=37.0723
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.3675, Inter=38.4786
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=5.1838, Inter=39.5841
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.1262, Inter=39.4050
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=4.7190, Inter=40.1323
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=3.5182, Inter=41.3247
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=4.0971, Inter=40.6498
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=6.3134, Inter=37.8183
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=3.38
+RATIO=0.4 EVENT=REPAIR acc=36.46
+RATIO=0.4 EVENT=FD value=705.6627
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=64.34
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=66.80
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=68.25
+RATIO=0.4 EVENT=FINETUNE_EPOCH4 acc=68.17
+RATIO=0.4 EVENT=FINETUNE_EPOCH5 acc=67.89
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1536, Intra=4.2671, Inter=44.6823
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1536, Intra=9.2384, Inter=37.0749
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1536, Intra=10.9159, Inter=35.3867
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1536, Intra=10.5692, Inter=35.6807
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1536, Intra=9.9463, Inter=36.3109
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1536, Intra=8.2221, Inter=38.1053
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1536, Intra=6.9701, Inter=39.4457
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1536, Intra=7.1644, Inter=38.9584
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1536, Intra=6.3976, Inter=40.0923
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1536, Intra=4.9124, Inter=41.5684
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1536, Intra=5.3760, Inter=41.0374
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1536, Intra=8.5299, Inter=37.1702
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.61
+RATIO=0.5 EVENT=REPAIR acc=25.07
+RATIO=0.5 EVENT=FD value=716.8605
+RATIO=0.5 EVENT=FINETUNE_EPOCH1 acc=59.24
+RATIO=0.5 EVENT=FINETUNE_EPOCH2 acc=63.05
+RATIO=0.5 EVENT=FINETUNE_EPOCH3 acc=64.81
+RATIO=0.5 EVENT=FINETUNE_EPOCH4 acc=65.03
+RATIO=0.5 EVENT=FINETUNE_EPOCH5 acc=65.29
+✅ Vision + classification head loaded
+
+[MODEL] 23/72 model_29.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.28
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2764, Intra=0.5292, Inter=39.0731
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2764, Intra=1.2695, Inter=39.0257
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2764, Intra=1.5094, Inter=38.6836
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2764, Intra=1.5646, Inter=38.6607
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2764, Intra=1.5228, Inter=38.7479
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2764, Intra=1.4555, Inter=38.8693
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2764, Intra=1.3049, Inter=39.0649
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2764, Intra=1.1883, Inter=39.1552
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2764, Intra=0.7620, Inter=39.4813
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2764, Intra=0.7588, Inter=39.5915
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2764, Intra=1.0011, Inter=39.2830
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2764, Intra=1.2453, Inter=38.9263
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=67.72
+RATIO=0.1 EVENT=REPAIR acc=67.00
+RATIO=0.1 EVENT=FD value=554.4541
+RATIO=0.1 EVENT=FINETUNE_EPOCH1 acc=74.81
+RATIO=0.1 EVENT=FINETUNE_EPOCH2 acc=75.81
+RATIO=0.1 EVENT=FINETUNE_EPOCH3 acc=75.54
+RATIO=0.1 EVENT=FINETUNE_EPOCH4 acc=75.05
+RATIO=0.1 EVENT=FINETUNE_EPOCH5 acc=74.44
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2457, Intra=1.0126, Inter=40.6546
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2457, Intra=2.7888, Inter=38.9472
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2457, Intra=3.2815, Inter=38.1919
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2457, Intra=3.3225, Inter=38.2693
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2457, Intra=3.3714, Inter=38.3249
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2457, Intra=3.1001, Inter=38.7154
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2457, Intra=2.4459, Inter=39.3732
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2457, Intra=2.1732, Inter=39.5012
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2457, Intra=1.7257, Inter=39.9512
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2457, Intra=1.5388, Inter=40.2756
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2457, Intra=1.9215, Inter=39.7746
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2457, Intra=2.7345, Inter=38.6298
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=45.14
+RATIO=0.2 EVENT=REPAIR acc=59.94
+RATIO=0.2 EVENT=FD value=579.3655
+RATIO=0.2 EVENT=FINETUNE_EPOCH1 acc=72.49
+RATIO=0.2 EVENT=FINETUNE_EPOCH2 acc=73.95
+RATIO=0.2 EVENT=FINETUNE_EPOCH3 acc=73.73
+RATIO=0.2 EVENT=FINETUNE_EPOCH4 acc=73.33
+RATIO=0.2 EVENT=FINETUNE_EPOCH5 acc=73.06
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=2150, Intra=1.6159, Inter=42.4058
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=2150, Intra=4.6865, Inter=38.6120
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=2150, Intra=5.4842, Inter=37.5668
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=2150, Intra=5.4904, Inter=37.6358
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=2150, Intra=5.4079, Inter=37.8303
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=2150, Intra=4.6754, Inter=38.6320
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=2150, Intra=3.6124, Inter=39.5971
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=2150, Intra=3.4840, Inter=39.5760
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=2150, Intra=3.1739, Inter=40.0911
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=2150, Intra=2.4042, Inter=40.8805
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=2150, Intra=2.9456, Inter=40.2250
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=2150, Intra=4.4874, Inter=38.2819
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=19.47
+RATIO=0.3 EVENT=REPAIR acc=51.68
+RATIO=0.3 EVENT=FD value=590.9163
+RATIO=0.3 EVENT=FINETUNE_EPOCH1 acc=69.68
+RATIO=0.3 EVENT=FINETUNE_EPOCH2 acc=71.31
+RATIO=0.3 EVENT=FINETUNE_EPOCH3 acc=71.77
+RATIO=0.3 EVENT=FINETUNE_EPOCH4 acc=71.63
+RATIO=0.3 EVENT=FINETUNE_EPOCH5 acc=71.10
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+[CLUSTERS] visual.transformer.resblocks.0.mlp.c_fc: Clusters=1843, Intra=2.7097, Inter=43.7754
+[CLUSTERS] visual.transformer.resblocks.1.mlp.c_fc: Clusters=1843, Intra=6.6965, Inter=38.0674
+[CLUSTERS] visual.transformer.resblocks.2.mlp.c_fc: Clusters=1843, Intra=7.9726, Inter=36.6461
+[CLUSTERS] visual.transformer.resblocks.3.mlp.c_fc: Clusters=1843, Intra=7.8378, Inter=36.8396
+[CLUSTERS] visual.transformer.resblocks.4.mlp.c_fc: Clusters=1843, Intra=7.7881, Inter=37.0839
+[CLUSTERS] visual.transformer.resblocks.5.mlp.c_fc: Clusters=1843, Intra=6.4152, Inter=38.4518
+[CLUSTERS] visual.transformer.resblocks.6.mlp.c_fc: Clusters=1843, Intra=5.1394, Inter=39.5724
+[CLUSTERS] visual.transformer.resblocks.7.mlp.c_fc: Clusters=1843, Intra=5.1588, Inter=39.3605
+[CLUSTERS] visual.transformer.resblocks.8.mlp.c_fc: Clusters=1843, Intra=4.6154, Inter=40.1794
+[CLUSTERS] visual.transformer.resblocks.9.mlp.c_fc: Clusters=1843, Intra=3.5281, Inter=41.2976
+[CLUSTERS] visual.transformer.resblocks.10.mlp.c_fc: Clusters=1843, Intra=4.0686, Inter=40.6614
+[CLUSTERS] visual.transformer.resblocks.11.mlp.c_fc: Clusters=1843, Intra=6.3188, Inter=37.8104
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=5.50
+RATIO=0.4 EVENT=REPAIR acc=42.62
+RATIO=0.4 EVENT=FD value=595.1941
+RATIO=0.4 EVENT=FINETUNE_EPOCH1 acc=65.57
+RATIO=0.4 EVENT=FINETUNE_EPOCH2 acc=68.25
+RATIO=0.4 EVENT=FINETUNE_EPOCH3 acc=69.39

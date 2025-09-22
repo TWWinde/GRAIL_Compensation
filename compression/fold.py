@@ -30,7 +30,7 @@ class ResNet18_ModelFolding(BaseResNetCompression):
                                      method="hkmeans", normalize=False, use_pca=True)
         labels = clusterer(weight).to(self.device).long()
 
-        _log_cluster_stats(weight, labels, axes[0][0])
+        # _log_cluster_stats(weight, labels, axes[0][0])
 
         # Build merge matrix
         merge_matrix = torch.zeros((n_clusters, n_channels), device=self.device)
@@ -86,8 +86,6 @@ class CLIPViT_ModelFolding(BaseCLIPViTCompression):
           - For c_proj, sum columns corresponding to clustered members
           - For c_fc bias, average within each cluster
         """
-        import torch
-
         compressed = {}
         merge_sizes = {}
 
@@ -122,7 +120,7 @@ class CLIPViT_ModelFolding(BaseCLIPViTCompression):
         )
         labels = clusterer(W_fc_norm).to(device).long()
 
-        _log_cluster_stats(W_fc_norm, labels, module_fc)
+        # _log_cluster_stats(W_fc_norm, labels, module_fc)
 
         # --- Ensure labels cover all (possibly fewer) clusters ---
         unique_labels = torch.unique(labels, sorted=True)
@@ -190,7 +188,7 @@ class PreActResNet18_ModelFolding(BasePreActResNetCompression):
         labels = clusterer(weight).to(self.device).long()
 
         # Log cluster stats
-        _log_cluster_stats(weight, labels, axes[0][0])
+        # _log_cluster_stats(weight, labels, axes[0][0])
 
         # Convert to merge matrix
         merge_matrix = torch.zeros((n_clusters, n_channels), device=self.device, dtype=torch.float32)
@@ -311,13 +309,12 @@ class ViT_ModelFolding(BaseViTCompression):
         )
         labels = clusterer(W_fc_norm).to(device).long()
 
-        _log_cluster_stats(W_fc_norm, labels, module_fc)
+        # _log_cluster_stats(W_fc_norm, labels, module_fc)
 
         # --- Ensure labels cover all clusters (HKMeans can be sparse in edge cases) ---
         unique_labels = torch.unique(labels, sorted=True)
         if unique_labels.numel() < n_clusters:
             # Collapse to the actually used cluster ids in a stable order
-            # (Optional: you could re-run clustering with a smaller k if desired.)
             remap = {int(lbl): i for i, lbl in enumerate(unique_labels.tolist())}
             labels = torch.tensor([remap[int(l.item())] for l in labels], device=device, dtype=torch.long)
             n_clusters = unique_labels.numel()

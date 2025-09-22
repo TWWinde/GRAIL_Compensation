@@ -4,7 +4,7 @@ from collections import defaultdict
 from open_clip import create_model_and_transforms
 
 
-# === Utility functions ===
+# --- Utility functions ===
 def get_module_by_name_ViT(model, module_name):
     """Traverse model by dotted name (supports list indices)."""
     parts = module_name.split('.')
@@ -17,7 +17,6 @@ def get_module_by_name_ViT(model, module_name):
 
 
 def get_axis_to_perm_ViT(model):
-    """Map transformer MLP layers (c_fc and c_proj) to folding axes."""
     axis_to_perm = defaultdict(list)
     for i in range(12):
         axis_to_perm[f"group_{i}"] = [
@@ -41,10 +40,10 @@ class CLIPViT_B32:
         )
         model = model.to(self.device)
 
-        # === Attach classification head ===
+        # --- Attach classification head ===
         model.classification_head = torch.nn.Linear(model.visual.output_dim, self.num_classes).to(self.device)
 
-        # === Load vision + head weights ===
+        # --- Load vision + head weights ===
         raw_ckpt = torch.load(self.checkpoint_path, map_location="cpu")
         state_dict = {}
         for k, v in raw_ckpt.items():
