@@ -10,36 +10,6 @@ It accompanies our ICLR'26 submission (anonymized):
 
 Trained model checkpoints used in this project can either be generated locally or downloaded from external sources:
 
-- **ResNet18 on CIFAR-10**
-  - Train using scripts in [`train/run.sh`](train/run.sh)
-
-- **CLIP ViT-B/32 model soups (M. Wortsman)**  
-  - Paper: [Model Soups](https://arxiv.org/abs/2203.05482)  
-  - Checkpoints: [GitHub Release](https://github.com/mlfoundations/model-soups/releases/)
-
-- **PreActResNet18 & ViT experiments (M. Andriushchenko)**  
-  - Paper: [Sharpness vs. Generalization](https://arxiv.org/pdf/2302.07011)  
-  - Code: [GitHub Repository](https://github.com/tml-epfl/sharpness-vs-generalization/tree/main)  
-  - Checkpoints: [Google Drive](https://drive.google.com/drive/folders/1LmthJCb3RXBFWjeTOC4UOOl7Ppgg2h7n)  
-  - Notes:
-    - Install `vit-pytorch==0.40.2`  
-    - See [commit](https://github.com/tml-epfl/sharpness-vs-generalization/commit/6d73be94eb88dae6d3096647bb24b92244fae18f) for compatibility  
-    - Training metrics available on Google Drive  
-
----
-
-# Folding as Projection
-
-This repository contains code and experiments for exploring **model compression through projection-based folding**.  
-It accompanies our ICLR'26 submission (anonymized):  
-> *"Cut Less, Fold More: Model Compression through the Lens of Projection Geometry"*
-
----
-
-## 📦 Checkpoints
-
-Trained model checkpoints used in this project can either be generated locally or downloaded from external sources:
-
 - **ResNet18 on CIFAR-10**  
   - Train using scripts in [`train/run.sh`](train/run.sh)
 
