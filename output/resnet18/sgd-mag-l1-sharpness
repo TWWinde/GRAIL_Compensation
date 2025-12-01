@@ -14464,3 +14464,2415 @@ Skipping model 2025-06-11_07-29-09_dataset=cifar10_arch=resnet18_opt=sgd_seed=42
 [BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=89.91
 [BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=46.80
 [BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=87.23
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0141|0.0823|0.2531
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=15.27
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=82.35
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0194|0.1295|0.3634
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=11.54
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=73.19
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0335|0.2364|0.6660
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.16
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=58.81
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0582|0.3816|0.9988
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=43.49
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0474|0.3115|0.8717
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=20.12
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0488|0.2843|0.7344
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.01
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=12.32
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0375|0.2371|0.5527
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=11.50
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0102|0.0513|0.1248
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.22
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0020|0.0120|0.0232
+
+2025-06-16_06-07-02_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth ========
+[MODEL] 500/576 2025-06-16_06-07-02_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=88.40
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=56.17
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=82.38
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0286|0.2285|0.7874
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=16.16
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=70.64
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0479|0.3367|1.1543
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=12.51
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=55.64
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0494|0.3931|1.2150
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=38.61
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0450|0.3036|0.9901
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=24.95
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0398|0.2713|0.7972
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=15.64
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0198|0.1243|0.3072
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=10.84
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0100|0.0513|0.1235
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.41
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0043|0.0220|0.0472
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.63
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0016|0.0078|0.0159
+
+2025-06-16_06-07-07_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=False.pth ========
+[MODEL] 501/576 2025-06-16_06-07-07_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=89.79
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=50.60
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=87.41
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0132|0.0858|0.2528
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=28.10
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=82.04
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0207|0.1419|0.4354
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=11.59
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=72.70
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0345|0.2324|0.7019
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.04
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=62.15
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0415|0.2870|0.8403
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=42.19
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0495|0.3049|0.8843
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=25.18
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0478|0.2869|0.7870
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=11.62
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0253|0.1393|0.3572
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=9.41
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0123|0.0715|0.1642
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.90
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0037|0.0180|0.0392
+
+2025-06-16_06-07-17_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=True.pth ========
+[MODEL] 502/576 2025-06-16_06-07-17_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=85.21
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=51.36
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=80.60
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0177|0.1234|0.3790
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=12.15
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=74.80
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0251|0.1856|0.5712
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=14.63
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=66.12
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0336|0.2452|0.7800
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=16.26
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=47.51
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0463|0.3126|0.9599
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=29.64
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0461|0.3123|0.8080
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=16.45
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0329|0.2110|0.4851
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=12.09
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0194|0.1077|0.2650
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=11.50
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0092|0.0524|0.1167
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.08
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0015|0.0075|0.0145
+
+2025-06-16_06-17-41_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth ========
+[MODEL] 503/576 2025-06-16_06-17-41_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=91.31
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=42.92
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=87.48
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0218|0.1705|0.5998
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=18.46
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=79.59
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0404|0.3355|1.0798
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=14.34
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=68.22
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0521|0.3833|1.1181
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=11.26
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=47.32
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0678|0.4505|1.2967
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.14
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=26.95
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0514|0.3460|0.9939
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.01
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=17.20
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0377|0.2396|0.6026
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=12.11
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0210|0.1155|0.3036
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.30
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0078|0.0453|0.0901
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=8.76
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0026|0.0125|0.0288
+
+2025-06-16_06-27-36_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth ========
+[MODEL] 504/576 2025-06-16_06-27-36_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=93.64
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=75.26
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=91.33
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0089|0.0575|0.1356
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=26.73
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=85.25
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0258|0.1529|0.3826
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=13.57
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=74.61
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0370|0.2147|0.4622
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.45
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=50.14
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0437|0.2405|0.5209
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=11.67
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=34.48
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0336|0.1782|0.3861
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=17.73
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0182|0.0953|0.2083
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=12.02
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0111|0.0537|0.1175
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.58
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0082|0.0484|0.1028
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.21
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0016|0.0068|0.0175
+
+2025-06-16_06-47-51_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=False.pth ========
+[MODEL] 505/576 2025-06-16_06-47-51_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=94.04
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=82.45
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=92.84
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0037|0.0200|0.0451
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=35.16
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=90.56
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0055|0.0311|0.0711
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=15.95
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=83.75
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0104|0.0567|0.1198
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=12.62
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=72.24
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0160|0.0856|0.1999
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=52.35
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0180|0.0967|0.2059
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=31.28
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0139|0.0749|0.1620
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=14.79
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0114|0.0610|0.1458
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.28
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0056|0.0319|0.0754
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.24
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0024|0.0112|0.0245
+
+2025-06-16_06-50-29_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth ========
+[MODEL] 506/576 2025-06-16_06-50-29_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=92.82
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=84.18
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=91.55
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0080|0.0485|0.1049
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=43.76
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=88.50
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0118|0.0624|0.1347
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=14.77
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=81.38
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0184|0.0966|0.2157
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=11.17
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=65.36
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0241|0.1243|0.2735
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.02
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=44.80
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0241|0.1281|0.2683
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=9.79
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=19.42
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0186|0.0951|0.2089
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=10.56
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0091|0.0443|0.1049
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=9.95
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0060|0.0352|0.0777
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=8.89
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0016|0.0077|0.0183
+
+2025-06-16_06-52-26_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth ========
+[MODEL] 507/576 2025-06-16_06-52-26_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=91.09
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=83.12
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=89.78
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0103|0.0622|0.1383
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=39.53
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=85.44
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0169|0.0919|0.1881
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=15.78
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=78.83
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0191|0.1092|0.2184
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.23
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=65.77
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0232|0.1196|0.2664
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=9.50
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=46.01
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0219|0.1165|0.2483
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=26.30
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0146|0.0821|0.1588
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=14.08
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0109|0.0569|0.1234
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=7.78
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0032|0.0215|0.0541
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.45
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0020|0.0089|0.0245
+
+2025-06-16_06-59-17_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=True.pth ========
+[MODEL] 508/576 2025-06-16_06-59-17_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=94.66
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=78.68
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=93.36
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0037|0.0238|0.0550
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=51.14
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=89.59
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0084|0.0444|0.1061
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=11.36
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=80.47
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0186|0.0987|0.2361
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.07
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=61.53
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0276|0.1575|0.3659
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=9.45
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=43.13
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0297|0.1730|0.3846
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.02
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=26.93
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0280|0.1436|0.3338
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=14.94
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0166|0.0848|0.1716
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=11.24
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0075|0.0388|0.0875
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.57
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0026|0.0135|0.0278
+
+2025-06-16_07-03-15_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=True.pth ========
+[MODEL] 509/576 2025-06-16_07-03-15_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=86.83
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=51.11
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=82.71
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0207|0.1466|0.4419
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=19.66
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=76.57
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0273|0.2192|0.6423
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=12.03
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=65.42
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0392|0.2947|0.9273
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=48.91
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0473|0.3336|0.9254
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=32.53
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0381|0.2527|0.7268
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=19.28
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0229|0.1319|0.3419
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=9.96
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0135|0.0828|0.1994
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=11.37
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0072|0.0339|0.0819
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=11.09
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0017|0.0082|0.0166
+
+2025-06-16_07-22-13_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth ========
+[MODEL] 510/576 2025-06-16_07-22-13_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=93.84
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=84.69
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=92.56
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0045|0.0256|0.0585
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=43.66
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=89.31
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0090|0.0524|0.1107
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=15.31
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=81.52
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0177|0.0980|0.2224
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.88
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=71.59
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0213|0.1223|0.2693
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=12.45
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=53.72
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0195|0.1006|0.2196
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=7.89
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=29.84
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0134|0.0708|0.1456
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=9.98
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=13.62
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0067|0.0336|0.0667
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.01
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.12
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0029|0.0147|0.0343
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.51
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0009|0.0039|0.0089
+
+2025-06-16_07-23-32_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth ========
+[MODEL] 511/576 2025-06-16_07-23-32_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=94.33
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=78.95
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=92.83
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0046|0.0295|0.0666
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=40.65
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=86.65
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0166|0.0968|0.2204
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=18.94
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=73.75
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0288|0.1662|0.3941
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=11.33
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=58.99
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0322|0.1861|0.4081
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=40.89
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0268|0.1376|0.3194
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=22.45
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0181|0.0950|0.2102
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=12.70
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0096|0.0528|0.1070
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.19
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0056|0.0259|0.0648
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.22
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0032|0.0164|0.0303
+
+2025-06-16_07-33-04_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth ========
+[MODEL] 512/576 2025-06-16_07-33-04_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=94.18
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=83.74
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=93.02
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0048|0.0272|0.0627
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=33.17
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=89.82
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0082|0.0446|0.1025
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=20.04
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=84.39
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0116|0.0610|0.1255
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=13.82
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=73.03
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0156|0.0873|0.1806
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=16.47
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=56.56
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0188|0.1006|0.2163
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=11.69
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=25.62
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0200|0.1050|0.2321
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=13.38
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0153|0.0825|0.1890
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.90
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0126|0.0596|0.1422
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.60
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0025|0.0128|0.0203
+
+2025-06-16_07-42-17_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth ========
+[MODEL] 513/576 2025-06-16_07-42-17_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=94.76
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=80.65
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=93.11
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0062|0.0462|0.1298
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=36.63
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=87.99
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0218|0.1188|0.2919
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=10.55
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=75.59
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0359|0.1979|0.4596
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.22
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=52.33
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0430|0.2278|0.5426
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=30.72
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0359|0.1921|0.4039
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=16.71
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0259|0.1420|0.3024
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=11.85
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0161|0.0869|0.2152
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.13
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0040|0.0221|0.0431
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.05
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0019|0.0096|0.0161
+
+2025-06-16_07-46-36_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=True.pth ========
+[MODEL] 514/576 2025-06-16_07-46-36_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=95.29
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=77.10
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=93.85
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0039|0.0215|0.0478
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=46.68
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=90.48
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0074|0.0378|0.0863
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=16.23
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=81.93
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0144|0.0790|0.1950
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.04
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=70.20
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0195|0.1017|0.2351
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=50.64
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0201|0.1145|0.2227
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=28.28
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0209|0.1205|0.2598
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=17.27
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0156|0.0825|0.1730
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=9.83
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0111|0.0600|0.1252
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.15
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0031|0.0151|0.0326
+
+2025-06-16_07-51-47_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth ========
+[MODEL] 515/576 2025-06-16_07-51-47_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=91.31
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=85.64
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=90.49
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0086|0.0438|0.1011
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=71.58
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=87.29
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0101|0.0633|0.1300
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=49.27
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=82.48
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0161|0.0775|0.1777
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=22.36
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=75.59
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0205|0.1084|0.2232
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=18.49
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=59.57
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0263|0.1422|0.3087
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.18
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=35.40
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0298|0.1656|0.3399
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=9.70
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=18.33
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0274|0.1309|0.2912
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=9.99
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.71
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0165|0.0939|0.1950
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=7.94
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0093|0.0432|0.0817
+
+2025-06-16_07-52-07_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth ========
+[MODEL] 516/576 2025-06-16_07-52-07_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=94.50
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=87.02
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=92.79
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0061|0.0363|0.0821
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=45.35
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=87.68
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0150|0.0753|0.1975
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=18.44
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=76.13
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0264|0.1395|0.3003
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.81
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=58.26
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0327|0.1776|0.3785
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.08
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=40.92
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0297|0.1629|0.3682
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=23.10
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0234|0.1268|0.2635
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=11.11
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=12.86
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0155|0.0762|0.1649
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=9.26
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0082|0.0360|0.0774
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=8.15
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0035|0.0205|0.0403
+
+2025-06-16_08-21-30_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth ========
+[MODEL] 517/576 2025-06-16_08-21-30_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=91.64
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=87.44
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=91.02
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0077|0.0397|0.0797
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=72.51
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=88.61
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0089|0.0475|0.1075
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=27.33
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=84.53
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0120|0.0655|0.1301
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.08
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=75.20
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0172|0.0892|0.2016
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.07
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=62.51
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0243|0.1298|0.2897
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=38.25
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0352|0.1862|0.3719
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=20.87
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0324|0.1743|0.3559
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=11.41
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0282|0.1475|0.2837
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=12.24
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0105|0.0542|0.1163
+
+2025-06-16_08-24-19_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth ========
+[MODEL] 518/576 2025-06-16_08-24-19_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=95.27
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=81.31
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=93.92
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0050|0.0245|0.0662
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=32.03
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=90.50
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0111|0.0598|0.1465
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=14.08
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=80.75
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0227|0.1304|0.2898
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=11.31
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=61.34
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0315|0.1711|0.3975
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.89
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=37.97
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0301|0.1637|0.3753
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=17.67
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0314|0.1622|0.3795
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=11.72
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0256|0.1346|0.3036
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.48
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0087|0.0430|0.0882
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=11.06
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0022|0.0101|0.0219
+
+2025-06-16_08-25-20_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=False.pth ========
+[MODEL] 519/576 2025-06-16_08-25-20_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=94.90
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=89.61
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=93.74
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0040|0.0221|0.0446
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=49.59
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=90.59
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0065|0.0366|0.0758
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=21.80
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=83.61
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0103|0.0526|0.1204
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=73.30
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0135|0.0738|0.1621
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=51.67
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0177|0.0918|0.2031
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=32.45
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0151|0.0818|0.1726
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=16.89
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0138|0.0701|0.1554
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=11.11
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0094|0.0516|0.1127
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=11.37
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0025|0.0145|0.0337
+
+2025-06-16_08-30-28_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth ========
+[MODEL] 520/576 2025-06-16_08-30-28_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=94.47
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=78.13
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=92.61
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0045|0.0228|0.0661
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=36.75
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=88.84
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0106|0.0621|0.1467
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=19.04
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=80.52
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0193|0.1147|0.2465
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.15
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=63.81
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0265|0.1446|0.3233
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=12.73
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=47.47
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0223|0.1172|0.2652
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=22.74
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0157|0.0869|0.1959
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=11.89
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0099|0.0548|0.1350
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.20
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0055|0.0295|0.0614
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.86
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0017|0.0091|0.0234
+
+2025-06-16_08-50-55_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth ========
+[MODEL] 521/576 2025-06-16_08-50-55_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=94.82
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=86.89
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=93.60
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0050|0.0244|0.0719
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=44.92
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=89.61
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0129|0.0745|0.1787
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=17.96
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=80.02
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0250|0.1337|0.2933
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.10
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=65.74
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0352|0.1844|0.4201
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=13.15
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=45.80
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0353|0.1972|0.4189
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=23.70
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0311|0.1644|0.3578
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=14.52
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0184|0.0985|0.2162
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=11.11
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0101|0.0459|0.0953
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.02
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0015|0.0089|0.0178
+
+2025-06-16_09-11-07_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth ========
+[MODEL] 522/576 2025-06-16_09-11-07_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=93.82
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=79.69
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=92.48
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0056|0.0283|0.0663
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=45.11
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=89.42
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0077|0.0429|0.0934
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=16.36
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=81.66
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0124|0.0702|0.1533
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=13.57
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=66.48
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0175|0.0984|0.2176
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=45.23
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0197|0.0975|0.2161
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=27.80
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0157|0.0897|0.1962
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=14.43
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0132|0.0767|0.1702
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=11.46
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0073|0.0443|0.0837
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.83
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0024|0.0149|0.0328
+
+2025-06-16_09-11-09_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=True.pth ========
+[MODEL] 523/576 2025-06-16_09-11-09_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=94.52
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=85.42
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=93.40
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0041|0.0238|0.0612
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=31.70
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=90.24
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0096|0.0516|0.1242
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=14.93
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=82.62
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0172|0.0955|0.2144
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=12.07
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=63.45
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0272|0.1438|0.3166
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=9.99
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=43.80
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0295|0.1666|0.3535
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=9.93
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=26.81
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0229|0.1223|0.2497
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=13.60
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0152|0.0743|0.1626
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.18
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0099|0.0475|0.1069
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.40
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0025|0.0128|0.0266
+
+2025-06-16_09-18-57_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=False.pth ========
+[MODEL] 524/576 2025-06-16_09-18-57_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=94.74
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=83.88
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=93.55
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0037|0.0207|0.0429
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=37.97
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=91.54
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0055|0.0289|0.0637
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=21.22
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=85.74
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0090|0.0491|0.1074
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.10
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=72.64
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0135|0.0710|0.1504
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.24
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=51.11
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0192|0.1015|0.2169
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=28.61
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0197|0.0994|0.2218
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=15.25
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0166|0.0977|0.2051
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.37
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0091|0.0533|0.1039
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.79
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0023|0.0108|0.0260
+
+2025-06-16_09-20-49_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth ========
+[MODEL] 525/576 2025-06-16_09-20-49_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=93.50
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=87.78
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=92.34
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0042|0.0249|0.0501
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=59.84
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=89.26
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0074|0.0446|0.0969
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=25.85
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=84.48
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0112|0.0571|0.1204
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=15.95
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=73.48
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0142|0.0744|0.1546
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=9.95
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=56.23
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0164|0.0860|0.1875
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=30.13
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0113|0.0572|0.1167
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=11.56
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0073|0.0361|0.0833
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.13
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0062|0.0280|0.0661
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.04
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0013|0.0069|0.0131
+
+2025-06-16_09-22-52_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=False.pth ========
+[MODEL] 526/576 2025-06-16_09-22-52_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=94.19
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=88.84
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=93.66
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0033|0.0172|0.0385
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=40.76
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=91.06
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0058|0.0304|0.0647
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=18.78
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=85.85
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0095|0.0507|0.1125
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=11.24
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=74.98
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0123|0.0678|0.1465
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=13.83
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=54.04
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0167|0.0886|0.1941
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=9.86
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=28.49
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0171|0.0874|0.1771
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=15.08
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0114|0.0661|0.1260
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.05
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0052|0.0278|0.0524
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.71
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0021|0.0131|0.0206
+
+2025-06-16_09-34-22_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth ========
+[MODEL] 527/576 2025-06-16_09-34-22_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=88.43
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=29.16
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=65.53
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.1794|1.5604|6.0796
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=13.20
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=36.23
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.2327|1.8527|6.6757
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=10.61
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=16.99
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.2030|1.9028|6.6545
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.23
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=16.85
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.1207|0.9171|3.3140
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.01
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=15.09
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0882|0.6356|2.0744
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=11.96
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0471|0.3136|0.8719
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=10.99
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0186|0.0963|0.2386
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=9.43
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0087|0.0486|0.0984
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.70
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0019|0.0095|0.0209
+
+2025-06-16_09-44-04_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth ========
+[MODEL] 528/576 2025-06-16_09-44-04_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=89.00
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=44.47
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=78.45
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0793|0.6451|2.5138
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=17.41
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=61.14
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.1349|1.0462|3.5901
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=15.25
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=37.24
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.1346|0.9583|3.0181
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.19
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=23.68
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.1338|0.8376|2.5308
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.01
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=20.64
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0841|0.5203|1.5943
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=9.96
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=15.18
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0526|0.3159|0.9212
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=9.97
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0279|0.1728|0.4087
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=12.63
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0100|0.0569|0.1333
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.21
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0035|0.0167|0.0406
+
+2025-06-16_10-01-11_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth ========
+[MODEL] 529/576 2025-06-16_10-01-11_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=91.78
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=47.30
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=87.24
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0218|0.1419|0.4629
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=10.80
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=78.84
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0393|0.2472|0.7549
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=10.02
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=64.14
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0566|0.3820|1.0320
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.07
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=46.19
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0562|0.3738|1.0529
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=29.67
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0451|0.2854|0.8259
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=17.30
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0337|0.1820|0.4671
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=11.92
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0232|0.1288|0.2858
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.40
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0142|0.0811|0.1940
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=11.43
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0035|0.0179|0.0402
+
+2025-06-16_10-01-58_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth ========
+[MODEL] 530/576 2025-06-16_10-01-58_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=89.44
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=48.56
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=83.35
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0279|0.2276|0.7500
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=28.49
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=71.07
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0500|0.3446|1.2066
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=13.92
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=46.85
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0617|0.4839|1.5031
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.63
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=32.36
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0439|0.3483|1.0909
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=20.80
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0445|0.2673|0.8175
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=14.84
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0248|0.1511|0.4134
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=9.21
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0122|0.0698|0.1725
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.87
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0057|0.0300|0.0663
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.21
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0015|0.0071|0.0145
+
+2025-06-16_10-16-56_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=True.pth ========
+[MODEL] 531/576 2025-06-16_10-16-56_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=87.26
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=43.64
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=84.08
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0155|0.1082|0.3097
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=12.60
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=77.16
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0256|0.1783|0.5847
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=10.01
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=63.51
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0347|0.2588|0.7770
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=51.61
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0374|0.2958|0.7671
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=36.13
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0375|0.2435|0.7288
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=21.08
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0278|0.1805|0.4770
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=11.63
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0149|0.0867|0.2290
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=9.99
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0053|0.0285|0.0635
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=11.57
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0016|0.0085|0.0173
+
+2025-06-16_10-26-38_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=True.pth ========
+[MODEL] 532/576 2025-06-16_10-26-38_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=95.28
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=80.15
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=94.37
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0036|0.0187|0.0426
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=29.98
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=91.35
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0063|0.0349|0.0759
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=21.20
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=84.42
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0119|0.0619|0.1420
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=13.72
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=68.16
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0221|0.1241|0.2834
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=9.75
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=47.23
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0291|0.1620|0.3886
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=27.34
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0309|0.1668|0.3583
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=11.67
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0239|0.1364|0.2967
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.28
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0084|0.0490|0.0937
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.96
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0038|0.0206|0.0449
+
+2025-06-16_10-34-54_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth ========
+[MODEL] 533/576 2025-06-16_10-34-54_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=90.59
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=39.99
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=75.46
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0978|0.9943|4.0386
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=18.21
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=52.56
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.1383|1.2757|4.6477
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=11.84
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=28.20
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.1401|1.2977|4.2547
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=16.41
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0954|0.7507|2.6023
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=13.54
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0644|0.4857|1.6167
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=12.25
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0285|0.1684|0.4936
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=10.72
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0150|0.0871|0.2071
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=9.89
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0055|0.0304|0.0621
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.00
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0019|0.0092|0.0189
+
+2025-06-16_10-35-11_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth ========
+[MODEL] 534/576 2025-06-16_10-35-11_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.0005_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=95.18
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=80.53
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=93.92
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0040|0.0236|0.0619
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=36.15
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=89.42
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0105|0.0605|0.1377
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=18.76
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=78.88
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0213|0.1255|0.2786
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=12.46
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=60.26
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0286|0.1531|0.3573
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=11.86
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=39.59
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0342|0.1811|0.4120
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=22.21
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0335|0.1865|0.4430
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=14.25
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0229|0.1387|0.2897
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=9.96
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0120|0.0638|0.1448
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.29
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0036|0.0216|0.0411
+
+2025-06-16_10-36-54_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth ========
+[MODEL] 535/576 2025-06-16_10-36-54_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=91.36
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=32.78
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=85.52
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0427|0.3099|1.1420
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=13.74
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=70.28
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0842|0.7042|2.5853
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=10.92
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=49.68
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.1100|0.9604|3.2061
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=14.82
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=28.84
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0994|0.7438|2.3806
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=17.98
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0669|0.4991|1.6575
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=13.45
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0510|0.3064|0.9023
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=11.49
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0220|0.1262|0.3105
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.19
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0114|0.0638|0.1404
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=11.26
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0036|0.0168|0.0384
+
+2025-06-16_10-44-49_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth ========
+[MODEL] 536/576 2025-06-16_10-44-49_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=92.00
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=39.00
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=89.29
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0155|0.1114|0.3420
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=19.41
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=83.42
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0269|0.1832|0.5643
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=10.25
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=69.64
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0518|0.3483|1.0329
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=49.56
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0636|0.4288|1.1353
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=29.42
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0497|0.3372|0.9460
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=17.19
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0350|0.2092|0.5390
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=9.87
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0153|0.0875|0.2245
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=8.73
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0082|0.0451|0.1033
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.14
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0021|0.0106|0.0239
+
+2025-06-16_10-59-56_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth ========
+[MODEL] 537/576 2025-06-16_10-59-56_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=88.98
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=51.55
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=83.52
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0240|0.1604|0.5642
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=27.93
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=74.15
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0339|0.2503|0.7819
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=18.33
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=60.26
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0463|0.3680|1.1666
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.13
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=44.36
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0384|0.2975|0.9175
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=29.60
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0292|0.1815|0.5119
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=17.99
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0178|0.1188|0.3060
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.39
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=11.57
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0100|0.0540|0.1236
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.70
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0039|0.0195|0.0404
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.06
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0012|0.0059|0.0119
+
+2025-06-16_11-05-01_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth ========
+[MODEL] 538/576 2025-06-16_11-05-01_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=88.01
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=52.37
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=80.15
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0619|0.4024|1.2357
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=14.87
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=66.26
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0916|0.5725|1.7695
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=14.64
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=42.51
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.1123|0.7388|2.0078
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=26.93
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.1021|0.6316|1.7118
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=18.85
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0831|0.5200|1.5140
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=14.88
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0640|0.3780|1.0510
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=12.14
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0406|0.2439|0.6087
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=11.47
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0134|0.0765|0.1811
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=12.11
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0025|0.0126|0.0277
+
+2025-06-16_11-07-23_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=False.pth ========
+[MODEL] 539/576 2025-06-16_11-07-23_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=90.54
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=53.56
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=88.79
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0103|0.0650|0.1710
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=20.38
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=83.94
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0168|0.1037|0.2717
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=12.39
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=75.65
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0240|0.1666|0.4690
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.91
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=61.72
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0333|0.2137|0.5477
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.33
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=49.59
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0328|0.1991|0.5570
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=26.37
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0377|0.2337|0.6119
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=14.08
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0305|0.1647|0.3898
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.41
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0139|0.0750|0.1662
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=8.72
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0038|0.0214|0.0438
+
+2025-06-16_11-14-31_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth ========
+[MODEL] 540/576 2025-06-16_11-14-31_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=88.48
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=32.84
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=70.00
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.1363|1.2644|5.4855
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=20.34
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=45.38
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.2031|1.6456|6.1984
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=11.30
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=26.96
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.1795|1.4691|4.9402
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=13.94
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=17.10
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.1564|1.0559|3.0421
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=11.29
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=15.25
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0974|0.5987|1.8958
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=11.64
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0612|0.3864|1.1854
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=10.44
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0343|0.1824|0.4914
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=9.19
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0133|0.0733|0.1777
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=13.08
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0024|0.0134|0.0251
+
+2025-06-16_11-28-42_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=False.pth ========
+[MODEL] 541/576 2025-06-16_11-28-42_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=91.15
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=79.25
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=89.53
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0120|0.0696|0.1991
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=17.56
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=84.91
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0179|0.1194|0.3140
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=10.03
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=71.15
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0306|0.1961|0.5071
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=60.40
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0358|0.2434|0.6231
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=41.44
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0497|0.2986|0.7721
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=22.59
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0368|0.2383|0.5643
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=14.23
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0230|0.1295|0.2955
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.50
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0108|0.0601|0.1491
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.82
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0043|0.0228|0.0536
+
+2025-06-16_11-48-05_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth ========
+[MODEL] 542/576 2025-06-16_11-48-05_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=89.53
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=56.32
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=83.31
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0294|0.2286|0.7845
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=16.08
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=69.90
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0536|0.4050|1.3796
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=13.20
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=54.10
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0658|0.4921|1.5701
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=36.10
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0503|0.3748|1.2067
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=25.65
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0428|0.2973|0.8362
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=18.10
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0289|0.1747|0.4597
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=11.31
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0119|0.0647|0.1560
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.06
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0048|0.0261|0.0577
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.68
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0013|0.0066|0.0135
+
+2025-06-16_11-49-33_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth ========
+[MODEL] 543/576 2025-06-16_11-49-33_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=91.74
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=62.35
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=87.94
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0230|0.1544|0.4778
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=18.15
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=79.03
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0400|0.2908|0.8269
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=13.71
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=64.04
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0582|0.3837|1.1190
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=14.70
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=46.15
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0563|0.3854|1.0444
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=33.14
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0439|0.2647|0.7770
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=15.12
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0364|0.2282|0.5705
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=10.01
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0252|0.1502|0.3238
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=9.23
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0093|0.0513|0.1054
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.24
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0029|0.0158|0.0313
+
+2025-06-16_11-53-28_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=False.pth ========
+[MODEL] 544/576 2025-06-16_11-53-28_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=91.46
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=70.89
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=88.80
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0124|0.0786|0.1958
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=24.84
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=82.63
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0206|0.1384|0.3601
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=70.82
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0339|0.2042|0.5449
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=11.20
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=58.09
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0403|0.2435|0.6367
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.29
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=45.12
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0418|0.2656|0.6160
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=28.63
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0311|0.1889|0.4783
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.04
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=17.72
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0240|0.1331|0.3136
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=8.90
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0076|0.0394|0.0964
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=12.15
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0022|0.0118|0.0255
+
+2025-06-16_11-54-14_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=True.pth ========
+[MODEL] 545/576 2025-06-16_11-54-14_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=87.37
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=55.66
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=83.59
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0167|0.1178|0.3523
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=21.54
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=78.02
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0231|0.1711|0.5415
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=66.89
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0337|0.2295|0.7328
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=52.32
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0414|0.2910|0.8787
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=29.83
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0345|0.2470|0.6673
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=19.36
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0282|0.1642|0.3908
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=11.07
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0124|0.0765|0.1677
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=11.13
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0048|0.0280|0.0541
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=8.91
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0013|0.0066|0.0130
+
+2025-06-16_11-58-35_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth ========
+[MODEL] 546/576 2025-06-16_11-58-35_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=90.88
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=36.21
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=77.01
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0762|0.7407|3.0710
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=19.54
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=52.26
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.1328|1.1277|3.9259
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=9.97
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=30.28
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.1228|0.8948|2.9926
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.07
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=19.32
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.1007|0.7011|2.3834
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=13.99
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0694|0.4946|1.4893
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=9.08
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=10.60
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0346|0.2149|0.5409
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=13.55
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0150|0.0853|0.2220
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=11.87
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0068|0.0350|0.0770
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=11.68
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0019|0.0096|0.0196
+
+2025-06-16_12-20-55_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth ========
+[MODEL] 547/576 2025-06-16_12-20-55_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=91.61
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=83.11
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=89.84
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0092|0.0486|0.1068
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=68.43
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=86.92
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0113|0.0601|0.1262
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=25.31
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=80.66
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0150|0.0742|0.1597
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=17.50
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=71.17
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0162|0.0821|0.1811
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.93
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=59.48
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0157|0.0829|0.1785
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.37
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=38.39
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0151|0.0721|0.1569
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=19.36
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0079|0.0413|0.0887
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=8.54
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0028|0.0169|0.0316
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.70
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0009|0.0046|0.0090
+
+2025-06-16_12-37-52_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth ========
+[MODEL] 548/576 2025-06-16_12-37-52_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=90.73
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=15.83
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=85.54
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0341|0.2200|0.7151
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=12.31
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=73.12
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0575|0.3916|1.1146
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=10.87
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=52.22
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0755|0.5376|1.4987
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=8.98
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=30.30
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0766|0.4788|1.2957
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.60
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=18.55
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0625|0.3879|1.0367
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.54
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=15.69
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0399|0.2509|0.6629
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=13.62
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0325|0.1919|0.5290
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.97
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0209|0.1126|0.2482
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.32
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0053|0.0273|0.0646
+
+2025-06-16_12-41-56_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=False.pth ========
+[MODEL] 549/576 2025-06-16_12-41-56_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=90.35
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=64.27
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=89.19
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0093|0.0591|0.1494
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=15.44
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=85.16
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0161|0.0914|0.2406
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=10.44
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=73.05
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0262|0.1605|0.4274
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=60.48
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0322|0.1982|0.4990
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=46.14
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0439|0.2638|0.7006
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=28.01
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0313|0.1879|0.5089
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.01
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=13.63
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0365|0.1864|0.4656
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=8.50
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0133|0.0809|0.1632
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.35
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0032|0.0155|0.0355
+
+2025-06-16_12-42-58_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=True.pth ========
+[MODEL] 550/576 2025-06-16_12-42-58_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=85.90
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=55.50
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=82.74
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0153|0.0989|0.2896
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=10.06
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=77.59
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0208|0.1375|0.4130
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=67.82
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0289|0.1813|0.5600
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=49.96
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0366|0.2451|0.6743
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=37.09
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0321|0.2119|0.5828
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=20.34
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0316|0.1942|0.5125
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=14.58
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0120|0.0643|0.1730
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.01
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0067|0.0406|0.0906
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.66
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0020|0.0094|0.0231
+
+2025-06-16_12-48-20_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=True.pth ========
+[MODEL] 551/576 2025-06-16_12-48-20_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=86.05
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=57.76
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=83.18
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0152|0.1041|0.3071
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=17.48
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=77.51
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0221|0.1531|0.4763
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=69.36
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0282|0.2080|0.6368
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.14
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=51.46
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0394|0.2983|0.8718
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=29.52
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0381|0.2534|0.6654
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=18.04
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0209|0.1241|0.3578
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=8.17
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0225|0.1199|0.2990
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=8.41
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0110|0.0598|0.1454
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=8.37
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0027|0.0136|0.0296
+
+2025-06-16_13-01-19_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth ========
+[MODEL] 552/576 2025-06-16_13-01-19_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=92.07
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=57.16
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=90.12
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0141|0.0973|0.2720
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=26.25
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=84.45
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0244|0.1572|0.4924
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=10.79
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=70.08
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0424|0.2860|0.7688
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=16.02
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=56.41
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0496|0.3000|0.8725
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=11.63
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=36.49
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0461|0.3087|0.8522
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=22.01
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0322|0.2021|0.5053
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=14.29
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0139|0.0852|0.1846
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=9.55
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0076|0.0350|0.0876
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.61
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0026|0.0158|0.0331
+
+2025-06-16_13-03-43_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth ========
+[MODEL] 553/576 2025-06-16_13-03-43_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.9_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=88.85
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=56.98
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=84.21
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0222|0.1723|0.5124
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=33.52
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=75.43
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0367|0.2740|0.8860
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=12.87
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=64.71
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0345|0.2812|0.9596
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=42.60
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0486|0.3359|0.9195
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.35
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=29.98
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0328|0.2166|0.6466
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=13.93
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=14.25
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0221|0.1403|0.3417
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=11.05
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0089|0.0487|0.1082
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.47
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0036|0.0180|0.0361
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.56
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0013|0.0065|0.0126
+
+2025-06-16_13-16-57_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth ========
+[MODEL] 554/576 2025-06-16_13-16-57_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=94.51
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=85.47
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=92.71
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0057|0.0387|0.0933
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=50.18
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=89.43
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0125|0.0730|0.1683
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=12.72
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=80.93
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0209|0.1191|0.2441
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=11.54
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=64.45
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0229|0.1244|0.2548
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=26.37
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0217|0.1081|0.2334
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.04
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=9.47
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0129|0.0669|0.1448
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=8.31
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0071|0.0437|0.0862
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=9.95
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0022|0.0124|0.0245
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.01
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0008|0.0054|0.0105
+
+2025-06-16_13-20-35_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth ========
+[MODEL] 555/576 2025-06-16_13-20-35_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=93.42
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=81.10
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=92.21
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0042|0.0234|0.0541
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=53.22
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=89.53
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0061|0.0310|0.0723
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=14.85
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=84.02
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0090|0.0497|0.1024
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.01
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=72.01
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0125|0.0656|0.1448
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=50.05
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0148|0.0750|0.1564
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=9.98
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=30.95
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0116|0.0611|0.1361
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=15.12
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0084|0.0442|0.0938
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=9.29
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0034|0.0191|0.0377
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.36
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0010|0.0049|0.0098
+
+2025-06-16_13-24-40_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth ========
+[MODEL] 556/576 2025-06-16_13-24-40_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=91.82
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=78.12
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=89.80
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0083|0.0483|0.1047
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=56.01
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=86.26
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0104|0.0573|0.1246
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=19.98
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=81.22
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0129|0.0667|0.1396
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.89
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=69.48
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0149|0.0827|0.1661
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=9.94
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=55.27
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0152|0.0789|0.1623
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=11.28
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=27.95
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0104|0.0539|0.1132
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=15.63
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0074|0.0376|0.0854
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=8.74
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0045|0.0231|0.0463
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.55
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0016|0.0082|0.0187
+
+2025-06-16_13-26-00_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth ========
+[MODEL] 557/576 2025-06-16_13-26-00_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=95.23
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=79.87
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=93.24
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0064|0.0393|0.1052
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=50.04
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=89.13
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0144|0.0809|0.1803
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=11.84
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=80.70
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0226|0.1200|0.2664
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.97
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=51.48
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0303|0.1549|0.3268
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=25.51
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0242|0.1287|0.2613
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.01
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=11.35
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0151|0.0798|0.1623
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.01
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=8.74
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0083|0.0419|0.0946
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=9.36
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0031|0.0162|0.0380
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.91
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0016|0.0080|0.0176
+
+2025-06-16_13-31-38_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=True.pth ========
+[MODEL] 558/576 2025-06-16_13-31-38_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=95.32
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=86.78
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=94.13
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0026|0.0148|0.0321
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=53.48
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=91.86
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0063|0.0355|0.0752
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=17.51
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=84.97
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0127|0.0647|0.1359
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=13.79
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=71.98
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0172|0.0909|0.1858
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=50.96
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0142|0.0732|0.1487
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=28.84
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0097|0.0498|0.1029
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=9.99
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=11.94
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0045|0.0229|0.0500
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=11.14
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0019|0.0089|0.0197
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.57
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0008|0.0039|0.0096
+
+2025-06-16_14-03-00_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth ========
+[MODEL] 559/576 2025-06-16_14-03-00_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=90.48
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=83.59
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=89.56
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0082|0.0401|0.0846
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=66.48
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=86.63
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0095|0.0534|0.1186
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=29.83
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=81.57
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0138|0.0688|0.1542
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=15.28
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=67.77
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0207|0.0996|0.2206
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=21.03
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=56.32
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0230|0.1165|0.2554
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.88
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=37.97
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0252|0.1319|0.2703
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=24.43
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0304|0.1606|0.3487
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=9.43
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=13.68
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0256|0.1270|0.2851
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.68
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0129|0.0694|0.1425
+
+2025-06-16_14-05-00_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth ========
+[MODEL] 560/576 2025-06-16_14-05-00_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=95.83
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=83.59
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=94.79
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0035|0.0184|0.0406
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=35.41
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=91.59
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0081|0.0416|0.0948
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=14.31
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=84.17
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0145|0.0842|0.1731
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=11.94
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=72.04
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0206|0.1056|0.2372
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.02
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=51.97
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0175|0.0936|0.1866
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=28.48
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0151|0.0816|0.1658
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=13.98
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0099|0.0563|0.1243
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.31
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0050|0.0300|0.0608
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.93
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0013|0.0092|0.0138
+
+2025-06-16_14-14-26_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=False.pth ========
+[MODEL] 561/576 2025-06-16_14-14-26_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=94.16
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=85.09
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=93.20
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0033|0.0186|0.0393
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=53.92
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=91.20
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0052|0.0288|0.0570
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=25.19
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=86.24
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0073|0.0390|0.0797
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=14.10
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=76.59
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0117|0.0629|0.1409
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=60.71
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0126|0.0640|0.1415
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=42.35
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0117|0.0646|0.1380
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=24.08
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0085|0.0428|0.0878
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=11.27
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0044|0.0239|0.0529
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.40
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0014|0.0085|0.0184
+
+2025-06-16_14-17-07_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth ========
+[MODEL] 562/576 2025-06-16_14-17-07_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=95.18
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=86.75
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=94.02
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0022|0.0140|0.0342
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=33.13
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=90.51
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0076|0.0420|0.0944
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=29.69
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=81.99
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0140|0.0741|0.1958
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=11.26
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=66.59
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0180|0.0941|0.2082
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=49.16
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0147|0.0791|0.1703
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=24.78
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0093|0.0483|0.1058
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=9.97
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0051|0.0279|0.0573
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=9.40
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0024|0.0130|0.0337
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.60
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0009|0.0052|0.0126
+
+2025-06-16_14-31-33_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth ========
+[MODEL] 563/576 2025-06-16_14-31-33_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=94.77
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=87.13
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=93.23
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0038|0.0260|0.0690
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=66.81
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=90.00
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0098|0.0558|0.1252
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=37.56
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=83.14
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0185|0.0973|0.2043
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=24.88
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=71.84
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0251|0.1274|0.2844
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=12.26
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=53.96
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0262|0.1437|0.2893
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=8.37
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=27.01
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0208|0.1041|0.2322
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=14.77
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0114|0.0559|0.1206
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=11.20
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0056|0.0287|0.0566
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.27
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0013|0.0071|0.0179
+
+2025-06-16_14-48-42_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=True.pth ========
+[MODEL] 564/576 2025-06-16_14-48-42_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=95.76
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=87.55
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=95.05
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0032|0.0170|0.0367
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=57.68
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=93.44
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0047|0.0243|0.0521
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=22.43
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=88.78
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0078|0.0425|0.0905
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=21.07
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=77.49
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0135|0.0735|0.1492
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.04
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=54.87
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0166|0.0845|0.1765
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=34.19
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0146|0.0796|0.1672
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=15.63
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0117|0.0571|0.1456
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.28
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0061|0.0348|0.0866
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.12
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0032|0.0163|0.0427
+
+2025-06-16_14-51-26_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth ========
+[MODEL] 565/576 2025-06-16_14-51-26_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=93.37
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=79.10
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=92.24
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0043|0.0231|0.0513
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=32.83
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=89.87
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0067|0.0375|0.0819
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=16.27
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=85.36
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0107|0.0542|0.1182
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.03
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=75.10
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0126|0.0686|0.1458
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=9.92
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=59.14
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0123|0.0645|0.1296
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=35.67
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0119|0.0562|0.1204
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=9.99
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=16.50
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0077|0.0351|0.0790
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.06
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0037|0.0208|0.0497
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.06
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0012|0.0074|0.0130
+
+2025-06-16_14-52-03_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth ========
+[MODEL] 566/576 2025-06-16_14-52-03_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=93.56
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=86.23
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=92.25
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0042|0.0242|0.0499
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=62.01
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=89.65
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0061|0.0356|0.0753
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=19.43
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=85.80
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0084|0.0440|0.0964
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.27
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=76.47
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0134|0.0680|0.1484
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.01
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=58.60
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0160|0.0802|0.1794
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=37.88
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0154|0.0827|0.1722
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.29
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=16.77
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0114|0.0636|0.1292
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=11.19
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0055|0.0291|0.0639
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.76
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0014|0.0073|0.0153
+
+2025-06-16_15-04-43_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=False.pth ========
+[MODEL] 567/576 2025-06-16_15-04-43_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=94.15
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=87.85
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=93.18
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0031|0.0179|0.0386
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=72.16
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=91.29
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0045|0.0257|0.0546
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=24.07
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=87.08
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0074|0.0413|0.0865
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.49
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=77.76
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0108|0.0614|0.1270
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=9.87
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=58.79
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0139|0.0730|0.1624
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=36.70
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0127|0.0653|0.1404
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=21.93
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0074|0.0374|0.0799
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=11.60
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0044|0.0249|0.0552
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.65
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0019|0.0103|0.0208
+
+2025-06-16_15-06-55_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=False.pth ========
+[MODEL] 568/576 2025-06-16_15-06-55_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=0.0_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=94.22
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=86.62
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=93.13
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0035|0.0180|0.0362
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=43.48
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=91.31
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0046|0.0246|0.0493
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=12.43
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=88.26
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0060|0.0317|0.0738
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=13.59
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=81.45
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0085|0.0445|0.0998
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=12.57
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=67.66
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0119|0.0628|0.1397
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=40.64
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0121|0.0635|0.1459
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=20.85
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0104|0.0617|0.1255
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.02
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.28
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0068|0.0353|0.0731
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.53
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0026|0.0138|0.0288
+
+2025-06-16_15-20-13_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth ========
+[MODEL] 569/576 2025-06-16_15-20-13_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=95.17
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=89.23
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=93.61
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0042|0.0299|0.0657
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=56.49
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=89.65
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0122|0.0685|0.1526
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=21.06
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=81.13
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0230|0.1228|0.2715
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=16.25
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=64.73
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0293|0.1487|0.3349
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=12.28
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=47.52
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0303|0.1513|0.3236
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=12.52
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=30.79
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0260|0.1330|0.2817
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=13.83
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0200|0.0986|0.2094
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=9.74
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0099|0.0575|0.1103
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.13
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0028|0.0144|0.0282
+
+2025-06-16_15-25-07_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth ========
+[MODEL] 570/576 2025-06-16_15-25-07_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=91.46
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=84.74
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=90.61
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0061|0.0326|0.0738
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=69.14
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=87.81
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0081|0.0423|0.0936
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=32.37
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=83.27
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0107|0.0589|0.1225
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=11.81
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=74.03
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0159|0.0786|0.1762
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=13.41
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=60.92
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0224|0.1209|0.2525
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.07
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=40.42
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0288|0.1436|0.3067
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=9.97
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=17.80
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0322|0.1742|0.4070
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=13.13
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0242|0.1380|0.3138
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=8.31
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0144|0.0682|0.1504
+
+2025-06-16_15-40-28_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth ========
+[MODEL] 571/576 2025-06-16_15-40-28_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=93.75
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=86.78
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=92.98
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0037|0.0200|0.0426
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=56.19
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=90.94
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0053|0.0295|0.0606
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=24.01
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=87.23
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0075|0.0417|0.0848
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.01
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=77.78
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0114|0.0577|0.1197
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=59.07
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0139|0.0731|0.1581
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=33.53
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0123|0.0660|0.1357
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=9.72
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=15.71
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0074|0.0386|0.0813
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=9.95
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0041|0.0246|0.0506
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.87
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0011|0.0047|0.0091
+
+2025-06-16_15-51-18_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth ========
+[MODEL] 572/576 2025-06-16_15-51-18_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=True_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=95.69
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=87.87
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=94.66
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0031|0.0154|0.0351
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=40.50
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=91.70
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0069|0.0365|0.0803
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=12.06
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=83.71
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0121|0.0676|0.1479
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=65.04
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0181|0.0980|0.2159
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=44.13
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0160|0.0839|0.1712
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=24.38
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0110|0.0613|0.1302
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=13.39
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=15.62
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0079|0.0403|0.0932
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=11.44
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0058|0.0334|0.0774
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.53
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0016|0.0074|0.0160
+
+2025-06-16_15-52-56_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=True.pth ========
+[MODEL] 573/576 2025-06-16_15-52-56_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=False_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=95.33
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=89.79
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=94.42
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0027|0.0144|0.0370
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=50.60
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=91.24
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0072|0.0359|0.0810
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=20.97
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=84.41
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0133|0.0727|0.1527
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=14.06
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=71.71
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0188|0.0984|0.2130
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=9.95
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=52.20
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0180|0.0925|0.2090
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=32.56
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0116|0.0616|0.1236
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=12.53
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0063|0.0324|0.0764
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.55
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0039|0.0192|0.0388
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.66
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0008|0.0030|0.0073
+
+2025-06-16_16-08-49_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=True.pth ========
+[MODEL] 574/576 2025-06-16_16-08-49_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=95.73
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=72.37
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=94.84
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0033|0.0165|0.0346
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=42.29
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=93.08
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0051|0.0275|0.0579
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=19.69
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=87.84
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0092|0.0477|0.1039
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=13.47
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=77.67
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0145|0.0810|0.1729
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=58.36
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0181|0.0999|0.2295
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=29.63
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0174|0.0921|0.2277
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=14.75
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0130|0.0718|0.1536
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=9.01
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=11.73
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0071|0.0378|0.0832
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.00
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0016|0.0081|0.0183
+
+2025-06-16_16-18-33_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth ========
+[MODEL] 575/576 2025-06-16_16-18-33_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=95.11
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=79.12
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=93.73
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0023|0.0153|0.0349
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=43.38
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=91.54
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0061|0.0347|0.0767
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=21.44
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=84.22
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0128|0.0690|0.1552
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.60
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=71.15
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0171|0.0876|0.2041
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.03
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=48.79
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0143|0.0710|0.1617
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=24.35
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0080|0.0405|0.0870
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=12.20
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0054|0.0329|0.0611
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=10.11
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0029|0.0136|0.0300
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=9.77
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0007|0.0031|0.0075
+
+2025-06-16_16-57-28_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=False.pth ========
+[MODEL] 576/576 2025-06-16_16-57-28_dataset=cifar10_arch=resnet18_opt=sgd_seed=42_lr=0.001_batch_size=128_momentum=0.99_wd=0.001_epochs=200_l1=1e-05_l2=0.0_sam=True_sam_rho=0.1_rand_aug=True_lr_schedule=False.pth
+[BASE] Ratio=0.0 Params=11173962 Eval=BeforePruning [RESULT] TestAcc=94.25
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterPruning [RESULT] TestAcc=83.23
+[BASE] Ratio=0.1 Params=9018358 Eval=AfterRepair [RESULT] TestAcc=93.65
+[SHARPNESS] Ratio=0.1 Method=mag-l1 Sharpness=0.0033|0.0174|0.0364
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterPruning [RESULT] TestAcc=29.87
+[BASE] Ratio=0.2 Params=7122360 Eval=AfterRepair [RESULT] TestAcc=92.06
+[SHARPNESS] Ratio=0.2 Method=mag-l1 Sharpness=0.0044|0.0240|0.0503
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterPruning [RESULT] TestAcc=11.29
+[BASE] Ratio=0.3 Params=5459866 Eval=AfterRepair [RESULT] TestAcc=87.57
+[SHARPNESS] Ratio=0.3 Method=mag-l1 Sharpness=0.0067|0.0364|0.0804
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterPruning [RESULT] TestAcc=10.09
+[BASE] Ratio=0.4 Params=4009418 Eval=AfterRepair [RESULT] TestAcc=79.80
+[SHARPNESS] Ratio=0.4 Method=mag-l1 Sharpness=0.0096|0.0538|0.1212
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterPruning [RESULT] TestAcc=10.38
+[BASE] Ratio=0.5 Params=2797610 Eval=AfterRepair [RESULT] TestAcc=67.12
+[SHARPNESS] Ratio=0.5 Method=mag-l1 Sharpness=0.0123|0.0634|0.1315
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.6 Params=1776662 Eval=AfterRepair [RESULT] TestAcc=42.20
+[SHARPNESS] Ratio=0.6 Method=mag-l1 Sharpness=0.0143|0.0741|0.1574
+[BASE] Ratio=0.7 Params=997272 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.7 Params=997272 Eval=AfterRepair [RESULT] TestAcc=23.95
+[SHARPNESS] Ratio=0.7 Method=mag-l1 Sharpness=0.0115|0.0619|0.1384
+[BASE] Ratio=0.8 Params=444218 Eval=AfterPruning [RESULT] TestAcc=9.69
+[BASE] Ratio=0.8 Params=444218 Eval=AfterRepair [RESULT] TestAcc=12.14
+[SHARPNESS] Ratio=0.8 Method=mag-l1 Sharpness=0.0081|0.0494|0.1121
+[BASE] Ratio=0.9 Params=110378 Eval=AfterPruning [RESULT] TestAcc=10.00
+[BASE] Ratio=0.9 Params=110378 Eval=AfterRepair [RESULT] TestAcc=10.04
+[SHARPNESS] Ratio=0.9 Method=mag-l1 Sharpness=0.0015|0.0077|0.0168
