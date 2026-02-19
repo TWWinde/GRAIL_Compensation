@@ -1,80 +1,72 @@
-# Folding as Projection
+<p align="center">
+<img src="grail-llm/figures/grail_logo.png" width="20%"> <br>
+</p>
 
-This repository contains code and experiments for exploring **model compression through projection-based folding**. 
+<div align="center">
+<h1>GRAIL</h1>
+<h3>GRAIL: Post-hoc Compensation by Linear Reconstruction for Compressed Networks</h3>
+</div>
 
-## Checkpoints
+## Overview
 
-Trained model checkpoints used in this project can either be generated locally or downloaded from external sources:
+**GRAIL** is a post-compression weight compensation framework that recovers the performance of structured compressed models. It leverages Gram matrix statistics and ridge regression to compensate for information loss without expensive retraining.
+<p align="center">
+<img width="100%" alt="image" src="grail-llm/figures/main.png">    
+</p>
 
-- **ResNet18 on CIFAR-10**  
-  - Train using scripts in [`train/run.sh`](train/run.sh)
+This repository contains implementations for:
+1. **Large Language Models (LLMs)**: LLaMA, LLaMA-2
+2. **Vision Models**: ResNet, ViT, CLIP
 
-- **CLIP ViT-B/32 model soups (M. Wortsman)**  
-  - Paper: [Model Soups](https://arxiv.org/abs/2203.05482)  
-  - Checkpoints: [GitHub Release](https://github.com/mlfoundations/model-soups/releases/)
+## Repository Structure
 
-- **PreActResNet18 & ViT experiments (M. Andriushchenko)**  
-  - Paper: [Sharpness vs. Generalization](https://arxiv.org/pdf/2302.07011)  
-  - Code: [GitHub Repository](https://github.com/tml-epfl/sharpness-vs-generalization/tree/main)  
-  - Checkpoints: [Google Drive](https://drive.google.com/drive/folders/1LmthJCb3RXBFWjeTOC4UOOl7Ppgg2h7n)  
-  - Notes:
-    - Install `vit-pytorch==0.40.2`  
-    - See [commit](https://github.com/tml-epfl/sharpness-vs-generalization/commit/6d73be94eb88dae6d3096647bb24b92244fae18f) for compatibility  
-    - Training metrics available on Google Drive  
+The project is organized into two main modules:
 
----
+### 1. [GRAIL for LLMs](./grail-llm)
+Located in `grail-llm/`, this module supports:
+- **Models**: LLaMA-1, LLaMA-2
+- **Pruning Methods**: FLAP, Wanda-SP, SlimGPT, Wanda++
+- **Features**: Weight & Bias compensation, Zero-shot evaluation
+- The code folder is modified from https://github.com/TWWinde/GRAIL_LLM and https://github.com/nanguoyu/simple_model_folding
 
-## Evaluation on Individual Checkpoints
+**[👉 Go to GRAIL-LLM Documentation](./grail-llm/README.md)**
 
-Install dependencies from `requirements.txt`.  
-Assuming checkpoints are located under `../checkpoints/<model_name>/<optimizer_name>`, run:
+### 2. [GRAIL for Vision](./grail-vision)
+Located in `grail-vision/`, this module supports:
+- **Models**: ResNet18, ViT, CLIP
+- **Features**: Model soups, specialized compensation pipelines
+- The code folder is modified from  https://github.com/osaukh/folding_as_projection
 
+**[👉 Go to GRAIL-Vision Documentation](./grail-vision/README.md)**
+
+## Quick Start
+
+### For LLMs
 ```bash
-CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.eval_resnet_compression
-CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.eval_preact_resnet_compression
-CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.eval_vit_compression
-CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.eval_clip_compression
+cd grail-llm
+pip install -r requirements.txt  # If available, or see installation in README
+python main.py --model meta-llama/Llama-2-7b-hf --prune_method flap --compensate
 ```
 
-## Testing pipelines 
-The following scripts reproduce the log files used to generate the plots in our submission.
-Logs are automatically stored in the `output` folder.
-
-*ResNet18 (CIFAR-10):*
-```
-CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_resnet_compression --ckpt_dir ../checkpoints/resnet18/adam --method fold
-CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_resnet_compression --ckpt_dir ../checkpoints/resnet18/adam --method mag-l1
-CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_resnet_compression --ckpt_dir ../checkpoints/resnet18/adam --method mag-l2
-CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_resnet_sharpness --ckpt_dir ../checkpoints/resnet18/sgd --method mag-l1 >>output/resnet18/sgd-mag-l1-sharpness
+### For Vision Models
+```bash
+cd grail-vision
+# Follow instructions in grail-vision/README.md
 ```
 
-*PreActResNet18:*
-```
-CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_preact_resnet_compression --ckpt_dir ../checkpoints/preactresnet18 --method fold --epochs 5
-CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_preact_resnet_sharpness --ckpt_dir ../checkpoints/preactresnet18 --method mag-l2 --sharp-layer-pattern "visual.transformer.resblocks.11" >>output/preactresnet18/mag-l2-sharpness
-CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_preact_resnet_zeroshot --ckpt_dir ../checkpoints/preactresnet18 --method mag-l2 >>output/preactresnet18/mag-l2-zeroshot
-CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_preact_resnet_compression --ckpt_dir ../checkpoints/preactresnet18 --method fisher --epochs 0 >>output/preactresnet18/fisher
-```
-*ViT experiments:*
-```
-CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_vit_compression --ckpt_dir ../checkpoints/vit-exp --method fold --epochs 5
-```
-*CLIP model soups:*
-```
-CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_clip_compression --ckpt_dir ../checkpoints/clipvit-b32-model-soups --method fold --epochs 5
-CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_clip_sharpness --ckpt_dir ../checkpoints/clipvit-b32-model-soups --method mag-l2 >>output/clip/mag-l2-sharpness
-CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_clip_zeroshot --ckpt_dir ../checkpoints/clipvit-b32-model-soups --method mag-l2 >>output/clip/mag-l2-zeroshot
-```
+## Citation
 
-## Reproducing Plots
-- Full experiment logs are available in the `output` folder.
-- Use the Jupyter notebooks in `notebooks` to reproduce the plots shown in the paper.
+If you use GRAIL in your research, please cite:
 
-## Publication
 ```bibtex
-@inproceedings{saukh2026cutless,
-  title     = {Cut Less, Fold More: Model Compression through the Lens of Projection Geometry},
-  author    = {Saukh, Olga and Wang, Dong and {\v{S}}iki{\'c}, Haris and Cheng, Yun and Thiele, Lothar},
-  booktitle = {Proceedings of the International Conference on Learning Representations (ICLR)},
-  year      = {2026}
+@inproceedings{Tang2026GRAIL,
+  author    = {Tang, Wenwu. and Wang, Dong and Thiele, Lothar. and Saukh, Olga.},
+  title     = {GRAIL: Post-hoc Compensation by Linear Reconstruction for Compressed Networks},
+  booktitle = {Proceedings of the Conference on Parsimony and Learning (CPAL)},
+  year      = {2026},
+  note      = {Accepted (Proceedings Track)}
 }
+```
+
+## License
+Apache-2.0
