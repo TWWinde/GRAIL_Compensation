@@ -1,11 +1,9 @@
 <p align="center">
 <img src="grail-llm/figures/grail_logo.png" width="20%"> <br>
 </p>
-# GRAIL Compensation
 
 <div align="center">
-<h1>GRAIL</h1>
-<h3>GRAIL: Post-hoc Compensation by Linear Reconstruction for Compressed Networks</h3>
+<h1>GRAIL: Post-hoc Compensation by Linear Reconstruction for Compressed Networks</h1>
 </div>
 
 ## Overview
