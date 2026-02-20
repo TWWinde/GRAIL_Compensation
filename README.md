@@ -26,7 +26,7 @@ Located in `grail-llm/`, this module supports:
 - **Models**: LLaMA-1, LLaMA-2
 - **Pruning Methods**: FLAP, Wanda-SP, SlimGPT, Wanda++
 - **Features**: Weight & Bias compensation, Zero-shot evaluation
-- The code folder is modified from https://github.com/TWWinde/GRAIL_LLM and https://github.com/nanguoyu/simple_model_folding
+- The code folder is modified from https://github.com/TWWinde/GRAIL_LLM and [https://github.com/nanguoyu/simple_model_folding](https://github.com/nanguoyu/simple_model_folding_public)
 
 **[👉 Go to GRAIL-LLM Documentation](./grail-llm/README.md)**
 
