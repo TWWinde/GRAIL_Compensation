@@ -3,7 +3,9 @@
 </p>
 
 <div align="center">
-<h1>[GRAIL: Post-hoc Compensation by Linear Reconstruction for Compressed Networks](https://arxiv.org/abs/2602.23795)</h1>
+
+# [GRAIL: Post-hoc Compensation by Linear Reconstruction for Compressed Networks](https://arxiv.org/abs/2602.23795)
+
 </div>
 
 ## Overview
